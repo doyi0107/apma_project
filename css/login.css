@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+
+/* font-family: 'Courgette', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Shadows Into Light', cursive 
+font-family: 'Gowun Dodum', sans-serif;*/
+
+.hideClass{
+    width:0; height:0;
+    font-size:0; line-height:0;
+    position:absolute;
+    visibility:hidden;
+  }
+
+
+div#wrap{
+  position: relative;
+  width:100%;
+
+}
+
+#headerWrap{
+ position:fixed;
+ left:0; top:0;
+ width:100%;
+ background-color:rgba(34, 34, 34, 0.9);
+ z-index:9999;
+}
+
+header{
+  width:1400px;
+  margin:0 auto;
+
+  /* height: 100px; */
+  /* background-color: rgba(34, 34, 34, 0.8); */
+
+}
+header>h1{float: left;}
+
+header>h1>a{
+  font:60px  'Shadows Into Light', cursive ;
+  color: #fff;
+}
+header>nav{
+  float:right;
+position:relative;
+}
+
+header>nav>ul{
+   margin-right:200px;
+
+}
+header>nav>ul#nl{
+
+  margin-right:400px;
+  display: flex;
+  padding-top: 30px;
+
+}
+
+header>nav>ul#nl>li:nth-child(1)>a:hover{
+  color:rgb(218, 191, 44);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(2)>a:hover{
+  color:#fff;
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(3)>a:hover{
+  color:rgb(101, 182, 69);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(4)>a:hover{
+  color:rgb(134, 66, 180);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(5)>a:hover{
+  color:rgb(224, 102, 64);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(6)>a:hover{
+  color:rgb(60, 160, 206);
+  text-decoration: underline;
+}
+
+
+header>nav>ul#nr{
+position:absolute;
+right:0;
+top:30px;
+margin-right: 50px;
+display:flex;
+ 
+}
+
+header>nav>ul>li{
+  margin-left: 30px;
+}
+
+header>nav>ul>li>a{
+  font:19px 'Shadows Into Light', cursive ;
+  color: #fff;
+
+}
+
+/* header */
+
+main{
+
+    background-color: #6b6b6b;
+    width:100%;
+    height: 100%;
+}
+
+section{
+  width:700px;
+  margin: 0 auto;
+  padding-bottom:200px;
+}
+
+h3{
+  padding-top:150px;
+  font:70px 'Shadows Into Light', cursive ;
+  color:#313131;
+  margin-bottom:50px;
+}
+
+form{
+    width:500px;
+    margin:0 50px;
+    padding:100px 50px;
+    box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+    border:3px solid #444444;
+    
+}
+
+
+form #fl{
+   float: left;
+   padding-bottom: 20px;
+   margin-left: 70px;
+}
+
+#fl li{
+    margin-bottom: 3px;
+}
+
+#fl li>input{
+   width:250px;
+   height:30px;
+   background-color: #6b6b6b;
+   border:3px solid #444444;
+
+}
+
+
+form #fr{
+  float: right;
+}
+
+form p>input{
+  float:left;
+  margin-left:30px;
+  width:70px;
+  height:80px;
+  color:#fff;
+  background-color:#444444;
+  border:none;
+  font-family: '나눔고딕', sans-serif;
+}
+
+#f2{
+  display: flex;
+  overflow:hidden;
+  clear: both;
+  margin-left: 70px;
+}
+
+#f2>p{
+  margin-right:10px;
+  color:#2e2e2e;
+}
+
+#f2>p>a{
+  color:#2e2e2e;
+}
+
+/* footer */
+
+#footerWrap{
+
+  bottom: 0px;
+  z-index:9999;
+  background-color: rgb(34, 34, 34);
+}
+#footerWrap>footer{
+ 
+}
+
+#footerWrap div#fu{
+  overflow: hidden;
+  width:1590px;
+  margin: 0 auto;
+ padding-top:30px;
+  
+}
+#footerWrap div#ful{
+  float:left;
+  width:500px;
+  padding-bottom:3px;
+}
+
+#footerWrap div#ful>dl{
+  padding-bottom:3px;
+  font:15px 나눔고딕,'sans-serif';
+}
+
+
+#footerWrap div#ful dt{
+   float:left;
+   clear: both;
+   color:#666;
+
+}
+#footerWrap div#ful dd{
+  color:#666;
+}
+
+#footerWrap div#fur{
+
+  float:right;
+  display: flex;
+  color:#666;
+
+}
+
+#footerWrap div#fur>dl{
+  margin-left:20px;
+}
+
+#footerWrap div#fur>dl>dt{
+  padding-bottom:5px;
+}
+
+#footerWrap div#fd{
+  width:1590px;
+  height:50px;
+  margin: 0 auto;
+}
+#footerWrap div#fd>ul{}
+#footerWrap div#fd li{
+  float:left;
+  
+} 
+#footerWrap div#fd li>a{
+  display: flex;
+  margin-right: 5px;
+}
+
+#footerWrap div#fd small{
+  float:right;
+  font:15px 나눔고딕,'sans-serif';
+  color:#666;
+}

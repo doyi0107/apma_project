@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+
+
+/* font-family: 'Courgette', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Shadows Into Light', cursive 
+font-family: 'Gowun Dodum', sans-serif;*/
+
+.hideClass{
+    width:0; height:0;
+    font-size:0; line-height:0;
+    position:absolute;
+    visibility:hidden;
+  }
+
+
+div#wrap{
+  position: relative;
+  width:100%;
+
+}
+
+#headerWrap{
+ position:fixed;
+ left:0; top:0;
+ width:100%;
+ background-color:rgba(34, 34, 34, 0.9);
+}
+
+header{
+  width:1400px;
+  margin:0 auto;
+
+  /* height: 100px; */
+  /* background-color: rgba(34, 34, 34, 0.8); */
+
+}
+header>h1{float: left;}
+
+header>h1>a{
+  font:60px  'Shadows Into Light', cursive ;
+  color: #fff;
+}
+header>nav{
+  float:right;
+position:relative;
+}
+
+header>nav>ul{
+   margin-right:200px;
+
+}
+header>nav>ul#nl{
+
+  margin-right:400px;
+  display: flex;
+  padding-top: 30px;
+
+}
+
+header>nav>ul#nl>li:nth-child(1)>a:hover{
+  color:rgb(218, 191, 44);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(2)>a:hover{
+  color:#fff;
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(3)>a:hover{
+  color:rgb(101, 182, 69);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(4)>a:hover{
+  color:rgb(134, 66, 180);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(5)>a:hover{
+  color:rgb(224, 102, 64);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(6)>a:hover{
+  color:rgb(60, 160, 206);
+  text-decoration: underline;
+}
+
+
+header>nav>ul#nr{
+position:absolute;
+right:0;
+top:30px;
+margin-right: 50px;
+display:flex;
+ 
+}
+
+header>nav>ul>li{
+  margin-left: 30px;
+}
+
+header>nav>ul>li>a{
+  font:19px 'Shadows Into Light', cursive ;
+  color: #fff;
+
+}
+
+/* main */
+section{   
+  /* background:url('../image/gray\ back2.png') repeat-x 0px 316px ,
+  url('../image/coral\ back.png') repeat-x 0px 855px;  */
+
+}
+
+h3{
+  font:70px 'Shadows Into Light', cursive ;
+  color:rgb(224, 102, 64);
+  margin-bottom:50px;
+}
+
+figure{
+  width:1146px;
+  margin:0 auto;
+  overflow: hidden;
+  clear: both;
+  padding-bottom: 200px;
+
+}
+
+figure img{
+  width:500px;
+  height:400px;
+
+
+}
+
+#box01{
+  background:url('../image/gray_back.png') repeat-x top center;
+  padding-top:146px;
+  
+}
+#box02{
+  background:url('../image/coral_back2.png') repeat-x top center;
+  /* padding-top:146px; */
+  padding-top:60px;
+  
+}
+
+#box03{
+  background:url('../image/gray back.png') repeat-x;
+  padding-top: 100px;
+}
+
+#box04{
+  background:url('../image/coral_back2.png') repeat-x top center;
+  padding-top:60px;
+}
+
+figcaption{
+  overflow: hidden;
+  width:546px;
+  height: 400px;
+}
+figcaption>dl{
+
+}
+figcaption dt{
+  margin-top: 50px;
+  font:45px  'Gowun Dodum', sans-serif;
+  color:black;
+}
+
+figcaption dd{
+  margin-top: 30px;
+  font:16px/25px 나눔고딕,san-serif;
+  color:black;
+}
+
+
+
+#fr>img{
+  float: right;
+
+}
+
+#fr>figcaption{
+  float: left;
+}
+
+#fl>img{
+  float: left;
+}
+
+#fl>figcaption{
+  float: right;
+}
+
+#tr{
+  padding-left:100px;
+}
+
+#tl{
+  padding-right:100px;
+}
+
+
+/* footer */
+
+#footerWrap{
+    background-color: rgb(34, 34, 34);
+  }
+  #footerWrap>footer{
+   
+  }
+  
+  #footerWrap div#fu{
+    overflow: hidden;
+    width:1590px;
+    margin: 0 auto;
+   padding-top:30px;
+    
+  }
+  #footerWrap div#ful{
+    float:left;
+    width:500px;
+    padding-bottom:3px;
+  }
+  
+  #footerWrap div#ful>dl{
+    padding-bottom:3px;
+    font:15px 나눔고딕,'sans-serif';
+  }
+  
+  
+  #footerWrap div#ful dt{
+     float:left;
+     clear: both;
+     color:#666;
+  
+  }
+  #footerWrap div#ful dd{
+    color:#666;
+  }
+  
+  #footerWrap div#fur{
+  
+    float:right;
+    display: flex;
+    color:#666;
+  
+  }
+  
+  #footerWrap div#fur>dl{
+    margin-left:20px;
+  }
+  
+  #footerWrap div#fur>dl>dt{
+    padding-bottom:5px;
+  }
+  
+  #footerWrap div#fd{
+    width:1590px;
+    height:50px;
+    margin: 0 auto;
+  }
+  #footerWrap div#fd>ul{}
+  #footerWrap div#fd li{
+    float:left;
+    
+  } 
+  #footerWrap div#fd li>a{
+    display: flex;
+    margin-right: 5px;
+  }
+  
+  #footerWrap div#fd small{
+    float:right;
+    font:15px 나눔고딕,'sans-serif';
+    color:#666;
+  }

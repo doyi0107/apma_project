@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div id="headerWrap">
+            <header>       
+                    <h1><a href="main.html">APMA</a></h1>
+                    <nav>              
+                        <h2 class="hideClass">메인내비게이션</h2>
+                        <ul id="main_menu">
+                            <li><a href="museum.html">MUSEUM</a></li>
+                            <li><a href="exhibtion.html">EXHIBTION</a></li>
+                            <li><a href="project.html">PROJECT</a></li>
+                            <li><a href="event.html">EVENT</a></li>
+                            <li><a href="museum_shop.html">MUSEUM SHOP</a></li>
+                            <li><a href="infomation.html">INFOMATION</a></li>
+                        </ul>
+                        <ul id="side_menu">
+                            <li><a href="../pages/login.html">LOGIN</a></li>
+                            <li><a href="../pages/sign_up.html">SIGN UP</a></li>
+                        </ul>
+                    </nav>
+
+            </header>
+        </div>
+        <main>  
+            <article>
+                <!-- box01 -->
+                <div id="box01">
+                    <section>
+
+                        <div class="slider"> 
+                            <div class="myslider fade" style="display: block;">
+                                <div class="txt">
+                                    <h1>Sterling Ruby, &lt;The Window. cotton candy&gt;</h1>
+                                    <p>A window is a kind of boundary where two different spaces collide, <br> and it itself contains the meaning of an "unfair combination."</p>
+                                </div>
+                                <img src="../src/all_image/main_image8.jpeg" alt="1" >  
+                            </div>   
+                            <div class="myslider fade">
+                                <div class="txt">
+                                    <h1>ADHD, &lt;the process of death&gt;</h1>
+                                    <p>You can see noble and beautiful plum blossoms<br>in various folding screens.</p>
+                                </div>
+                                <img src="../src/all_image/main_image5.jpeg" alt="2" >  
+                            </div>
+                            <div class="myslider fade">
+                                <div class="txt">
+                                    <h1>Joseon, the land of folding screens</h1>
+                                    <p>I hope it will be the year of the black rabbit, <br> who leaps wisely and flexibly like a rabbit with many meanings and appearances. </p>
+                                </div>
+                                <img src="../src/all_image/main_image7.jpeg" alt="3">     
+                            </div>           
+                        </div> 
+                    
+                        <a class="prev" onclick="plusSliders(-1)">
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <a class="next" onclick="plusSliders(1)">
+                            <span></span>
+                            <span></span>
+                        </a>
+
+                        <div class="dotsbox" style="text-emphasis: center;">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </section>
+                </div>
+                <!-- box02 -->
+                <div id="box02">
+                    <section>
+                        <div class="container">
+                            <div class="item item1">
+                                <img src="../src/all_image/item1_image.jpeg">
+                                <p>[Wooden stuff] Hwang Hyungshin</p>
+                            </div>
+                            <div class="item item2">
+                                <img src="../src/all_image/item2_image.jpeg">
+                                <p>[Sun and Moon and Five Peaks] Park Yeojoo</p>
+                            </div>
+                            <div class="item item3">
+                                <img src="../src/all_image/item3_image.jpg">
+                                <p>[Andreas Gusky] Belitz, Untitled XIX</p>
+                            </div>
+                            <div class="item item4">
+                                <img src="../src/all_image/item4_image.jpg">
+                                <p>[APMA, CHAPTER THREE] Number,7</p>
+                            </div>
+                            <div class="item item5">
+                                <img src="../src/all_image/item5_image.jpeg">
+                                <p>[Merry course: Painting with light] Black soil</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="box03">
+                    <aside>
+                        <ul>
+                            <li><a href="./project.html"><img src="../src/all_image/museum_image.jpeg" alt="MUSEUM"></a>
+                            <p>MUSEUM</p>
+                            </li>
+                            <li><a href="./project.html"><img src="../src/all_image/project_image.jpeg" alt="PROJECT"></a>
+                            <p>PROJECT</p>
+                            </li>
+                            <li><a href="./event.html"><img src="../src/all_image/event_image.jpeg" alt="EVENT"></a>
+                            <p>EVENT</p>
+                            </li>
+                            <li><a href="./museum_shop.html"><img src="../src/all_image/museum_image2.jpeg" alt="MUSEUM SHOP"></a>
+                            <p>MUSEUM SHOP</p></li>
+                            <li><a href="./infomation.html"><img src="../src/all_image/information_image.jpg" alt="INFO"></a>
+                            <p>INFOMATION</p>
+                        </li>
+                        </ul>
+                    </aside>
+                </div>
+            </article>
+        </main>
+    
+                <!-- footer -->
+        <div id="footerWrap">
+            <footer>
+                <div id="fu">
+                    <div id="ful">
+                    <dl>               
+                        <dt>Address:</dt>
+                        <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
+                        <dt>E-mail:</dt>
+                        <dd>E. museum &#64;amorepacific.com</dd>
+                        <dt>Phone:</dt>
+                        <dd>02-6040-2345</dd>
+                        
+                    </dl>
+                    </div>
+                    <div id="fur">
+                        <dl>
+                            <dt>관람시간</dt>
+                            <dd>화-일10:00AM ~ 6:00PM</dd>
+                        </dl>
+                        <dl>
+                            <dt>휴관일</dt>
+                            <dd>매주월요일
+                                매년1월1일 / 설,추석 연휴</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div id="fd">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">영상정보처리기기 운영방침</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                    <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
+
+                </div>
+            </footer>
+        </div>       
+    </div>
+
+
+        <script src="../js/apma.js"></script>
+</body>
+</html>

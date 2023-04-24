@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap');
+
+
+
+.hideClass{
+    width:0; height:0;
+    font-size:0; line-height:0;
+    position:absolute;
+    visibility:hidden;
+  }
+
+
+div#wrap{
+  position: relative;
+  width:100%;
+
+}
+
+#headerWrap{
+ position:fixed;
+ left:0; top:0;
+ width:100%;
+ background-color:rgba(34, 34, 34, 0.9);
+ z-index:9999;
+}
+
+header{
+  width:1400px;
+  margin:0 auto;
+
+  /* height: 100px; */
+  /* background-color: rgba(34, 34, 34, 0.8); */
+
+}
+header>h1{float: left;}
+
+header>h1>a{
+  font:60px  'Shadows Into Light', cursive ;
+  color: #fff;
+}
+header>nav{
+  float:right;
+position:relative;
+}
+
+header>nav>ul{
+   margin-right:200px;
+
+}
+header>nav>ul#nl{
+
+  margin-right:400px;
+  display: flex;
+  padding-top: 30px;
+
+}
+
+header>nav>ul#nl>li:nth-child(1)>a:hover{
+  color:rgb(218, 191, 44);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(2)>a:hover{
+  color:#fff;
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(3)>a:hover{
+  color:rgb(101, 182, 69);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(4)>a:hover{
+  color:rgb(134, 66, 180);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(5)>a:hover{
+  color:rgb(224, 102, 64);
+  text-decoration: underline;
+}
+header>nav>ul#nl>li:nth-child(6)>a:hover{
+  color:rgb(60, 160, 206);
+  text-decoration: underline;
+}
+
+
+header>nav>ul#nr{
+position:absolute;
+right:0;
+top:30px;
+margin-right: 50px;
+display:flex;
+ 
+}
+
+header>nav>ul>li{
+  margin-left: 30px;
+}
+
+header>nav>ul>li>a{
+  font:19px 'Shadows Into Light', cursive ;
+  color: #fff;
+
+}
+
+/* main */
+
+article{
+
+  position:relative;
+  background-color:#2c2c2c;
+
+}
+
+#box01{
+  width:100%;
+  height:100vh;
+  position:relative;
+  background:url('../image/Yongsan2.jpg') no-repeat center top;
+  background-size:100% auto;
+
+}
+
+#box01>h4{
+  width:600px;
+  position: absolute;
+  left:50%; top:50%;
+  margin: -40px 0 0 -300px;
+  text-align:center;
+
+    /* top:45%; left:40%; */
+    font:80px 'Shadows Into Light', cursive ;
+    color:rgb(255, 255, 255);
+    z-index: 9999;
+}
+
+#box02{
+  width:100%;
+  height:100vh;
+  position:relative;
+  background:url('../image/Jeju.jpg') no-repeat center top;
+  background-size:100% auto;
+
+}
+
+#box02>h4{
+    width:600px;
+    position: absolute;
+    left:50%; top:50%;
+    margin: -40px 0 0 -300px;
+    text-align:center;
+  
+      /* top:45%; left:40%; */
+      font:80px 'Shadows Into Light', cursive ;
+      color:rgb(255, 255, 255);
+      z-index: 9999;
+
+}
+
+#box01>h4:hover{
+  color:rgb(101, 182, 69);
+}
+#box02>h4:hover{
+  color:rgb(101, 182, 69);
+}
+h4>span{
+  font-family:'IBM Plex Sans Arabic', sans-serif;
+}
+.box03>div{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  position:absolute;
+  left:0;
+  bottom:0;
+  z-index:100;
+
+  /* 
+ 
+  background-color:#2c2c2c;
+
+  
+  display: none; */
+}
+#box01 #pic{
+  width:100%;
+  position:absolute;
+  left:0;
+  top:-389px;
+
+}
+#box02 #pic{
+  width:100%;
+  position:absolute;
+  left:0;
+  top:-589px;
+
+}
+
+#box01 dl{
+  position:absolute;
+  bottom:-746px;
+  left:0;
+  width:100%;
+  margin:0 auto;
+  padding:50px 0 50px 0;
+  background-color:#2c2c2c;
+}
+#box02 dl{
+  position:absolute;
+  bottom:-746px;
+  left:0;
+  width:100%;
+  margin:0 auto;
+  padding:50px 0 50px 0;
+  background-color:#2c2c2c;
+}
+
+.box03 #pic>img{
+  width:33%;
+}
+
+.box03>div dt{
+  width:1000px;
+  margin: 15px auto 0;
+  font:20px  'Gowun Dodum', sans-serif;
+  color:rgb(101, 182, 69);
+  text-align: center;
+  /* margin-top:15px; */
+
+}
+
+.box03>div dd{
+  width:1000px;
+  margin: 5px auto 0;
+  font:16px/25px 나눔고딕,san-serif;
+  color:rgb(142, 180, 128);
+  text-align:center ;
+  /* margin-top:5px; */
+}
+
+#box00{
+  width:100%;
+  color:#fff;
+}
+
+#box00>div{
+  width:1000px;
+  margin:0 auto;
+  padding:196px 0 200px 0;
+}
+
+#box00>div>h3{
+  text-align: center;
+  font:70px 'Shadows Into Light', cursive ;
+  color:rgb(101, 182, 69);
+  text-align: center;
+}
+#box00 dl{
+    margin-top: 30px;
+}
+#box00 dt{
+  font:30px  'Gowun Dodum', sans-serif;
+  color:rgb(101, 182, 69);
+  text-align: center;
+  
+}
+#box00 dd{
+  font:16px/25px 나눔고딕,san-serif;
+  color:rgb(142, 180, 128);
+  text-align:center ;
+}
+
+
+
+/* footer */
+#footerWrap{
+  background-color: rgb(34, 34, 34);
+}
+#footerWrap>footer{
+ 
+}
+
+#footerWrap div#fu{
+  overflow: hidden;
+  width:1590px;
+  margin: 0 auto;
+ padding-top:30px;
+  
+}
+#footerWrap div#ful{
+  float:left;
+  width:500px;
+  padding-bottom:3px;
+}
+
+#footerWrap div#ful>dl{
+  padding-bottom:3px;
+  font:15px 나눔고딕,'sans-serif';
+}
+
+
+#footerWrap div#ful dt{
+   float:left;
+   clear: both;
+   color:#666;
+
+}
+#footerWrap div#ful dd{
+  color:#666;
+}
+
+#footerWrap div#fur{
+
+  float:right;
+  display: flex;
+  color:#666;
+
+}
+
+#footerWrap div#fur>dl{
+  margin-left:20px;
+}
+
+#footerWrap div#fur>dl>dt{
+  padding-bottom:5px;
+}
+
+#footerWrap div#fd{
+  width:1590px;
+  height:50px;
+  margin: 0 auto;
+}
+#footerWrap div#fd>ul{}
+
+#footerWrap div#fd li{
+  float:left;
+  
+} 
+#footerWrap div#fd li>a{
+  display: flex;
+  margin-right: 5px;
+}
+
+#footerWrap div#fd small{
+  float:right;
+  font:15px 나눔고딕,'sans-serif';
+  color:#666;
+}
