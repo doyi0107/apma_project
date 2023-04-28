@@ -14,14 +14,14 @@
 
 div#wrap{
   width:100%;
-
+  overflow: hidden;
 }
 
 #headerWrap{
   position:fixed;
   left:0; top:0;
-  width:100vw;
-  height:14%;
+  width:100%;
+  height:110px;
   background-color:rgba(34, 34, 34, 0.9);
   z-index: 999;
 }
@@ -55,7 +55,7 @@ header>nav{
   position: fixed;
   margin: 0 auto;
   left: 300px; right: 0;
-  top: 5%;
+  margin-top:40px;
   z-index: 999;
   display: flex;
 }
@@ -286,7 +286,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 
 #box02 .container{
   /* background-color:#cd4f96; */
-  width: 82vw;
+  width: 80vw;
   height: 750px;
   padding: 120px 0px;
   margin:0 auto;
@@ -369,7 +369,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 }
 
 #box03>aside{
-  width: 90vw;
+  width: 88vw;
   margin: 0 auto;
 }
 
@@ -411,7 +411,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 
 #footerWrap div#fu{
   overflow: hidden;
-  width:95vw;
+  width:98vw;
   margin:0 auto;
   padding-top:20px;  
 }
@@ -454,7 +454,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 /* 이용약관 */
 
 #footerWrap div#fd{
-  width: 95vw;
+  width: 98vw;
   height:50px;
   margin: 0 auto;
 }
@@ -654,26 +654,37 @@ header>nav>ul#side_menu>li:nth-child(2) img{
         height:230px
       }
 
-      #footerWrap{
-        /* position: absolute; */
-        background-color: rgb(34, 34, 34);
-        height: 120px;
-      }
+      /* footerWrap */
 
-      #footerWrap div#fu{
-        overflow: visible;
-        width:40vw;
-        margin:0 auto;
-        padding-top:25px;  
+      #footerWrap div#ful{
+        float:left;
+        width:380px;
+        padding-bottom:3px;
       }
-
+      
+    
+      #footerWrap div#ful>dl{
+        padding-bottom:5px;
+        font:0.9rem/1.2rem 나눔고딕,'sans-serif';
+      }
+    
       #footerWrap div#fur{
+        font:0.9rem 나눔고딕,'sans-serif';
+        color:#666;
+      }
+      
+      #footerWrap div#fd>ul{
         display: none;
       }
 
-      #fd{
-        display: none;
+      #footerWrap div#fur>dl{
+        margin-left:10px;
       }
+    
+      #footerWrap div#fd small{
+        font:0.9rem 나눔고딕,'sans-serif';
+      }
+      
       
 
 }
@@ -718,7 +729,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 
       #box02 .container{
         /* background-color:#cd4f96; */
-        width: 43vw;
+        width: 50vw;
         padding: 120px 0px;
         margin:0 auto;
         display: grid;
@@ -739,7 +750,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
       }
 
       #box03>aside{
-        width: 35vw;
+        width: 40vw;
         margin: 0 auto;
       
       }
@@ -782,5 +793,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
         display: none;
       }
 }
+
+
 
 

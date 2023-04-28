@@ -5,53 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MUSEUM</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/museum.css">
-  <script src="./js/jquery-3.6.0.js"></script>
-  <script src="./js/jquery-ui.min.js"></script>
-  <script src="./js/museum.js"></script>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/museum.css">
+  <script src="../js/jquery-3.6.0.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+  <script src="../js/museum.js"></script>
 </head>
 <body>
     <div id="Wrap">
       <!-- header -->
+      <input type="checkbox" id="menuicon">
+      <label for="menuicon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
       <div id="headerWrap">
-        <header>
-            <h1><a href="main.html">APMA</a></h1>
-            <nav>
-                <h2 class="hideClass">메인내비게이션</h2>
-                <ul id="nl">
-                    <li><a href="museum.html">MUSEUM</a></li>
-                    <li><a href="exhibtion.html">EXHIBTION</a></li>
-                    <li><a href="project.html">PROJECT</a></li>
-                    <li><a href="event.html">EVENT</a></li>
-                    <li><a href="museum_shop.html">MUSEUM SHOP</a></li>
-                    <li><a href="infomation.html">INFOMATION</a></li>
-                </ul>
-                <ul id="nr">
-                  <li><a href="./sign_up.html">SIGN UP</a></li>
-                    <li><a href="./login.html">LOGIN</a></li>
-                </ul>
-                <p id="close">
-                    <span></span>
-                    <span></span>
-                  </p>
+          <header>       
+                  <h1><a href="main.html">APMA</a></h1>
+                  <nav>              
+                      <h2 class="hideClass">메인내비게이션</h2>
+                      <ul id="main_menu">
+                          <li><a href="museum.html">MUSEUM</a></li>
+                          <li><a href="exhibtion.html">EXHIBTION</a></li>
+                          <li><a href="project.html">PROJECT</a></li>
+                          <li><a href="event.html">EVENT</a></li>
+                          <li><a href="museum_shop.html">MUSEUM SHOP</a></li>
+                          <li><a href="infomation.html">INFOMATION</a></li>
+                      </ul>
+                      <ul id="side_menu">
+                          <li><a href="../pages/login.html">LOGIN</a></li>
+                          <li><a href="../pages/sign_up.html">SIGN UP</a></li>
+                      </ul>
+                  </nav>
 
-            </nav>
-            <p class="btn">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </p>
-        </header>
+          </header>
       </div>
-
       <!-- main -->
       <main>
           <section>
             <article id="box01">
               <h3>APMA</h3>
-              <img src="image/Colorful.jpg" alt="">
+              <img src="../src/all_image/upslide_image.jpeg" alt="">
             </article>
             <article id="box02">
               <div class="box03">
