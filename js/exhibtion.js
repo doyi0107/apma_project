@@ -1,38 +1,3 @@
-function color(){
-      $('#eh1>img').on('mouseenter',function(e){
-            $('#eh1>img').attr('src','./image/Head.jpg');
-      });
-      $('#eh1>img').on('mouseleave',function(e){
-            $('#eh1>img').attr('src','./image/Head.black.jpg');
-      });
-}
-
-function color2(){
-      $('#eh2>img').on('mouseenter',function(e){
-            $('#eh2>img').attr('src','./image/phychogeography.jpg');
-      });
-      $('#eh2>img').on('mouseleave',function(e){
-            $('#eh2>img').attr('src','./image/phy.black.jpg');
-      });
-}
-
-function color3(){
-      $('#eh3>img').on('mouseenter',function(e){
-            $('#eh3>img').attr('src','./image/window.jpg');
-      });
-      $('#eh3>img').on('mouseleave',function(e){
-            $('#eh3>img').attr('src','./image/window.black.jpg');
-      });
-}
-
-function color4(){
-      $('#eh4>img').on('mouseenter',function(e){
-            $('#eh4>img').attr('src','./image/Twinkle.jpg');
-      });
-      $('#eh4>img').on('mouseleave',function(e){
-            $('#eh4>img').attr('src','./image/Twinkle.balck.jpg');
-      });
-}
 
 // eh1
 
@@ -94,5 +59,20 @@ function eh4(){
       $('#modal4 ul>li>img').on('click',function(){
             let str = $(this).attr('src');
             $('#modal4 figure>img').attr('src',str);
+      });
+}
+
+function eh5(){
+      $('#eh5>img').on('click',function(){
+            $('#eh5>#modal5').css('display','block');
+      });
+
+      $('#mClose5').on('click',function(){
+            $('#modal5').css('display','none');
+      });
+
+      $('#modal5 ul>li>img').on('click',function(){
+            let str = $(this).attr('src');
+            $('#modal5 figure>img').attr('src',str);
       });
 }

@@ -39,7 +39,7 @@ header>h1{
   /* 부모 #headerWrap */
   position: fixed;
   top:1%; left: 0; 
-  margin-left:50px;
+  margin-left:100px;
   width: 100px;
   z-index: 9999;
 }
@@ -235,28 +235,29 @@ header>nav>ul#side_menu>li:nth-child(2) img{
   left:5px;
   transform: rotate(135deg) translateX(0%);
 }
+
 #box01 .prev>span:nth-child(2){
   top:29px;
   left:5px;
   transform: rotate(45deg) translateX(0%);
 }
+
 #box01 .next{
   width:30px;
   height:46px;
   right:30px;
   top:45%;
   position:absolute;
-
   z-index:99;
   cursor: pointer;
 }
+
 #box01 .next>span{
   width:30px;
   height:5px;
   background-color:#fff;
   position: absolute;
   border-radius:180px;
-
 }
 
 #box01 .next>span:nth-child(1){
@@ -381,12 +382,15 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 
 #box03 ul>li{ 
   margin-right: 2.2rem;
+
 }
 
 #box03 ul>li>a>img{
   width:240px;
   height:240px;
   box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
+  border-radius: 3px;
+  transition: all 0.1s;
 }
 
 #box03 ul>li>a>img:hover{
@@ -457,15 +461,22 @@ header>nav>ul#side_menu>li:nth-child(2) img{
   width: 98vw;
   height:50px;
   margin: 0 auto;
+  color:#666;
 }
 
 #footerWrap div#fd li{
   float:left; 
 } 
 
+#footerWrap div#fd li>a:after{
+  content: " ㅣ";
+}
+
+
 #footerWrap div#fd li>a{
   display: flex;
   margin-right: 5px;
+  color:#666;
 }
 
 #footerWrap div#fd small{
