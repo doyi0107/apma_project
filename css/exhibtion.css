@@ -603,7 +603,7 @@ div.box02>figure>img{
     
     .modal>div li>img{
       width:7rem;
-      height:6.5rem;
+      height:15vh;
       border-radius: 5%;
     }
 
@@ -616,12 +616,12 @@ div.box02>figure>img{
     
     #modal1 ul{
       width: 40vw;
-      padding-top: 10px;
+      margin-top: 5px;
     }
 
     #modal1 figcaption dt{
         width: 50vw;
-        margin-top: -20px;
+        margin-top: 0px;
         font: bold 1.5rem/5rem 'Gothic A1', sans-serif;
         color: white;
         text-align: center;
@@ -630,7 +630,7 @@ div.box02>figure>img{
 
     #modal1>div li>img{
       width:7rem;
-      height:6.5rem;
+      height:13vh;
       border-radius: 5%;
     }
 
@@ -685,7 +685,7 @@ div.box02>figure>img{
 
       #modal1 figcaption dt{
         width: 50vw;
-        margin-top: -20px;
+        margin-top: 0px;
         font: bold 1.5rem/5rem 'Gothic A1', sans-serif;
         color: white;
         text-align: center;
@@ -704,9 +704,14 @@ div.box02>figure>img{
       }
 
       #modal1 ul{
-        width: 55vw;
-        padding-top: 10px;
+        width: 60vw;
       }
+
+      #modal1>div li>img{
+        width:7rem;
+        border-radius: 5%;
+      }
+  
 
 }
 
@@ -807,14 +812,13 @@ div.box02>figure>img{
     
     .modal>div li>img{
       width:5.5rem;
-      height:15vh;
+      height:12vh;
       border-radius: 5%;
     }
 
     
     #modal1>div li>img{
       width:5.5rem;
-      height:13vh;
       border-radius: 5%;
     }
 
@@ -852,7 +856,6 @@ div.box02>figure>img{
 
 
     #modal1 ul{
-      margin-top: 10px;
       width: 100vw;
       
     }

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&family=Shadows+Into+Light&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 
 .hideClass{
@@ -308,7 +308,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
   transition: all 0.1s;
 }
 
-.container>.item:nth-child(even)>img:hover{
+.container>.item:nth-child(even) img:hover{
   cursor: pointer;
   width:19.5rem;
 }
@@ -319,13 +319,13 @@ header>nav>ul#side_menu>li:nth-child(2) img{
   height: 520px;
 }
 
-.container>.item:nth-child(3)>img:hover{
+.container>.item:nth-child(3) img:hover{
   cursor: pointer;
   width:19.5rem;
   height: 238px;
 }
 
-.container>.item:nth-child(5)>img:hover{
+.container>.item:nth-child(5) img:hover{
   cursor: pointer;
   width:19.5rem;
   height: 238px;
@@ -339,24 +339,24 @@ header>nav>ul#side_menu>li:nth-child(2) img{
   height: 510px;
 }
 
-.container>.item2>img{
+.container>.item2 img{
 
 }
 
-.container>.item3>img{
-  height: 228px;
+.container>.item3 img{
+  height: 230px;
 }
 
 .container>.item4>img{
 }
 
-.container>.item5>img{
+.container>.item5 img{
   height: 228px;
 }
 
 .container p{
-  margin-top: 8px;
-  font: bold 0.9rem 'Montserrat', sans-serif;
+  margin-top: 11px;
+  font:  bold 1rem  'Poiret One', cursive;
 }
 
 
@@ -380,10 +380,12 @@ header>nav>ul#side_menu>li:nth-child(2) img{
   padding-top: 140px;
 }
 
-#box03 ul>li{ 
+/* #box03 ul>li{ 
   margin-right: 2.2rem;
 
-}
+} */
+
+
 
 #box03 ul>li>a>img{
   width:240px;
@@ -400,10 +402,24 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 
 #box03 ul p{
   margin-left:85px;
-  margin-top:5px;
-  font: bold 1.2rem 'Shadows Into Light', cursive;
+  margin-top:7px;
+  font: bold 1.2rem 'Poiret One', cursive;
 
 }
+
+#box03 ul>li:nth-child(1)>p{
+  margin-left:80px;
+}
+
+#box03 ul>li:nth-child(4)>p{
+  margin-left:55px;
+}
+
+#box03 ul>li:nth-child(5)>p{
+  margin-left:60px;
+}
+
+
 
 
 /* footerWrap */

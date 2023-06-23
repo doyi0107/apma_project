@@ -27,11 +27,11 @@ div#wrap{
 }
 
 #headerWrap{
- position:fixed;
- left:0; top:0;
- width:100%;
- background-color:rgba(34, 34, 34, 0.9);
- z-index: 99999;
+  position:fixed;
+  left:0; top:0;
+  width:100%;
+  background-color:rgba(34, 34, 34, 0.9);
+  z-index: 99999;
 }
 
 header{
@@ -54,7 +54,7 @@ position:relative;
 }
 
 header>nav>ul{
-   margin-right:200px;
+  margin-right:200px;
 
 }
 header>nav>ul#nl{
@@ -228,22 +228,20 @@ h3{
 }
 
 
-/* footer */
+/* footerWrap */
 
 #footerWrap{
+  /* position: absolute; */
   background-color: rgb(34, 34, 34);
-}
-#footerWrap>footer{
- 
 }
 
 #footerWrap div#fu{
   overflow: hidden;
-  width:1590px;
-  margin: 0 auto;
- padding-top:30px;
-  
+  width:98vw;
+  margin:0 auto;
+  padding-top:20px;  
 }
+
 #footerWrap div#ful{
   float:left;
   width:500px;
@@ -252,26 +250,23 @@ h3{
 
 #footerWrap div#ful>dl{
   padding-bottom:3px;
-  font:15px 나눔고딕,'sans-serif';
+  font:1rem/1.2rem 나눔고딕,'sans-serif';
 }
-
 
 #footerWrap div#ful dt{
-   float:left;
-   clear: both;
-   color:#666;
-
+  float:left;
+  clear: both;
+  color:#666;
 }
+
 #footerWrap div#ful dd{
   color:#666;
 }
 
 #footerWrap div#fur{
-
   float:right;
   display: flex;
   color:#666;
-
 }
 
 #footerWrap div#fur>dl{
@@ -282,19 +277,28 @@ h3{
   padding-bottom:5px;
 }
 
+/* 이용약관 */
+
 #footerWrap div#fd{
-  width:1590px;
+  width: 98vw;
   height:50px;
   margin: 0 auto;
+  color:#666;
 }
-#footerWrap div#fd>ul{}
+
 #footerWrap div#fd li{
-  float:left;
-  
+  float:left; 
 } 
+
+#footerWrap div#fd li>a:after{
+  content: " ㅣ";
+}
+
+
 #footerWrap div#fd li>a{
   display: flex;
   margin-right: 5px;
+  color:#666;
 }
 
 #footerWrap div#fd small{
