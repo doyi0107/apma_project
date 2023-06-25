@@ -71,7 +71,7 @@ header>nav>ul{
 }
 
 header>nav>ul#main_menu{
-  margin-right: 200px;
+  margin-right: 6rem;
 }
 
 header>nav>ul#side_menu{
@@ -507,7 +507,7 @@ section{
 
     #footerWrap div#fu{
       overflow: visible;
-      width:60vw;
+      width:50vw;
       margin:0 auto;
       padding-top:25px;  
     }
@@ -520,4 +520,25 @@ section{
     #fd{
       display: none;
     }
+}
+
+
+@media screen and (max-width:720px) {
+
+
+  #box02 .container{
+    /* background-color:#cd4f96; */
+    width: 50vw;
+  }
+
+  #box03>aside{
+    width: 40vw;
+    margin: 0 auto;
+  
+  }
+
+  #footerWrap div#fu{
+    width:70vw;
+  }
+
 }
