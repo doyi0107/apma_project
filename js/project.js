@@ -1,7 +1,7 @@
 function pj(){
   $('#box01>h4').on('click',function(){
-    $('#box01 #pic').animate({top:'0px'},500);
     $('#box01 dl').animate({bottom:'0px'},500);  
+    $('#box01 #pic').animate({top:'0px'},500);
     $('#box01>h4').css('display','none'); 
   });
 
