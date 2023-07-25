@@ -439,39 +439,66 @@ h3{
     color: #fff;  
   }
 
-  #box01>h3{
-    font: 5.5rem 'Shadows Into Light', cursive ;
+
+  /* box */
+  h3{
+    font:70px 'Shadows Into Light', cursive ;
+    padding-bottom: 0px;
+    margin:-100px 100px 50px;
   }
 
-  /* box02 */
-    
-  #box02{
-    overflow: hidden;
-    margin: 0 auto;
-
-  }
-
-  #box02 h3{
-    font:3.7rem 'Shadows Into Light', cursive ;
-  }
-
-  #box02 dl{
-    margin:50px 5%;
-  }
   
-  #box02 dt{
-    font:1.5rem  'Gowun Dodum', sans-serif;
+  #box01{
+    width:500px;
+    padding:0px 50px 50px 0px;
+    box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
   }
 
-  #box02 dd{
-    font:0.9rem/25px 나눔고딕,san-serif;
+  #box02{
+    width:500px;
+    padding:25px 50px 75px 0px;
+    box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
   }
 
-  #box02>.box03{
-    width:70vw;
-    margin:0 auto;
-    padding:400px 0px 100px;
-  }
+
+  .box00{
+        display: flex;
+        flex-direction: column;      
+        overflow: hidden;
+        margin-bottom: 200px;
+        padding:0px 50px 50px 0px;
+        box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+        margin: 100px auto;
+      }
+
+  
+  
+     #map img{
+        width:560px;
+        height:400px;
+        margin: 0 200px;
+        padding-bottom:50px ;
+      }
+
+      
+    #pic{
+      float:none;
+      clear: none;
+      margin: 0 auto;
+    }
+
+    #info{
+      float:none;
+      font:16px 나눔고딕,san-serif;
+      color:#fff;
+      margin: 0 auto;
+    }
+
+    
+    #info>h4{
+      margin-top: 50px;
+    }
+
 
   /* footerwrap */
 
@@ -508,7 +535,54 @@ h3{
 }
 
 @media screen and (max-width:820px){
-    
+
+    #box01{
+      width:420px;
+      padding:0px 50px 50px 0px;
+      box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+    }
+
+    #box02{
+      width:420px;
+      padding:25px 50px 75px 0px;
+      box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+    }
+
+
+  .box00{
+        display: flex;
+        flex-direction: column;      
+        overflow: hidden;
+        margin-bottom: 200px;
+        padding:0px 50px 50px 0px;
+        box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+        margin: 100px 20vw;
+      }
+
+      #info h4{
+        font:bold 1.7rem  'Gowun Dodum', sans-serif;
+      }
+
+      #info>dl>span{
+        position:absolute;
+        width:400px;
+        height:1px;
+        background-color: #fff;
+        float:right;
+      }
+      
+      #info dd{
+        width: 380px;
+      }
+
+      #map img{
+        width:460px;
+        height:400px;
+        margin: 0 350px;
+        padding-bottom:50px ;
+      }
+
+  /* footwrap */
     #footerWrap{
       /* position: absolute; */
       background-color: rgb(34, 34, 34);
@@ -535,9 +609,175 @@ h3{
 
 @media screen and (max-width:720px) {
 
-  #footerWrap div#fu{
-    width:70vw;
-  }
+  
+  h3{
+    font:3.5rem 'Shadows Into Light', cursive ;
+    padding-bottom: 0px;
+    margin:-100px 100px 50px;}
+
+
+          
+    #info>dl>span{
+      position:absolute;
+      width:300px;
+      height:1px;
+      background-color: #fff;
+      float:right;
+    }
+    
+    #info dd{
+      width: 270px;
+    }
+
+
+    #box01{
+      width:300px;
+      padding:0px 50px 50px 0px;
+      box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+    }
+
+    #box02{
+      width:300px;
+      padding:25px 50px 75px 0px;
+      box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+    }
+
+
+  .box00{
+        display: flex;
+        flex-direction: column;      
+        overflow: hidden;
+        margin-bottom: 200px;
+        padding:0px 50px 50px 0px;
+        box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+        margin: 100px 20vw;
+      }
+
+    
+    #info{
+      float:none;
+      font:0.8rem 나눔고딕,san-serif;
+      color:#fff;
+      margin: 0 auto;
+    }
+  
+    #info>h4{
+      margin-top: 50px;
+      font:bold 1.3rem  'Gowun Dodum', sans-serif;
+    }
+
+    #map img{
+      display: none;
+    }
+
+    section img{
+      width:200px;
+      height:200px;
+      float:none;
+    margin-left: 55px;
+    
+    }
+    
+    #box02 img{
+      width:200px;
+      height:200px;
+      float:none;
+      margin-left: 55px;
+    
+    }
+
+
+    /* footer */
+    #footerWrap div#fu{
+      width:70vw;
+    }
+
+
+}
+
+
+@media screen and (max-width:520px) {
+
+  h3{
+    font:3rem 'Shadows Into Light', cursive ;
+    padding-bottom: 0px;
+    margin:-100px 30px 50px;}
+
+
+          
+    #info>dl>span{
+      position:absolute;
+      width:300px;
+      height:1px;
+      background-color: #fff;
+      float:right;
+    }
+    
+    #info dd{
+      width: 270px;
+    }
+
+
+    #box01{
+      width:280px;
+      padding:0px 50px 50px 0px;
+      box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+    }
+
+    #box02{
+      width:280px;
+      padding:25px 50px 75px 0px;
+      box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+    }
+
+
+  .box00{
+        display: flex;
+        flex-direction: column;      
+        overflow: hidden;
+        margin-bottom: 200px;
+        padding:0px 50px 50px 0px;
+        box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
+        margin: 100px 10vw;
+      }
+
+    
+    #info{
+      float:none;
+      font:0.8rem 나눔고딕,san-serif;
+      color:#fff;
+      margin: 0 auto;
+    }
+  
+    #info>h4{
+      margin-top: 50px;
+      font:bold 1.3rem  'Gowun Dodum', sans-serif;
+    }
+
+    #map img{
+      display: none;
+    }
+
+    section img{
+      width:200px;
+      height:200px;
+      float:none;
+      margin-left: 55px;
+    
+    }
+    
+    #box02 img{
+      width:200px;
+      height:200px;
+      float:none;
+      margin-left: 55px;
+    
+    }
+
+        /* footer */
+        #footerWrap div#fu{
+          width:90vw;
+        }
 
 }
 

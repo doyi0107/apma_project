@@ -22,20 +22,20 @@
         </label>
         <div id="headerWrap">
             <header>       
-                    <h1><a href="index.html">APMA</a></h1>
+                <h1><a href="../index.html">APMA</a></h1>
                     <nav>              
                         <h2 class="hideClass">메인내비게이션</h2>
                         <ul id="main_menu">
-                            <li><a href="museum.html">MUSEUM</a></li>
-                            <li><a href="exhibtion.html">EXHIBTION</a></li>
-                            <li><a href="project.html">PROJECT</a></li>
-                            <li><a href="event.html">EVENT</a></li>
-                            <li><a href="museum_shop.html">MUSEUM SHOP</a></li>
-                            <li><a href="infomation.html">INFOMATION</a></li>
+                            <li><a href="./pages/museum.html">MUSEUM</a></li>
+                            <li><a href="./pages/exhibtion.html">EXHIBTION</a></li>
+                            <li><a href="./pages/project.html">PROJECT</a></li>
+                            <li><a href="./pages/event.html">EVENT</a></li>
+                            <li><a href="./pages/museum_shop.html">MUSEUM SHOP</a></li>
+                            <li><a href="./pages/infomation.html">INFOMATION</a></li>
                         </ul>
                         <ul id="side_menu">
-                            <li><a href="../pages/login.html">LOGIN</a></li>
-                            <li><a href="../pages/sign_up.html">SIGN UP</a></li>
+                            <li><a href="./pages/login.html">LOGIN</a></li>
+                            <li><a href="./pages/sign_up.html">SIGN UP</a></li>
                         </ul>
                     </nav>
 
@@ -48,6 +48,8 @@
                     <section>
 
                         <div class="slider"> 
+
+
                             <div class="myslider fade" style="display: block;">
                                 <div class="txt">
                                     <h1>Sterling Ruby, &lt;The Window. cotton candy&gt;</h1>
@@ -68,30 +70,32 @@
                                     <p>I hope it will be the year of the black rabbit, <br> who leaps wisely and flexibly like a rabbit with many meanings and appearances. </p>
                                 </div>
                                 <img src="../src/all_image/main_image7.jpeg" alt="3">     
-                            </div>           
+                            </div> 
+                            
+                            <a class="prev" onclick="plusSliders(-1)">
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <a class="next" onclick="plusSliders(1)">
+                                <span></span>
+                                <span></span>
+                            </a>
+    
+                            <div class="dotsbox" style="text-emphasis: center;">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
                         </div> 
                     
-                        <a class="prev" onclick="plusSliders(-1)">
-                            <span></span>
-                            <span></span>
-                        </a>
-                        <a class="next" onclick="plusSliders(1)">
-                            <span></span>
-                            <span></span>
-                        </a>
 
-                        <div class="dotsbox" style="text-emphasis: center;">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
                     </section>
                 </div>
                 <!-- box02 -->
                 <div id="box02">
                     <section>
                         <div class="container">
-                            <div class="item item1">
+                            <div class="item item1" id="item1">
                                 <a href="../pages/exhibtion.html"><img src="../src/all_image/item1_image.jpg" alt="고흐"></a>
                                 <p>[GOGH] HYUNG KOO KANG</p>
                             </div>
@@ -120,15 +124,15 @@
                             <li><a href="../pages/museum.html"><img src="../src/all_image/museum_image.jpeg" alt="MUSEUM"></a>
                             <p>MUSEUM</p>
                             </li>
-                            <li><a href="./project.html"><img src="../src/all_image/project_image.jpeg" alt="PROJECT"></a>
+                            <li><a href="../pages/project.html"><img src="../src/all_image/project_image.jpeg" alt="PROJECT"></a>
                             <p>PROJECT</p>
                             </li>
-                            <li><a href="./event.html"><img src="../src/all_image/event_image.jpeg" alt="EVENT"></a>
+                            <li><a href="../pages/event.html"><img src="../src/all_image/event_image.jpeg" alt="EVENT"></a>
                             <p>EVENT</p>
                             </li>
-                            <li><a href="./museum_shop.html"><img src="../src/all_image/museum_image2.jpeg" alt="MUSEUM SHOP"></a>
+                            <li><a href="../pages/museum_shop.html"><img src="../src/all_image/museum_image2.jpeg" alt="MUSEUM SHOP"></a>
                             <p>MUSEUM SHOP</p></li>
-                            <li><a href="./infomation.html"><img src="../src/all_image/information_image.jpg" alt="INFO"></a>
+                            <li><a href="../pages/infomation.html"><img src="../src/all_image/information_image.jpg" alt="INFO"></a>
                             <p>INFOMATION</p>
                         </li>
                         </ul>

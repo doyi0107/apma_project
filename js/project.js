@@ -22,20 +22,20 @@ function pj2(){
 function pj3(){
   $('#box01 #pic').on('click',function(e){
     //$('body').css('background','red');
-    $(this).animate({top:'-589px'},500);
+    $(this).animate({top:'-500px'},500);
     $('#box01 dl').animate({bottom:'-746px'},500);
     $('#box01>h4').css('display','block');
   });
   $('#box01 dl').on('click',function(e){
     //$('body').css('background','red');
-    $('#box01 #pic').animate({top:'-589px'},500);
+    $('#box01 #pic').animate({top:'-789px'},500);
     $(this).animate({bottom:'-746px'},500);
     $('#box01>h4').css('display','block');
   });
 
   $('#box02 #pic').on('click',function(e){
     //$('body').css('background','red');
-    $(this).animate({top:'-589px'},500);
+    $(this).animate({top:'-500px'},500);
     $('#box02 dl').animate({bottom:'-746px'},500);
     $('#box02>h4').css('display','block');
   });

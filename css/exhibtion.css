@@ -776,7 +776,7 @@ div.box02>figure>img{
 
     /* box */
     section>div>figure{
-      width:60vw;
+      width:70vw;
       margin: 0 auto;
       /* background-color: antiquewhite; */
       /* overflow:hidden; */
@@ -811,7 +811,7 @@ div.box02>figure>img{
     /* modal */
 
     .modal figure{
-      width: 65vw;
+      width: 80vw;
       height: 65vh;
       margin: 0 auto;
       float: none;
@@ -824,9 +824,11 @@ div.box02>figure>img{
 
     .modal figcaption dt{
       width: 55vw;
+      margin: -10px auto;
       font: bold 1.5rem 'Gothic A1', sans-serif;
       text-align: center;
     }
+
 
     .modal>div>ul{
       width: 65vw;
@@ -863,8 +865,8 @@ div.box02>figure>img{
     #modal1 figure{
       width: 65vw;
       height: 68vh;
-
     }
+
     #modal1 figure>img{
       width:20rem;
       height:65vh;
@@ -888,6 +890,8 @@ div.box02>figure>img{
       width: 100vw;
       
     }
+
+
     /* footer */
 
     #footerWrap div#fu{
@@ -896,4 +900,117 @@ div.box02>figure>img{
 
 
     
+}
+
+
+@media screen and (max-width:480px){
+
+    .modal figure{
+      width: 80vw;
+      height: 65vh;
+      margin:20px -5vw;
+      float: none;
+    }
+
+    .modal figure>img{
+      margin-top: 50px;
+      width:16rem;
+      height:40vh;
+    }
+
+    .modal figcaption dt{
+      margin-top: -80px;
+      width: 55vw;
+      font: bold 1.3rem 'Gothic A1', sans-serif;
+    }
+
+    #modal2 figcaption dt{
+      margin-top: -90px;
+      width: 55vw;
+      font: bold 1.2rem/3rem 'Gothic A1', sans-serif;
+    }
+
+    #modal2>div>ul{
+      margin:10px -7vw; 
+    }
+
+    .modal>div>ul{
+      margin:-5px -7vw; 
+    }
+
+    
+    .modal>div li>img{
+      width:5.5rem;
+      height:12vh;
+      border-radius: 5%;
+    }
+
+    .modal>div li{
+      margin-right:12px;
+    }
+    
+    .modal>div li>img{
+      width:5rem;
+      height:12vh;
+      border-radius: 5%;
+    }
+
+    #modal1 figure{
+      width: -150vw;
+      height: 68vh;
+      margin:-30px -5vw 0px;
+    }
+
+    #modal1 figure>img{
+      width:16rem;
+      height:60vh;
+      border-radius: 5%;
+      box-shadow:7px 7px 15px 5px rgba(255, 255, 255, 0.5);
+    }
+
+    #modal1 figcaption dt{
+      margin-top: 0px;
+      font: bold 1.3rem/5rem 'Gothic A1', sans-serif;
+    }
+
+    #modal1 ul{
+      margin:0px -5vw;  
+    }
+
+
+    
+    #modal1>div li>img{
+      width:4.8rem;
+      height: 13vh;
+      border-radius: 5%;
+    }
+
+    #eh1>img{
+      width: 16rem;
+      height: 28rem;
+    }
+    
+    #eh1>img:hover{
+      width: 17rem;
+      height: 31rem;
+    }
+
+    
+    .same_box>figure>img{
+      width: 16rem;
+      height: 14rem;
+    }
+    
+    .same_box>figure>img:hover{
+      width: 17rem;
+      height: 15rem;
+    }
+
+
+
+  
+ 
+
+  
+
 }

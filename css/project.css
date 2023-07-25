@@ -135,7 +135,7 @@ article{
 
 #box01{
   width:100%;
-  height:100vh;
+  height:650px;
   position:relative;
 background:url('../src/all_image/project_main_image1.JPG') no-repeat center top;
   background-size:100% 100%;
@@ -161,10 +161,9 @@ background:url('../src/all_image/project_main_image1.JPG') no-repeat center top;
 
 #box02{
   width:100%;
-  height:100vh;
+  height:650px;
   position:relative;  background:url('../src/all_image/project_main_image2.jpeg') no-repeat center top;
   background-size:100% 100%;
-
 }
 
 #box02>h4{
@@ -199,7 +198,7 @@ h4>span{
 }
 .box03>div{
   width:100%;
-  height:100vh;
+  height:650px;
   overflow:hidden;
   position:absolute;
   left:0;
@@ -211,7 +210,7 @@ h4>span{
   width:100%;
   position:absolute;
   left:0;
-  top:-389px;
+  top:-300px;
 }
 
 #box02 #pic{
@@ -244,14 +243,14 @@ h4>span{
 
 .box03 #pic>img{
   width:33%;
-  height: 38vh;
+  height: 280px;
   box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
 }
 
 .box03>div dt{
   width:1000px;
   margin: 15px auto 0;
-  font:1.6rem  'Gowun Dodum', sans-serif;
+  font:1.4rem  'Gowun Dodum', sans-serif;
   color:rgb(101, 182, 69);
   text-align: center;
   /* margin-top:15px; */
@@ -260,7 +259,7 @@ h4>span{
 .box03>div dd{
   width:1000px;
   margin: 5px auto 0;
-  font:0.9rem/25px 나눔고딕,san-serif;
+  font:0.8rem/25px 나눔고딕,san-serif;
   color:rgb(142, 180, 128);
   text-align:center ;
   /* margin-top:5px; */
@@ -507,11 +506,11 @@ h4>span{
   }
 
   #box00>div>h3{
-    font-size:3.5rem ;
+    font-size:3rem ;
   }
 
   #box00 dt{
-    font-size:1.8rem;
+    font-size:1rem;
   }
   
   #box00 dd{
@@ -524,12 +523,13 @@ h4>span{
 
   .box03>div dd{
     width: 90%;
+
   }
   
 
   .box03 #pic>img{
     width:32.8%;
-    height: 35vh;
+    height: 280px;
   box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
   }
 
@@ -584,12 +584,16 @@ h4>span{
       display: none;
     }
 
-  .box03 #pic>img{
-    width:32.8%;
-    height: 37vh;
-    box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
-  }
-  
+    .box03>div dt{
+      font-size: 1.3rem;
+    }
+
+    .box03 #pic>img{
+      width:32.8%;
+      height: 280px;
+      box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
+    }
+    
     #box01>h4{
       font-size: 4rem;
     }
@@ -607,7 +611,7 @@ h4>span{
       content: "\A농사가 행해지는 장소와 녹차잎 성장이 가장 활발한 여름이 \A 전시의 시공간적 배경. ‘예술적 가능성의 밭’으로 장소의 개념을 확장.";
       font:1rem/0.5rem  'Gowun Dodum', sans-serif;
       white-space: pre;
-      color:rgb(101, 182, 69);
+      color:rgb(142, 180, 128);
     }
 
     
@@ -615,7 +619,7 @@ h4>span{
       content: "\A '새로운 미(美)를 향한 테크놀로지'를 전시 주제로 삼고 수차례 \A현장을 답사한 작가는, 주제에 대한 연구과정과 결과를 형상화하여 야외 공간 곳곳에 작품을 설치.";
       font:1rem/0.5rem  'Gowun Dodum', sans-serif;
       white-space: pre;
-      color:rgb(101, 182, 69);
+      color:rgb(142, 180, 128);
     }
 
         
@@ -623,29 +627,29 @@ h4>span{
       content: "\A 용산이라는 지역의 과거-현재-미래를 생각하면서 전시를 통해 두 개의 장소를 개념적으로 연결하고, \A 도시-자연-사람 등 다양한 요소를 예술작품을 매개로 적극적으로 소통.";
       font:1rem/0.5rem  'Gowun Dodum', sans-serif;
       white-space: pre;
-      color:rgb(101, 182, 69);
+      color:rgb(142, 180, 128);
     }
 
            
     #box02 dt:nth-child(1):after{
       content: "단순한 관광지로서의 제주가 아닌 고유의 자연과 어우러진 현대미술을 즐길 수 있는 장소로 \A  제주의 위상을 높이고자 했음. 제주의 탄생과 관련된 '설화'를 주제로 오설록 티뮤지엄 일대에서 개최.";
-      font:1rem/0.5rem  'Gowun Dodum', sans-serif;
+      font:0.9rem/0.5rem  'Gowun Dodum', sans-serif;
       white-space: pre;
-      color:rgb(101, 182, 69);
+      color:rgb(142, 180, 128);
     }
 
     #box02 dt:nth-child(3):after{
       content: "화산 활동으로 만들어진 제주는 독특한 화산 지형을 자랑. 생성 과정에서 만들어진 오름이나 용암동굴과 \A 같은 신비로운 제주의 자연을 주제로 한 작품들은 관람객에게 제주의 강인한 생명력을 느끼게 함.";
-      font:1rem/0.5rem  'Gowun Dodum', sans-serif;
+      font:0.9rem/0.5rem  'Gowun Dodum', sans-serif;
       white-space: pre;
-      color:rgb(101, 182, 69);
+      color:rgb(142, 180, 128);
     }
 
     #box02 dt:nth-child(5):after{
       content: "제주 사람들은 바람과 돌이 많은 제주의 자연 환경 속에서 극복하고 순응하며 \A고유한 삶의 방식과 문화를 구축해왔음. 자연을 단순히 개척해야하는 대상으로만 보지 않고, \A 혹독할 정도로 거세었던 자연의 위력 앞에서 겸허한 자세로 자신들의 삶을 일구어낸 제주 사람들의 모습을 담음.";
-      font:1rem/0.5rem  'Gowun Dodum', sans-serif;
+      font:0.9rem/0.5rem  'Gowun Dodum', sans-serif;
       white-space: pre;
-      color:rgb(101, 182, 69);
+      color:rgb(142, 180, 128);
     }
   
 
@@ -686,9 +690,11 @@ h4>span{
     font-size: 3rem;
   }
 
+
+
   .box03 #pic>img{
     width:32.5%;
-    height: 29vh;
+    height: 220px;
     box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
   }
 
@@ -696,34 +702,40 @@ h4>span{
     content: "\A농사가 행해지는 장소와 녹차잎 성장이 \A 가장 활발한 여름이 전시의 시공간적 배경. \A  ‘예술적 가능성의 밭’으로 장소의 개념을 확장";
     white-space: pre;
     font-size: 0.9rem;
+    color:rgb(142, 180, 128);
   }
 
   #box01 dt:nth-child(3):after{
-    content: "\A '새로운 미(美)를 향한 테크놀로지'를 전시 주제로 삼고 수차례 \A현장을 답사, 주제에 대한 연구과정과 결과를 \A 형상화하여 야외 공간 곳곳에 작품을 설치";
+    content: "\A '새로운 미(美)를 향한 테크놀로지'를 전시 주제로 \A 삼고 수차례 현장을 답사, 주제에 대한 연구과정과 \A 결과를 형상화하여 야외 공간 곳곳에 작품을 설치";
     font-size: 0.9rem;
+    color:rgb(142, 180, 128);
   }
 
           
   #box01 dt:nth-child(5):after{
-    content: "\A 용산이라는 지역의 과거-현재-미래를 생각하면서 전시를 통해 \A 두 개의 장소를 개념적으로 연결,  도시-자연-사람 등 다양한 \A 요소를 예술작품을 매개로 적극적으로 소통.";
+    content: "\A 용산이라는 지역의 과거-현재-미래를 생각하면서  \A 전시를 통해 두 개의 장소를 개념적으로 연결,  도시-자연-사람 등 \A다양한 요소를 예술작품을 매개로 적극적으로 소통.";
     font-size: 0.9rem;
+    color:rgb(142, 180, 128);
 
   }
 
   #box02 dt:nth-child(1):after{
-    content: "제주의 탄생과 관련된 '설화'를 주제로 \A오설록 티뮤지엄 일대에서 개최.";
+    content: "\A 제주의 탄생과 관련된 '설화'를 주제로 \A오설록 티뮤지엄 일대에서 개최.";
     font-size: 0.9rem;
+    color:rgb(142, 180, 128);
   }
 
   #box02 dt:nth-child(3):after{
-    content: "화산 활동으로 만들어진 제주는 독특한 화산 지형을 자랑. \A 신비로운 자연을 주제로 한 작품들은 제주의 \A강인한 생명력을 느끼게 함.";
+    content: "\A  화산 활동으로 만들어진 제주는 독특한 화산 지형을 자랑. \A 신비로운 자연을 주제로 한 작품들은 제주의 \A강인한 생명력을 느끼게 함.";
     font-size: 0.9rem;
+    color:rgb(142, 180, 128);
 
   }
 
   #box02 dt:nth-child(5):after{
-    content: "자연을 단순히 개척해야하는 대상으로만 보지 않고, \A 혹독할 정도로 거세었던 자연의 위력 앞에서 겸허한 자세로 \A자신들의 삶을 일구어낸 제주 사람들의 모습을 담음.";
+    content: "\A  자연을 단순히 개척해야하는 대상으로만 보지 않고, \A 혹독할 정도로 거세었던 자연의 위력 앞에서 겸허한 \A자세로 자신들의 삶을 일구어낸 제주 사람들의 모습을 담음.";
     font-size: 0.9rem;
+    color:rgb(142, 180, 128);
   }
 
   .box03 #pic>img{
@@ -731,7 +743,7 @@ h4>span{
   }
 
   .box03>div dt{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   /* #box02 .container{
@@ -746,6 +758,19 @@ h4>span{
 
   #footerWrap div#fu{
     width:70vw;
+  }
+
+}
+
+
+
+@media screen and (max-width:500px){
+
+  .box03 #pic>img{
+    width: 32.3% ;
+  }
+  .box03>div dt{
+    font-size: 1.2rem;
   }
 
 }

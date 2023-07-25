@@ -719,10 +719,29 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 
 @media screen and (max-width:820px){
 
+  
+
+  #box01 .prev>span{
+    width:30px;
+    height:3px;
+    background-color:#fff;
+    position: absolute;
+    border-radius:180px;
+  
+  }
+
+  #box01 .next>span{
+    width:30px;
+    height:3px;
+    background-color:#fff;
+    position: absolute;
+    border-radius:180px;
+  }
+  
+
 
     .txt{
-      top:50%;
-      left:50%;
+      top:48%; left:50%;
       transform: translate(-50%,-50%);
       -webkit-animation-name: posi2;
       -webkit-animation-duration: 2s;
@@ -731,17 +750,17 @@ header>nav>ul#side_menu>li:nth-child(2) img{
     }
 
     @-webkit-keyframes posi2{
-      from {top: 35%;}
-      to {top:50%;}
+      from{ top: 30%}
+      to { top: 48%;}
     }
 
     @keyframes posi2{
-      from {top:35%;}
-      to{top:50%;}
+      from{ top: 30%}
+      to { top: 48%;}
     }
 
     .txt>h1{
-      font-size:1.8rem;
+      font-size:1.5rem;
       text-align: center;
     }
     
@@ -843,5 +862,101 @@ header>nav>ul#side_menu>li:nth-child(2) img{
         width:70vw;
       }
 
+}
+
+
+@media screen and (max-width:500px){
+
+.txt>h1{
+  font-size: 1rem;
+}
+
+#box01 .prev>span{
+  width:20px;
+  height:3px;
+  background-color:#fff;
+  position: absolute;
+  border-radius:200px;
+
+}
+
+#box01 .prev>span:nth-child(1){
+  top:17px;
+  right:5px;
+  transform: rotate(135deg) translateX(0%);
+}
+
+#box01 .prev>span:nth-child(2){
+  top:30px;
+  right:5px;
+  transform: rotate(45deg) translateX(0%);
+}
+
+#box01 .next>span{
+  width:20px;
+  height:3px;
+  background-color:#fff;
+  position: absolute;
+  border-radius:200px;
+}
+
+#box01 .next>span:nth-child(1){
+  top:17px;
+  right:5px;
+  transform: rotate(-135deg) translateX(0%);
+}
+#box01 .next>span:nth-child(2){
+  top:30px;
+  right:5px;
+  transform: rotate(-45deg) translateX(0%);
+}
+
+
+  #box02 .container{
+    /* background-color:#cd4f96; */
+    width: 60vw;
+  }
+
+  .container>#item1 img{
+      width:17rem;
+      height:470px ;
+      transition: all 0.1s;
+  }
+
+    
+  .container>#item1 img:hover{
+    cursor: pointer;
+    width:18rem;
+    height: 490px;
+  }
+
+
+  .container>.item img{
+    width:17rem;
+    height: 210px;
+  }
+
+  
+  .container>.item:nth-child(even) img:hover{
+    width:18rem;
+    height: 220px;
+  }
+
+  .container>.item:nth-child(3) img:hover{
+    width:18rem;
+    height: 220px;
+  }
+  
+  .container>.item:nth-child(5) img:hover{
+    width:18rem;
+    height: 220px;
+  }
+  
+
+  #box03>aside{
+    width: 50vw;
+    margin: 0 auto;
+  
+  }
 }
 

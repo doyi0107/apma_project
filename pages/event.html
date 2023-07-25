@@ -5,56 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENT</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/event.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/event.css">
     <link rel="stylesheet" href="./js/jquery-3.6.0.js">
     <link rel="stylesheet" href="./js/jquery-ui.min.js">
 </head>
 <body>
     <div id="wrap">
         <!-- header -->
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <div id="headerWrap">
-            <header>
-                <h1><a href="index.html">APMA</a></h1>
-                <nav>
-                    <h2 class="hideClass">메인내비게이션</h2>
-                    <ul id="nl">
-                        <li><a href="museum.html">MUSEUM</a></li>
-                        <li><a href="exhibtion.html">EXHIBTION</a></li>
-                        <li><a href="project.html">PROJECT</a></li>
-                        <li><a href="event.html">EVENT</a></li>
-                        <li><a href="museum_shop.html">MUSEUM SHOP</a></li>
-                        <li><a href="infomation.html">INFOMATION</a></li>
-                    </ul>
-                    <ul id="nr">
-                        <li><a href="./sign_up.html">SIGN UP</a></li>
-                        <li><a href="./login.html">LOGIN</a></li>
-                    </ul>
-                    <p id="close">
-                        <span></span>
-                        <span></span>
-                    </p>
-    
-                </nav>
-                <p class="btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </p>
+            <header>       
+              <h1><a href="../index.html">APMA</a></h1>
+                      <nav>              
+                          <h2 class="hideClass">메인내비게이션</h2>
+                          <ul id="main_menu">
+                            <li><a href="./museum.html">MUSEUM</a></li>
+                            <li><a href="./exhibtion.html">EXHIBTION</a></li>
+                            <li><a href="./project.html">PROJECT</a></li>
+                            <li><a href="./event.html">EVENT</a></li>
+                            <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
+                            <li><a href="./infomation.html">INFOMATION</a></li>
+                        </ul>
+                        <ul id="side_menu">
+                            <li><a href="./login.html">LOGIN</a></li>
+                            <li><a href="./sign_up.html">SIGN UP</a></li>
+                        </ul>
+                      </nav>
+  
             </header>
-
-            </div>
+        </div>
             <!-- main -->
 
             <main>
                 <section>
                     <article>
                         <h3>Event<span>(전시관람 이벤트)</span></h3>
-                        <div id="box01">
+                        <div id="box01" >
                             <div id="pic">
                             <span></span>
-                            <img src="./image/blog.jpg" alt="블로그">
+                            <img src="../src/all_image/blog_log.png" alt="블로그">
                             </div>
 
                             <div id="info">
@@ -85,11 +80,11 @@
 
                         </div>
 
-                        <div id="box01">
+                        <div id="box01" class="box03">
 
                             <div id="pic">
                                 <span></span>
-                                <img src="./image/instarlogo.png" alt="인스타로고">
+                                <img src="../src/all_image/instagram_logo.png" alt="인스타로고">
                             </div>
 
                             <div id="info">
@@ -124,10 +119,9 @@
             <div id="footerWrap">
                 <footer>
                     <div id="fu">
-      
+        
                       <div id="ful">
-                      <dl>
-                       
+                      <dl>               
                           <dt>Address :</dt>
                           <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
                           <dt>E-mail :</dt>
@@ -137,7 +131,7 @@
                           
                       </dl>
                       </div>
-      
+        
                   <div id="fur">
                       <dl>
                           <dt>관람시간</dt>
@@ -149,24 +143,19 @@
                               매년1월1일 / 설,추석 연휴</dd>
                       </dl>
                       </div>
-                 </div>
-      
-                 <div id="fd">
+                    </div>
+        
+                  <div id="fd">
                         <ul>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">개인정보처리방침</a></li>
-                            <li><a href="#">영상정보처리기기 운영방침</a></li>
-                            <li><a href="#">사이트맵</a></li>
+                          <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
+                          <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
+                          <li><a href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기 운영방침</a></li>
                         </ul>
-                      <small>&copy; 2018 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
-      
-                 </div>
-                 
-                
-                  
-       
+                        <small>&copy; 2018 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
+        
+                  </div>
                 </footer>
-            </div>
+              </div>
               
           </div>
 
