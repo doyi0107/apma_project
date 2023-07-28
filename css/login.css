@@ -466,3 +466,12 @@ form p>input{
   }
 }
 
+
+
+@media screen and (max-width:520px){
+        /* footer */
+        #footerWrap div#fu{
+          width:85vw;
+        }
+}
+

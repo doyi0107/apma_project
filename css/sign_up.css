@@ -453,7 +453,16 @@ fieldset>p>input{
 
 
 @media screen and (max-width:720px){
-  #footerWrap div#fu{
-    width:70vw;
-  }
+    #footerWrap div#fu{
+      width:70vw;
+    }
+}
+
+
+@media screen and (max-width:520px){
+        /* footer */
+        #footerWrap div#fu{
+          width:85vw;
+        }
+
 }

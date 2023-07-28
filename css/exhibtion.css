@@ -1004,13 +1004,12 @@ div.box02>figure>img{
     .same_box>figure>img:hover{
       width: 17rem;
       height: 15rem;
+    }        
+    
+    /* footer */
+    #footerWrap div#fu{
+      width:85vw;
     }
-
-
-
-  
- 
-
   
 
 }

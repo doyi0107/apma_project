@@ -567,6 +567,13 @@ section{
       transition: all 0.5s;
     }
 
+    
+        /* footer */
+        #footerWrap div#fu{
+          width:85vw;
+        }
+
+
 
 }
 
