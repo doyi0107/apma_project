@@ -185,7 +185,7 @@ figcaption{
 }
 
 
-#img_l>img:hover ~ #text_r{
+#img_l img:hover ~ #text_r{
   opacity:1;
   background-color:rgba(189, 117, 95,0.7);
   width: 700px;
@@ -217,15 +217,20 @@ figcaption{
   color: #373737;
 }
 
-#img_l>img{
+#img_l img{
   position: relative;
+  z-index: 90;
 }
 
+#img_r img{
+  position: relative;
+  z-index: 90;
+}
 
 /* img가 오른쪽에 있는 레이아웃 */
 
 
-#img_r>img:hover ~ #text_l{
+#img_r img:hover ~ #text_l{
   opacity:1;
   background-color:rgba(103, 103, 103, 0.9); 
   width: 600px;
@@ -254,7 +259,7 @@ figcaption{
   margin-right: 200px;
 }
 
-#img_r>img{
+#img_r img{
   position: relative;
   top:0; left: 59%;
   /* transform: translate(-1%,-1%); */
@@ -495,7 +500,7 @@ figcaption{
         height:350px;
       }
 
-      #img_l>img:hover ~ #text_r{
+      #img_l img:hover ~ #text_r{
         width: 430px;
       }
 
@@ -519,7 +524,7 @@ figcaption{
       /* img가 오른쪽에 있는 레이아웃 */
 
 
-      #img_r>img:hover ~ #text_l{
+      #img_r img:hover ~ #text_l{
         width: 550px;
         left: 10%;
       }
@@ -540,7 +545,7 @@ figcaption{
         margin-right: 200px;
       }
 
-      #img_r>img{
+      #img_r img{
         position: relative;
         top:0; left: 45%;
         /* transform: translate(-1%,-1%); */
@@ -613,6 +618,7 @@ figcaption{
 
     #box01{
       padding:200px 0px 250px;
+      position: relative;
     }
 
      figure{
@@ -627,13 +633,8 @@ figcaption{
     figcaption{
       display: none;
     }
-
-     #box01{
-      background-color: rgb(67, 141, 141);
-      position: relative;
-     }
         
-    #img_r>img{
+    #img_r img{
       position: initial;
     } 
 
@@ -643,23 +644,21 @@ figcaption{
   .hoverBox{
       display: block;
       position: relative;
-      top:-280px; left: 0; 
+      top:-290px; left: 0; 
       width: 450px; 
-      height: 200px;
+      height: 230px;
     }
-
-  .hover1{
-     
-  }
 
   .hoverBox>span>p.p1{
      text-align:center; 
-      font-size:18px;
+     margin-top: 20px;
+     font:2rem 'Gothic A1', sans-serif ;
       color: rgb(253, 253, 253);
     }
 
   .hoverBox>span>p.p2{
-    margin-top: 40px;
+    margin: 30px 20px;
+    font:0.9rem/25px 'Gothic A1', sans-serif ;
     color: rgb(255, 255, 255);
   }
 
@@ -674,40 +673,48 @@ figcaption{
     width: 80%; 
     left: 10%;
     transition: 0.5s; 
-    opacity: 1;
+    opacity: 0;
   }  
   
-  .hoverBox>span>p{ 
-    opacity: 0; 
-  }
 
-  #img_l>img{
-    z-index: 0;
-    
-  }
 
-  #img_l:hover{
-    filter: brightness(0.2);
-    transition: 0.5s;
-  }
-
-  #img_l:hover ~ .hoverBox span{
-    animation: event7Ani 0.5s linear 1; 
-    height: 150px;
+  #img_l:hover .hoverBox span{
+    animation: event7Ani 0.3s linear 1; 
+    height: 230px;
     opacity: 1; 
   }
 
 
-  #img_l:hover ~ .hoverBox span>p{
-    animation: event7Ani2 0.5s linear 1; 
-    opacity: 1;
+  #img_l:hover .hoverBox span>p{
+    animation: event7Ani2 0.3s linear 1; 
+  }
+
+  #img_l:hover .imgbox{
+    filter: brightness(0.2);
+    transition: 0.5s;
+  }
+
+  #img_r:hover .hoverBox span{
+    animation: event7Ani 0.4s linear 1; 
+    height: 230px;
+    opacity: 1; 
+  }
+
+
+  #img_r:hover .hoverBox span>p{
+    animation: event7Ani2 0.4s linear 1; 
+  }
+
+  #img_r:hover .imgbox{
+    filter: brightness(0.2);
+    transition: 0.5s;
   }
 
 
     @keyframes event7Ani{
                 0%{height: 30px;}
-                80%{height: 150px;}
-                100%{height: 150px;;}
+                80%{height: 170px;}
+                100%{height: 230px;}
             }
 
 
@@ -748,8 +755,74 @@ figcaption{
 
 @media screen and (max-width:720px){
 
+  h3{
+    margin: -100px 0px 100px 0px; 
+    font-size: 3.5rem;
+  }
+
+   figure{
+    width:60vw;
+    margin:0 15vw;
+  }
+
+  figure img{
+    width:420px;
+    height:320px;
+  }
+
+  article>div{
+    height: 400px; 
+  }
+
   #box01{
-  background-color: rgb(67, 141, 84);}
+    background-color: #6b6b6b;
+    padding:200px 0px 200px;
+    background-size: cover;
+  }
+  
+  #box02, #box03, #box04 {
+    padding: 150px 0px;
+  }
+
+
+    /* hover */
+
+
+  .hoverBox{
+      top:-280px; left: 0; 
+      width: 410px; 
+      height: 250px;
+    }
+
+  .hoverBox>span>p.p1{
+    text-align:center; 
+    margin-top: 20px;
+    font:1.7rem 'Gothic A1', sans-serif ;
+    }
+
+  .hoverBox>span>p.p2{
+    margin: 10px 20px;
+    font:0.85rem/20px 'Gothic A1', sans-serif ;
+  }
+
+  #img_l:hover .hoverBox span{
+    animation: event7Ani 0.3s linear 1; 
+    height:  220px;
+    opacity: 1; 
+  }
+
+  #img_r:hover .hoverBox span{
+    animation: event7Ani 0.4s linear 1; 
+    height:  220px;
+    opacity: 1; 
+  }
+
+
+  @keyframes event7Ani{
+    0%{height: 30px;}
+    80%{height: 170px;}
+    100%{height: 220px;}
+  }
 
 
   #footerWrap div#fu{
@@ -761,9 +834,91 @@ figcaption{
 
 
 @media screen and (max-width:520px){
+
+       /* section */
+
+       h3{
+        margin: -100px 0px 100px 10px; 
+        font-size: 3rem;
+      }
   
-        #footerWrap div#fu{
-          width:85vw;
-        }
+       figure{
+        width:80vw;
+        margin:0 7vw;
+      }
+
+      figure img{
+        width:360px;
+        height:260px;
+      }
+
+      article>div{
+        height: 300px; 
+      }
+
+      #box01{
+        background-color: #6b6b6b;
+        padding:200px 0px 200px;
+        background-size: cover;
+      }
+      
+      #box02, #box03, #box04 {
+        padding: 150px 0px;;
+      }
+
+  
+      /* hover */
+    
+  
+    .hoverBox{
+        top:-200px; left: 0; 
+        width: 350px; 
+        height: 120px;
+      }
+  
+    .hoverBox>span>p.p1{
+       text-align:center; 
+       margin-top: 10px;
+       font:1.7rem 'Gothic A1', sans-serif ;
+        color: rgb(253, 253, 253);
+      }
+  
+    .hoverBox>span>p.p2{
+      margin: 10px 20px;
+      font:0.85rem/20px 'Gothic A1', sans-serif ;
+      color: rgb(255, 255, 255);
+    }
+  
+  
+    .hoverBox>span{    
+      margin-top: 10px;
+    }  
+    
+  
+  
+    #img_l:hover .hoverBox span{
+      animation: event7Ani 0.3s linear 1; 
+      height:  200px;
+      opacity: 1; 
+    }
+  
+    #img_r:hover .hoverBox span{
+      animation: event7Ani 0.4s linear 1; 
+      height:  200px;
+      opacity: 1; 
+    }
+  
+
+    @keyframes event7Ani{
+      0%{height: 30px;}
+      80%{height: 170px;}
+      100%{height: 200px;}
+  }
+
+    #footerWrap div#fu{
+      width:85vw;
+    }  
+  
+  
 
 }
