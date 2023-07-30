@@ -123,7 +123,6 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 /* header */
 
 main{
-
     background-color: #6b6b6b;
     width:100%;
     height: 100%;
@@ -136,69 +135,89 @@ section{
 }
 
 h3{
+  text-align: center;
   padding-top:150px;
-  font:70px 'Shadows Into Light', cursive ;
+  font:4.5rem 'Shadows Into Light', cursive ;
   color:#313131;
   margin-bottom:50px;
 }
 
 form{
     width:500px;
-    margin:0 50px;
-    padding:100px 50px;
-    box-shadow:3px 3px 3px rgb(0 0 0/ 20%);
-    border:3px solid #444444;
-    
+    margin:0 auto;
+    padding:70px 50px;
+    box-shadow:10px 10px 10px rgb(0 0 0/ 20%);
+    border:5px solid #444444;
+    border-radius: 2%;  
 }
 
 
-form #fl{
+form #login_box{
    float: left;
    padding-bottom: 20px;
    margin-left: 70px;
 }
 
-#fl li{
-    margin-bottom: 3px;
+#login_box li{
+    margin-bottom: 10px;
 }
 
-#fl li>input{
+#login_box li>input{
    width:250px;
-   height:30px;
+   height:40px;
    background-color: #6b6b6b;
    border:3px solid #444444;
+}
 
+#login_box li:nth-child(1)>input{
+  background: url(../src/all_image/login_icon.png) no-repeat 5px center;
+  background-size: 27px;
+  padding-left: 40px;
+}
+
+#login_box li:nth-child(2)>input{
+  background: url(../src/all_image/password_icon.png) no-repeat 5px center;
+  background-size: 29px;
+  padding:3px 3px 0px 40px;
 }
 
 
-form #fr{
-  float: right;
-}
-
-form p>input{
+button{
   float:left;
-  margin-left:30px;
+  margin-left:20px;
   width:70px;
-  height:80px;
+  height:105px;
   color:#fff;
   background-color:#444444;
   border:none;
   font-family: '나눔고딕', sans-serif;
+  border-radius: 5%;
 }
 
-#f2{
+button:hover{
+  cursor: pointer;
+}
+
+input::placeholder {
+  color:#d8d7d7;
+}
+
+#sub_box{
   display: flex;
   overflow:hidden;
   clear: both;
   margin-left: 70px;
 }
 
-#f2>p{
-  margin-right:10px;
+#sub_box>p{
   color:#2e2e2e;
 }
 
-#f2>p>a{
+#sub_box>p:nth-child(1):after{
+  content: "ㅣ";
+}
+
+#sub_box>p>a{
   color:#2e2e2e;
 }
 
