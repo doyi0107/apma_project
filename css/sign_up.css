@@ -218,6 +218,13 @@ input[type="date"]::-webkit-datetime-edit-year-field {
   color:#d8d7d7;
 }
 
+.date_empty:before{
+  content:attr(data-placeholder);
+  color:#d8d7d7;
+  width: calc(25% - 42px);
+  font-family: '나눔고딕', sans-serif;
+}
+
 
 fieldset>button{
   color: white;

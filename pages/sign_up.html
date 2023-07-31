@@ -7,6 +7,9 @@
   <title>Sign UP</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/sign_up.css">
+  <script src="../js/jquery-3.6.0.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+  <script src="../js/sign_up.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -62,8 +65,8 @@
 
                       <li>
                         <label for="date">생년월일</label>
-                        <input type="date" id="userdate" required 
-                        placeholder="생년월일">
+                        <input class="date_empty placeholder-date" type="date" id="userdate" data-placeholder="생년월일"  required 
+                        >
                       </li>
 
                       <li>
