@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,14 @@
     <title>LOGIN</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="./js/jquery-3.6.0.js">
-    <link rel="stylesheet" href="./js/jquery-ui.min.js">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 
 
 <body>
+
     <div id="wrap">
         <!-- header -->
         <input type="checkbox" id="menuicon">
@@ -22,72 +25,83 @@
             <span></span>
         </label>
         <div id="headerWrap">
-            <header>       
+            <header>
                 <h1><a href="../index.html">APMA</a></h1>
-                        <nav>              
-                            <h2 class="hideClass">메인내비게이션</h2>
-                            <ul id="main_menu">
-                              <li><a href="./museum.html">MUSEUM</a></li>
-                              <li><a href="./exhibtion.html">EXHIBTION</a></li>
-                              <li><a href="./project.html">PROJECT</a></li>
-                              <li><a href="./event.html">EVENT</a></li>
-                              <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
-                              <li><a href="./infomation.html">INFOMATION</a></li>
-                          </ul>
-                          <ul id="side_menu">
-                              <li><a href="./login.html">LOGIN</a></li>
-                              <li><a href="./sign_up.html">SIGN UP</a></li>
-                          </ul>
-                        </nav>
-    
-              </header>
+                <nav>
+                    <h2 class="hideClass">메인내비게이션</h2>
+                    <ul id="main_menu">
+                        <li><a href="./museum.html">MUSEUM</a></li>
+                        <li><a href="./exhibtion.html">EXHIBTION</a></li>
+                        <li><a href="./project.html">PROJECT</a></li>
+                        <li><a href="./event.html">EVENT</a></li>
+                        <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
+                        <li><a href="./infomation.html">INFOMATION</a></li>
+                    </ul>
+                    <ul id="side_menu">
+                        <li><a href="./login.html">LOGIN</a></li>
+                        <li><a href="./sign_up.html">SIGN UP</a></li>
+                    </ul>
+
+                    <ul id="login_on_menu">
+                        <li><a href="#">LOGOUT</a></li>
+                        <li><a href="#">MY PAGE</a></li>
+                    </ul>
+                </nav>
+
+            </header>
         </div>
 
 
-            <!-- main -->
-            <main>
+        <!-- main -->
+        <main>
             <section>
-                
+
                 <h3>LOGIN</h3>
-                <form action="#" method="post">
+                <form action="../index.html" method="POST">
                     <fieldset id="main_box">
                         <ul id="login_box">
                             <li>
-                               <label for="userId"></label>
-                               <input type="text" id="userId" placeholder="아이디" required>
+                                <label for="userId"></label>
+                                <input type="text" id="userId" placeholder="아이디" required>
                             </li>
-                          
+
                             <li>
-                               <label for="userPW"></label>
-                               <input type="password" id="userPW" placeholder="비밀번호" required>
+                                <label for="userPw"></label>
+                                <input type="password" id="userPw" placeholder="비밀번호" required>
                             <li>
                         </ul>
-                        <button>로그인</button>
+                        <button type='button' id="btnLogin" class="btn primary" onclick="signIn()" ;>로그인</button>
+
+
                     </fieldset>
-              
+
                     <fieldset id="sub_box">
-    
-                        <p>아이디 / 비밀번호 찾기</p>
+
+                        <p><a href="#">아이디</a> </p>
+                        <p><a href="#">&nbsp;비밀번호 찾기</a></p>
                         <p><a href="./sign_up.html">회원가입</a></p>
-                      
+
                     </fieldset>
+
+                    
+                    <button type='button' id="login_with_kakao"><img src="../src/all_image/kakao_log.png" alt="kakao_log">카카오 로그인</button>
                 </form>
             </section>
-           </main>
+        </main>
         <!-- footer -->
         <div id="footerWrap">
             <footer>
                 <div id="fu">
                     <div id="ful">
-                    <dl>               
-                        <dt>Address:</dt>
-                        <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
-                        <dt>E-mail:</dt>
-                        <dd>E. museum &#64;amorepacific.com</dd>
-                        <dt>Phone:</dt>
-                        <dd>02-6040-2345</dd>
-                        
-                    </dl>
+                        <dl>
+                            <dt>Address:</dt>
+                            <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
+                            <dt>E-mail:</dt>
+                            <dd>E. museum &#64;amorepacific.com</dd>
+                            <dt>Phone:</dt>
+                            <dd>02-6040-2345</dd>
+
+                        </dl>
                     </div>
                     <div id="fur">
                         <dl>
@@ -105,14 +119,17 @@
                     <ul>
                         <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
                         <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
-                        <li><a href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기 운영방침</a></li>
+                        <li><a
+                                href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기
+                                운영방침</a></li>
                     </ul>
                     <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
 
                 </div>
             </footer>
-        </div>  
-      </div>
-      
-    </body>
+        </div>
+    </div>
+
+</body>
+
 </html>

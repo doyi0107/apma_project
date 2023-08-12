@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/sign_up.css">
   <script src="../js/jquery-3.6.0.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
-  <script src="../js/sign_up.js"></script>
+  <script src="../js/sigin_up.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -49,8 +49,8 @@
                   <fieldset>
                     <ul>
                       <li>
-                        <label for="userId">아이디 또는 이메일</label>
-                        <input type="text" id="userId" placeholder="아이디 또는 이메일" required autofocus>
+                        <label for="userId">아이디</label>
+                        <input type="text" id="userId" placeholder="아이디" required autofocus>
                       </li>
                   
                       <li>
@@ -64,8 +64,8 @@
                       </li>
 
                       <li>
-                        <label for="date">생년월일</label>
-                        <input class="date_empty placeholder-date" type="date" id="userdate" data-placeholder="생년월일"  required 
+                        <label for="userDate">생년월일</label>
+                        <input class="date_empty placeholder-date" id="userDate" type="date" id="userdate"   required 
                         >
                       </li>
 
@@ -75,7 +75,7 @@
                         placeholder="전화번호">
                       </li>
                     </ul>
-                    <button type="submit" value="회원가입">회원가입</button>
+                    <button id="submit_menber_info" type="submit" value="회원가입">회원가입</button>
 
                   </fieldset>
                 </form>
