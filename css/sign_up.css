@@ -128,7 +128,7 @@ main{
 }
 
 section{
-  width:700px;
+  width:550px;
   margin:0 auto;
   padding-bottom:200px;
 }
@@ -136,7 +136,7 @@ section{
 h3{
   text-align: center;
   padding-top:150px;
-  font:4.5rem 'Shadows Into Light', cursive ;
+  font:4rem 'IBM Plex Sans Arabic', sans-serif;
   color:#313131;
   margin-bottom:50px;
 }
@@ -152,7 +152,7 @@ fieldset>ul{
 }
 
 fieldset>ul>li{  
-  margin:30px 100px; 
+  margin:30px 50px; 
 }
 
 fieldset>ul>li:nth-child(1){
@@ -167,7 +167,7 @@ fieldset>ul>li>label{
 
 fieldset>ul>li>input{
   display: block;
-  width:400px;
+  width:300px;
   height:40px;
   margin-left:90px;
   margin-top: -20px;
@@ -224,22 +224,47 @@ input[type="date"]::-webkit-datetime-edit-year-field {
   font-family: '나눔고딕', sans-serif;
 }
 
+#sub_ul>div{
+  display:inline;
+}
 
-fieldset>button{
+
+#sub_ul button{
   color: white;
-  background-color:#444444;
   border:none;
   font-family: '나눔고딕', sans-serif;
-  width:70px;
-  height:70px;
+  width:160px;
+  height:50px;
   border-radius:5px 5px;
-  margin-bottom:50px;
-  margin-left: 500px;
 }
 
-fieldset>button:hover{
+#sub_ul a{
+  padding: 16.8px 0px;
+  display: inline-block;
+  color: white;
+  background-color:#4e4e4e;
+  font: 0.8rem  '나눔고딕', sans-serif;
+  border:none;
+  width:160px;
+  border-radius:5px 5px;
+}
+
+#sub_ul button:hover{
   cursor: pointer;
 }
+
+#submit_menber_info{
+  margin: 20px 20px 70px 90px;
+  background-color:#444444;
+}
+
+#login_move{
+  vertical-align:middle;
+  text-align: center;
+  margin: 0px 0px 0px 17px;
+}
+
+
 /* footerWrap */
 
 #footerWrap{
@@ -421,7 +446,7 @@ fieldset>button:hover{
 
 
     header>nav>ul#main_menu{
-      margin-bottom:100px;
+      margin-bottom:80px;
     }
 
     header>nav>ul>li{
@@ -499,7 +524,7 @@ fieldset>button:hover{
       border-radius: 2%;  
     }
 
-
+    
     fieldset>ul>li{  
       width:350px;
       margin:30px auto;
@@ -512,14 +537,16 @@ fieldset>button:hover{
       height:40px;
       margin-left: 0px;
     }
-    
 
-        
-    fieldset>button{
-      border-radius:5px 5px;
-      margin-bottom:50px;
-      margin-left: 360px;
+    #submit_menber_info{
+      margin: 20px 20px 70px 70px;
     }
+    
+    #login_move{
+      margin: 0px 0px 0px 17px;
+    }
+    
+    
 
     
 
@@ -607,6 +634,27 @@ fieldset>button:hover{
         height:35px;
         border-radius:0px;
         margin:0 14px 50px;
+      }
+
+      
+      #sub_ul button{
+        width:140px;
+        height:45px;
+        border-radius:5px 5px;
+      }
+
+      #sub_ul a{
+        padding: 14px 0px;
+        font: 0.8rem  '나눔고딕', sans-serif;
+        width:140px;
+      }
+
+      #submit_menber_info{
+        margin: 20px 0px 70px 15px;
+      }
+      
+      #login_move{
+        margin: 0px 0px 0px 20px;
       }
 
         /* footer */

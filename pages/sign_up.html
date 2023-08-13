@@ -10,6 +10,7 @@
   <script src="../js/jquery-3.6.0.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
   <script src="../js/sigin_up.js"></script>
+      <script src="../js/login.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -36,6 +37,7 @@
                       <ul id="side_menu">
                           <li><a href="./login.html">LOGIN</a></li>
                           <li><a href="./sign_up.html">SIGN UP</a></li>
+                          <li><a href="#" onclick="mypage()">MY PAGE</a></li>
                       </ul>
                     </nav>
 
@@ -44,7 +46,7 @@
         <!-- main -->
             <main>
               <section>
-                <h3>sign up</h3>
+                <h3>SING UP</h3>
                 <form action="#" method="post">
                   <fieldset>
                     <ul>
@@ -75,7 +77,11 @@
                         placeholder="전화번호">
                       </li>
                     </ul>
-                    <button id="submit_menber_info" type="submit" value="회원가입">회원가입</button>
+
+                    <div id="sub_ul">
+                      <div><button id="submit_menber_info" type="submit" value="회원가입">회원가입</button></div>
+                      <div id="login_move"><a href="../pages/login.html">로그인으로 돌아가기</a></div>
+                    </div>
 
                   </fieldset>
                 </form>

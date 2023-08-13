@@ -7,11 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/find_id.css">
     <script src="../js/jquery-3.6.0.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
-    <script src="../js/login.js"></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 
 
@@ -57,35 +55,34 @@
         <main>
             <section>
 
-                <h3>LOGIN</h3>
+                <h3>아이디 찾기</h3>
                 <form action="../index.html" method="POST">
                     <fieldset id="main_box">
                         <ul id="login_box">
                             <li>
                                 <label for="userId"></label>
-                                <input type="text" id="userId" placeholder="아이디" required>
+                                <input type="text" id="userName" placeholder="이름" required>
                             </li>
 
                             <li>
                                 <label for="userPw"></label>
-                                <input type="password" id="userPw" placeholder="비밀번호" required>
+                                <input type="email" id="userEmail" placeholder="이메일" required>
                             <li>
                         </ul>
-                        <button type='button' id="btnLogin" class="btn primary" onclick="signIn()" ;>로그인</button>
+                        <button type='button' id="btn_find_id"> 아이디 찾기</button>
 
 
                     </fieldset>
 
                     <fieldset id="sub_box">
 
-                        <p><a href="../pages/find_id.html">아이디</a> </p>
-                        <p><a href="../pages/find_pw.html">&nbsp;비밀번호 찾기</a></p>
+                        <p><a href="./find_pw.html">비밀번호 찾기</a></p>
+                        <p><a href="./login.html">로그인</a></p>
                         <p><a href="./sign_up.html">회원가입</a></p>
 
                     </fieldset>
 
                     
-                    <button type='button' id="login_with_kakao"><img src="../src/all_image/kakao_log.png" alt="kakao_log" >카카오 로그인</button>
                 </form>
             </section>
         </main>

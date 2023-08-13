@@ -120,6 +120,10 @@ header>nav>ul#side_menu>li:nth-child(2) img{
   margin-bottom: 3px;
 }
 
+#login_on_menu{
+  display: none;
+}
+
 /* header */
 
 main{
@@ -137,7 +141,7 @@ section{
 h3{
   text-align: center;
   padding-top:150px;
-  font:4.5rem 'Shadows Into Light', cursive ;
+  font:4rem 'IBM Plex Sans Arabic', sans-serif;
   color:#313131;
   margin-bottom:30px;
 }
@@ -421,7 +425,7 @@ input::placeholder {
 
 
   header>nav>ul#main_menu{
-    margin-bottom:100px;
+    margin-bottom:80px;
   }
 
   header>nav>ul>li{
