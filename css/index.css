@@ -584,7 +584,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
       header>h1{
         /* 부모 #headerWrap */
         position: fixed;
-        top:60px; left:-250px; 
+        top:45px; left:-250px; 
         margin-left:50px;
         width: 100px;
         z-index: 999;
@@ -595,7 +595,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
       header>nav{ 
         position: fixed;
         left:-270px; right: 0;
-        top:190px;
+        top:155px;
         margin: 0;
         display: block;
         z-index: 999;
@@ -603,7 +603,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 
 
       header>nav>ul#main_menu{
-        margin-bottom:80px;
+        margin-bottom:50px;
       }
 
       header>nav>ul>li{

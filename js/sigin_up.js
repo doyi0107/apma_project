@@ -2,11 +2,11 @@
 $('submit_menber_info').click(function() {
 
     var menber_info = {
-        id :$("userId").val,
-        pw :$("userPW").val,
-        name :$("userName").val,
-        date :$("userDate").val,
-        phone : $("userPhone").val
+        id :$("userId").val(),
+        pw :$("userPW").val(),
+        name :$("userName").val(),
+        date :$("userDate").val(),
+        phone : $("userPhone").val()
     }
 
 
@@ -17,18 +17,19 @@ $('submit_menber_info').click(function() {
 		"headers": {
 			"Content-Type": "application/json"
 		},
-		"data": menber_info,
-		success: function (data) {
-			if (data == 'loginFail') {
-				alert('로그인에 실패하였습니다.')
-			} else {
-				window.location.href = '../index.html';
-			}
-		},
-		error: function (request, error) {
-			alert("code:" + request.status + "\n" + "error:" + error);
-		}
-	})
+		data: JSON.stringify(menber_info), 
+		dataType: "json"
+	}).done(function (resp) {
+			// 결과가 정상이면 done 실행
+			alert("회원가입이 완료되었습니다.");
+			console.log(resp);
+			location.href = "./login.html";
+		}).fail(function (error) {
+			// 실패하면 fail 실행
+			alert("회원가입이 실패하였습니다.");
+			alert(JSON.stringify(error));
+		});
+
 })
 
 

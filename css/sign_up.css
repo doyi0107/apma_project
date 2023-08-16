@@ -173,7 +173,8 @@ fieldset>ul>li>input{
   margin-top: -20px;
   margin: 0 auto;
   background-color: #6b6b6b;
-  border:3.5px solid #444444;
+  border:3.5px solid #444444;  
+  color:#d0d0d0;
 }
 
 fieldset>ul>li:nth-child(1)>input{
@@ -208,14 +209,14 @@ fieldset>ul>li:nth-child(6)>input{
 }
 
 input::placeholder {
-  color:#d8d7d7;
+  color:#d0d0d0;
 }
 
 input[type="date"]::-webkit-datetime-edit-text,
 input[type="date"]::-webkit-datetime-edit-month-field,
 input[type="date"]::-webkit-datetime-edit-day-field,
 input[type="date"]::-webkit-datetime-edit-year-field {
-  color:#d8d7d7;
+  color:#d0d0d0;
 }
 
 .date_empty:before{

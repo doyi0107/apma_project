@@ -29,7 +29,7 @@ function mypage(){
 		alert("서비스는 로그인 후 사용하실 수 있습니다.");
 		location.href="./login.html"
 	}else{
-		location.href="./login.html"
+		location.href="./my_page.html"
 	}
 }
 
@@ -54,6 +54,8 @@ function signIn() {
 					$.cookie('mytoken', response['token']);
 					alert('로그인완료');
 					window.location.href = '../index.html'
+					$('#side_menu>li:nth-child(1)').remove();
+					$('#side_menu').prepend("<li><input type='submit'>LOGOUT</input></li>");
 
 				}else{
 					alert(response['msg'])
