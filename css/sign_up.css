@@ -168,7 +168,7 @@ fieldset>ul>li>label{
 fieldset>ul>li>input{
   display: block;
   width:300px;
-  height:40px;
+  height: 40px;
   margin-left:90px;
   margin-top: -20px;
   margin: 0 auto;
@@ -191,18 +191,43 @@ fieldset>ul>li:nth-child(2)>input{
 }
 
 fieldset>ul>li:nth-child(4)>input{
+  background: url(../src/all_image/password_icon.png) no-repeat 5px center;
+  background-size: 35px;
+  padding:3px 10px 0px 48px;
+}
+
+fieldset>ul>li:nth-child(2), fieldset>ul>li:nth-child(4), fieldset>ul>li:nth-child(6){
+  height: 55px;
+}
+
+#pw_vaild{
+  display:inline-block;
+  margin:7px 0px 0px 53px;
+}
+
+#pwCk{
+  display:inline-block; 
+  margin:7px 0px 0px 53px;
+}
+
+#nameCk{
+  display:inline-block; 
+  margin:7px 0px 0px 53px;
+}
+
+fieldset>ul>li:nth-child(6)>input{
   background: url(../src/all_image/name_icon.png) no-repeat 5px center;
   background-size: 27px;
   padding:3px 12px 0px 45px;
 }
 
-fieldset>ul>li:nth-child(5)>input{
+fieldset>ul>li:nth-child(7)>input{
   background: url(../src/all_image/calendar_icon.png) no-repeat 5px center;
   background-size: 27px;
   padding:3px 10px 0px 45px;
 }
 
-fieldset>ul>li:nth-child(6)>input{
+fieldset>ul>li:nth-child(8)>input{
   background: url(../src/all_image/phone_icon.png) no-repeat 5px center;
   background-size: 27px;
   padding:3px 10px 0px 45px;
@@ -506,7 +531,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
     
     section{
       /* background-color: rgb(110, 211, 211); */
-      width:500px;
+      width:450px;
       margin:0 auto;
       padding-bottom:200px;
     }
@@ -537,8 +562,21 @@ input[type="date"]::-webkit-datetime-edit-year-field {
       margin-left: 0px;
     }
 
+    #pw_vaild{
+      margin:7px 0px 0px 10px;
+    }
+        
+    #pwCk{ 
+      margin:7px 0px 0px 10px;
+    }
+
+    #nameCk{
+      margin:7px 0px 0px 10px;
+    }
+
+
     #submit_menber_info{
-      margin: 20px 20px 70px 70px;
+      margin: 20px 20px 70px 45px;
     }
     
     #login_move{
@@ -623,8 +661,20 @@ input[type="date"]::-webkit-datetime-edit-year-field {
         height:35px;
         margin:0 14px;
       }
-      
 
+      #pw_vaild{
+        margin:7px 0px 0px 20px;
+      }
+
+      #pwCk{ 
+        margin:7px 0px 0px 20px;
+      }
+  
+      #nameCk{
+        margin:7px 0px 0px 20px;
+      }
+  
+      
           
       fieldset>button{
         width:87%;

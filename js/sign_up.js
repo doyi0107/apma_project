@@ -1,15 +1,56 @@
+  
+
 function submit_menber_info(){
+
 	var menber_info = {
         id :$("#userId").val(),
-        pw :$("#userPW").val(),
+        pw :$("#userPw").val(),
         name :$("#userName").val(),
         date :$("#userDate").val(),
         phone : $("#userPhone").val()
     }
 	console.log(menber_info)
 
+	// if ($("#userId").val().trim().length == 0) {
+    //     $(this).val("");
+    //     alert("아이디를 입력해주세요.");
+    //     $("#userId").focus();
+	// 	return;
+    //   }
+
+	// if ($("#userPw").val().trim().length == 0) {
+    //     $(this).val("");
+    //     alert("비밀번호를 입력해주세요.");
+    //     $("#userPw").focus();
+	// 	return;
+    //   }
+
+	
+	// if ($("#userName").val().trim().length == 0) {
+    //     $(this).val("");
+    //     alert("이름을 입력해주세요.");
+    //     $("#userName").focus();
+	// 	return;
+    //   }
+
+	// if ($("#userPhone").val().trim().length == 0) {
+    //     $(this).val("");
+    //     alert("이름을 입력해주세요.");
+    //     $("#userPhone").focus();
+	// 	return;
+    //   }
+
+
+	  const regExp
+	  = /^[0][0-9]{1,2}[0-9]{3,4}[0-9]{4}/;
+	
+	  if (!regExp.test($("#userPhone").val())) {
+		alert("전화번호의 형식이 올바르지 않습니다");
+		return false;
+	  }
+
 	$.ajax({
-		// "url": "#",
+		"url": "#",
 		"type": "POST",
 		"headers": {
 			"Content-Type": "application/json"

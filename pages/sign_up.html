@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta https-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,150 +8,199 @@
   <title>SIGN_UP</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/sign_up.css">
-  <script src="../js/sign_up.js"></script>
-  <script src="../js/login.js"></script>
-  <script src="../js/jquery-3.6.0.js"></script>
-  <script src="../js/jquery-ui.min.js"></script>
-
-
-
+  <script type="text/javascript" src="../js/sign_up.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>
 </head>
+
+<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
 <body>
- 
+
   <div id="wrap">
     <!-- header -->
     <input type="checkbox" id="menuicon">
     <label for="menuicon">
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </label>
     <div id="headerWrap">
-        <header>       
-            <h1><a href="../index.html">APMA</a></h1>
-                    <nav>              
-                        <h2 class="hideClass">메인내비게이션</h2>
-                        <ul id="main_menu">
-                          <li><a href="./museum.html">MUSEUM</a></li>
-                          <li><a href="./exhibtion.html">EXHIBTION</a></li>
-                          <li><a href="./project.html">PROJECT</a></li>
-                          <li><a href="./event.html">EVENT</a></li>
-                          <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
-                          <li><a href="./infomation.html">INFOMATION</a></li>
-                      </ul>
-                      <ul id="side_menu">
-                          <li><a href="./login.html">LOGIN</a></li>
-                          <li><a href="./sign_up.html">SIGN UP</a></li>
-                          <li><a href="#" onclick="mypage()">MY PAGE</a></li>
-                      </ul>
-                    </nav>
+      <header>
+        <h1><a href="../index.html">APMA</a></h1>
+        <nav>
+          <h2 class="hideClass">메인내비게이션</h2>
+          <ul id="main_menu">
+            <li><a href="./museum.html">MUSEUM</a></li>
+            <li><a href="./exhibtion.html">EXHIBTION</a></li>
+            <li><a href="./project.html">PROJECT</a></li>
+            <li><a href="./event.html">EVENT</a></li>
+            <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
+            <li><a href="./infomation.html">INFOMATION</a></li>
+          </ul>
+          <ul id="side_menu">
+            <li><a href="./login.html">LOGIN</a></li>
+            <li><a href="./sign_up.html">SIGN UP</a></li>
+            <li><a href="#" onclick="mypage()">MY PAGE</a></li>
+          </ul>
+        </nav>
 
-          </header>
+      </header>
     </div>
-        <!-- main -->
-            <main>
-              <section>
-                <h3>SING UP</h3>
-                <form action="#" method="POST">
-                  <fieldset>
-                    <ul>
-                      <li>
-                        <label for="userId">아이디</label>
-                        <input type="text" id="userId" placeholder="아이디" required autofocus>
-                      </li>
-                  
-                      <li>
-                          <label for="userPW">비밀번호</label>
-                        <input type="password" id="userPW" placeholder="비밀번호" required  autofocus>
-                      <li>
+    <!-- main -->
+    <main>
+      <section>
+        <h3>SING UP</h3>
+        <form action="domain.com/APMA/join/member" method="POST">
+          <fieldset>
+            <ul>
+              <li>
+                <label for="userId">아이디</label>
+                <input type="text" id="userId" placeholder="아이디" maxlength="14" minlength="5" required autofocus>
+              </li>
 
-                        
+              <li>
+                <label for="userPw">비밀번호</label>
+                <input type="password" id="userPw" placeholder="비밀번호" required autofocus>     
+                <span id="pw_vaild"></span>
+              <li>
 
-                      <li>
-                        <label for="userName">이름</label>
-                        <input type="text" id="userName" required autofocus placeholder="이름">
-                      </li>
+              <li>
+                <label for="userPw_check">비밀번호 확인</label>
+                <input type="password" id="userPw_check" placeholder="비밀번호 확인" required autofocus>
+                <span id="pwCk"></span>
+              <li>
 
-                      <li>
-                        <label for="userDate">생년월일</label>
-                        <input class="date_empty placeholder-date" id="userDate" type="date" id="userdate"   required 
-                        >
-                      </li>
+              <li>
+                <label for="userName">이름</label>
+                <input type="text" id="userName" required autofocus placeholder="이름">
+                <span id="nameCk"></span>
+              </li>
 
-                      <li>
-                        <label for="userPhone">전화번호</label>
-                        <input type="tel" id="userPhone" required 
-                        placeholder="전화번호">
-                      </li>
+              <li>
+                <label for="userDate">생년월일</label>
+                <input class="date_empty placeholder-date" id="userDate" type="date" id="userdate" required>
+              </li>
 
-                      <!-- <input type="submit" id="submit_menber_info" name="" value="제출"> -->
-                    </ul>
+              <li>
+                <label for="userPhone">전화번호</label>
+                <input type="tel" id="userPhone" required placeholder="전화번호 ( - 생략 )" digits >
+              </li>
+            </ul>
+
+
+            <div id="sub_ul">
+              <div> <button id="submit_menber_info" value="회원가입" onclick="submit_menber_info()">회원가입</button> </div>
+              <div id="login_move"><a href="../pages/login.html">로그인으로 돌아가기</a></div>
+            </div>
+
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <div id="footerWrap">
+      <footer>
+        <div id="fu">
+          <div id="ful">
+            <dl>
+              <dt>Address:</dt>
+              <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
+              <dt>E-mail:</dt>
+              <dd>E. museum &#64;amorepacific.com</dd>
+              <dt>Phone:</dt>
+              <dd>02-6040-2345</dd>
+
+            </dl>
+          </div>
+          <div id="fur">
+            <dl>
+              <dt>관람시간</dt>
+              <dd>화-일10:00AM ~ 6:00PM</dd>
+            </dl>
+            <dl>
+              <dt>휴관일</dt>
+              <dd>매주월요일
+                매년1월1일 / 설,추석 연휴</dd>
+            </dl>
+          </div>
+        </div>
+        <div id="fd">
+          <ul>
+            <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
+            <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
+            <li><a
+                href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기
+                운영방침</a></li>
+          </ul>
+          <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
+
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script>
+
+
+      $("#userPw").on("input",function(){
+        if ($(this).val().trim().length == 0) {
+              $("#pw_vaild").text("");
+              return;
+            }
+
+            const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/
+
+            if (passwordRegex.test($(this).val())) {
+              $("#pw_vaild").text("올바른 형식입니다.");
+              $("#pw_vaild").css("color", "rgb(60 194 60)");
+              
+            } else {
+              $("#pw_vaild").text("숫자,영문자,특수문자 조합으로 8자리 이상");
+              $("#pw_vaild").css("color", "rgb(249, 89, 33)");
+            }
+      });
+
+ 
+      
+       $("#userPw_check").on("keyup", function() {
+ 
+              if ($(this).val().trim().length == 0) {
+                $("#pwCk").text("");
+                  return;
+              }
+
+              if ($("#userPw").val() == $(this).val())
+                $("#pwCk").text("비밀번호가 일치합니다")
+                  .css("color", "rgb(60 194 60)");
+              else
+                $("#pwCk").text("비밀번호가 일치하지 않습니다.")
+                  .css("color", "rgb(249, 89, 33)");
+    });
+
+        $("#userName").on("input", function() {
+            if ($(this).val().trim().length == 0) {
+              $("#nameCk").text("");
+              return;
+            }
+
+            const regExp = /^[가-힣]{2,5}$/;
+              
+            if (regExp.test($(this).val())) {
+              $("#nameCk").text("올바른 형식입니다.");
+              $("#nameCk").css("color", "rgb(60 194 60)");
+              
+            } else {
+              $("#nameCk").text("이름의 올바른 형식이 아닙니다.");
+              $("#nameCk").css("color", "rgb(249, 89, 33)");
+            }
+    });
+
+
+  
+
    
 
-                    <div id="sub_ul">
-                      <div> <button id="submit_menber_info" value="회원가입" onclick="submit_menber_info()">회원가입</button> </div>
-                      <div id="login_move"><a href="../pages/login.html">로그인으로 돌아가기</a></div>
-                    </div>
-                   
-                  </fieldset>
-                </form>
-              </section>
-            </main>
-
-            <!-- footer -->
-
-        <!-- footer -->
-        <div id="footerWrap">
-          <footer>
-              <div id="fu">
-                  <div id="ful">
-                  <dl>               
-                      <dt>Address:</dt>
-                      <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
-                      <dt>E-mail:</dt>
-                      <dd>E. museum &#64;amorepacific.com</dd>
-                      <dt>Phone:</dt>
-                      <dd>02-6040-2345</dd>
-                      
-                  </dl>
-                  </div>
-                  <div id="fur">
-                      <dl>
-                          <dt>관람시간</dt>
-                          <dd>화-일10:00AM ~ 6:00PM</dd>
-                      </dl>
-                      <dl>
-                          <dt>휴관일</dt>
-                          <dd>매주월요일
-                              매년1월1일 / 설,추석 연휴</dd>
-                      </dl>
-                  </div>
-              </div>
-              <div id="fd">
-                  <ul>
-                      <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
-                      <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
-                      <li><a href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기 운영방침</a></li>
-                  </ul>
-                  <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
-
-              </div>
-          </footer>
-      </div>  
-  </div>
-   <!-- <script>
-    
-    $('#submit_menber_info').click(function() {
-
-    var menber_info = {
-        id :$("#userId").val(),
-        pw :$("#userPW").val(),
-        name :$("#userName").val(),
-        date :$("#userDate").val(),
-        phone : $("#userPhone").val()
-    }
-	console.log(menber_info) })
-  </script> -->
+  </script>
 </body>
-</html>
 
+</html>

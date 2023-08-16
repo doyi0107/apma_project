@@ -132,3 +132,37 @@ function login() {
 //       Kakao.Auth.setAccessToken(undefined)
 //     }
 //   }  
+
+
+
+
+    // function handleLogin() {
+    //     var adminId = document.getElementById("inputAdminID").value;
+    //     var password = document.getElementById("inputPassword").value;
+
+
+    //     var xhr = new XMLHttpRequest();
+    //     var url = 'https://tave.kro.kr:8080/login'; // Replace with your server's login endpoint
+
+    //     xhr.open("POST", url, true);
+    //     xhr.setRequestHeader("Content-Type", "application/json");
+
+    //     // Prepare the request body
+    //     var body = JSON.stringify({ username: adminId, password: password });
+
+    //     xhr.onreadystatechange = function () {
+    //         if (xhr.readyState === 4) {
+    //             if (xhr.status === 200) {
+    //                 // Store the token in the browser's local storage or any appropriate mechanism
+    //                 localStorage.setItem("token", "Bearer "+xhr.getResponseHeader("Authorization"));
+    //                 console.log(localStorage.getItem("token"));
+    //                 // Redirect to the Google OTP page or any other desired page
+    //                 window.location.href = "googleotp.html";
+    //             } else {
+    //                 // Handle login error (e.g., display an error message)
+    //                 console.error("Login failed. Status:", xhr.status);
+    //             }
+    //         }
+    //     };
+    //     xhr.send(body);
+    // }
