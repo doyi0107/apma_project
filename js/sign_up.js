@@ -1,19 +1,16 @@
-
-$('submit_menber_info').click(function() {
-
-    var menber_info = {
-        id :$("userId").val(),
-        pw :$("userPW").val(),
-        name :$("userName").val(),
-        date :$("userDate").val(),
-        phone : $("userPhone").val()
+function submit_menber_info(){
+	var menber_info = {
+        id :$("#userId").val(),
+        pw :$("#userPW").val(),
+        name :$("#userName").val(),
+        date :$("#userDate").val(),
+        phone : $("#userPhone").val()
     }
-
+	console.log(menber_info)
 
 	$.ajax({
-		"url": "localhost:8080/api/users/login",
+		// "url": "#",
 		"type": "POST",
-		"timeout": 0,
 		"headers": {
 			"Content-Type": "application/json"
 		},
@@ -29,7 +26,9 @@ $('submit_menber_info').click(function() {
 			alert("회원가입이 실패하였습니다.");
 			alert(JSON.stringify(error));
 		});
+}
+	
 
-})
+
 
 

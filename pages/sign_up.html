@@ -2,17 +2,21 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta https-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SIGN_UP</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/sign_up.css">
+  <script src="../js/sign_up.js"></script>
+  <script src="../js/login.js"></script>
   <script src="../js/jquery-3.6.0.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
-  <script src="../js/sigin_up.js"></script>
-      <script src="../js/login.js"></script>
+
+
+
 </head>
 <body>
+ 
   <div id="wrap">
     <!-- header -->
     <input type="checkbox" id="menuicon">
@@ -47,7 +51,7 @@
             <main>
               <section>
                 <h3>SING UP</h3>
-                <form action="#" method="post">
+                <form action="#" method="POST">
                   <fieldset>
                     <ul>
                       <li>
@@ -59,6 +63,8 @@
                           <label for="userPW">비밀번호</label>
                         <input type="password" id="userPW" placeholder="비밀번호" required  autofocus>
                       <li>
+
+                        
 
                       <li>
                         <label for="userName">이름</label>
@@ -76,13 +82,16 @@
                         <input type="tel" id="userPhone" required 
                         placeholder="전화번호">
                       </li>
+
+                      <!-- <input type="submit" id="submit_menber_info" name="" value="제출"> -->
                     </ul>
+   
 
                     <div id="sub_ul">
-                      <div><button id="submit_menber_info" type="submit" value="회원가입">회원가입</button></div>
+                      <div> <button id="submit_menber_info" value="회원가입" onclick="submit_menber_info()">회원가입</button> </div>
                       <div id="login_move"><a href="../pages/login.html">로그인으로 돌아가기</a></div>
                     </div>
-
+                   
                   </fieldset>
                 </form>
               </section>
@@ -129,7 +138,19 @@
           </footer>
       </div>  
   </div>
-  
+   <!-- <script>
+    
+    $('#submit_menber_info').click(function() {
+
+    var menber_info = {
+        id :$("#userId").val(),
+        pw :$("#userPW").val(),
+        name :$("#userName").val(),
+        date :$("#userDate").val(),
+        phone : $("#userPhone").val()
+    }
+	console.log(menber_info) })
+  </script> -->
 </body>
 </html>
 
