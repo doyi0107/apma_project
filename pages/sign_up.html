@@ -152,11 +152,12 @@
 
             if (passwordRegex.test($(this).val())) {
               $("#pw_vaild").text("올바른 형식입니다.");
-              $("#pw_vaild").css("color", "rgb(60 194 60)");
+              $("#pw_vaild").css({"color":"rgb(60 194 60)","font-size":"0.9rem" });
+    
               
             } else {
-              $("#pw_vaild").text("숫자,영문자,특수문자 조합으로 8자리 이상");
-              $("#pw_vaild").css("color", "rgb(249, 89, 33)");
+              $("#pw_vaild").text("숫자+영문자+특수문자 조합으로 8자리 이상");
+              $("#pw_vaild").css({"color":"rgb(249, 89, 33)","font-size":"0.9rem" });
             }
       });
 
@@ -169,13 +170,15 @@
                   return;
               }
 
-              if ($("#userPw").val() == $(this).val())
-                $("#pwCk").text("비밀번호가 일치합니다")
-                  .css("color", "rgb(60 194 60)");
+              if ($("#userPw").val() == $(this).val()){
+                $("#pwCk").text("비밀번호가 일치합니다.")
+                  .css({"color":"rgb(60 194 60)","font-size":"0.9rem" });}
               else
                 $("#pwCk").text("비밀번호가 일치하지 않습니다.")
-                  .css("color", "rgb(249, 89, 33)");
+                  .css({"color":"rgb(249, 89, 33)","font-size":"0.9rem" });
     });
+
+    
 
         $("#userName").on("input", function() {
             if ($(this).val().trim().length == 0) {
@@ -187,11 +190,11 @@
               
             if (regExp.test($(this).val())) {
               $("#nameCk").text("올바른 형식입니다.");
-              $("#nameCk").css("color", "rgb(60 194 60)");
+              $("#nameCk").css({"color":"rgb(60 194 60)","font-size":"0.9rem" });
               
             } else {
               $("#nameCk").text("이름의 올바른 형식이 아닙니다.");
-              $("#nameCk").css("color", "rgb(249, 89, 33)");
+              $("#nameCk").css({"color":"rgb(249, 89, 33)","font-size":"0.9rem" });
             }
     });
 

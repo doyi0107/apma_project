@@ -70,24 +70,24 @@ function login() {
             password_give:pw_give
 		},
 			
-		"datatype" : JSON,
-		success: function (response) {
-				if(response['result'] == 'success'){
+		"datatype" : JSON
+	}).done(function (response,status,xhr) {
+        console.log(response);    //로그인 성공하면 
+        console.log(xhr.getREsponseHeader('Authorization'))// 헤더에 있는 토큰을 받아와서
+        localStorage.setItem('accessToken', xhr.getREsponseHeader('Authorization')) // 로컬스토리지 = 디비 , 에다가 셋 에 응답 받은 토큰을 그대로 넣는다
+        alert('로그인 완료') 
+        window.location.href = '../index.html'  //로그인 성공시 새로고침 
+        $('#side_menu>li:nth-child(1)').remove();
+        $('#side_menu').prepend("<li><input type='submit'>LOGOUT</input></li>");
+      }).fail(function(response){
+          console.log(response.responseJSON);
+          if(response.responseJSON.statusCode === 404){
+              alert('아이디와 비밀번호를 확인하여 주세요');
+          } else{
+              alert('서버에 문제가 발생하였습니다.');
+          }
+        });
 
-					$.cookie('mytoken', response['token']);
-					alert('로그인완료');
-					window.location.href = '../index.html'
-					$('#side_menu>li:nth-child(1)').remove();
-					$('#side_menu').prepend("<li><input type='submit'>LOGOUT</input></li>");
-
-				}else{
-					alert(response['msg'])
-				}
-		},
-		error: function (request, error) {
-			alert("code:" + request.status + "\n" + "error:" + error);
-		}
-	})
 }
 
 
@@ -136,33 +136,5 @@ function login() {
 
 
 
-    // function handleLogin() {
-    //     var adminId = document.getElementById("inputAdminID").value;
-    //     var password = document.getElementById("inputPassword").value;
 
-
-    //     var xhr = new XMLHttpRequest();
-    //     var url = 'https://tave.kro.kr:8080/login'; // Replace with your server's login endpoint
-
-    //     xhr.open("POST", url, true);
-    //     xhr.setRequestHeader("Content-Type", "application/json");
-
-    //     // Prepare the request body
-    //     var body = JSON.stringify({ username: adminId, password: password });
-
-    //     xhr.onreadystatechange = function () {
-    //         if (xhr.readyState === 4) {
-    //             if (xhr.status === 200) {
-    //                 // Store the token in the browser's local storage or any appropriate mechanism
-    //                 localStorage.setItem("token", "Bearer "+xhr.getResponseHeader("Authorization"));
-    //                 console.log(localStorage.getItem("token"));
-    //                 // Redirect to the Google OTP page or any other desired page
-    //                 window.location.href = "googleotp.html";
-    //             } else {
-    //                 // Handle login error (e.g., display an error message)
-    //                 console.error("Login failed. Status:", xhr.status);
-    //             }
-    //         }
-    //     };
-    //     xhr.send(body);
-    // }
+    

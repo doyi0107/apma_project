@@ -203,6 +203,7 @@ fieldset>ul>li:nth-child(2), fieldset>ul>li:nth-child(4), fieldset>ul>li:nth-chi
 #pw_vaild{
   display:inline-block;
   margin:7px 0px 0px 53px;
+  font-size: 4rem;
 }
 
 #pwCk{
@@ -464,7 +465,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
     header>nav{ 
       position: fixed;
       left:-270px; right: 0;
-      top:190px;
+      top:170px;
       margin: 0;
       display: block;
       z-index: 999;
@@ -472,7 +473,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
 
 
     header>nav>ul#main_menu{
-      margin-bottom:80px;
+      margin-bottom:50px;
     }
 
     header>nav>ul>li{

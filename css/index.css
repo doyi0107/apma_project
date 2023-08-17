@@ -595,7 +595,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
       header>nav{ 
         position: fixed;
         left:-270px; right: 0;
-        top:155px;
+        top:170px;
         margin: 0;
         display: block;
         z-index: 999;

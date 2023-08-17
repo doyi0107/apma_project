@@ -522,7 +522,7 @@ div.box02>figure>img{
     header>nav{ 
       position: fixed;
       left:-270px; right: 0;
-      top:190px;
+      top:170px;
       margin: 0;
       display: block;
       z-index: 999;
@@ -530,7 +530,7 @@ div.box02>figure>img{
 
 
     header>nav>ul#main_menu{
-      margin-bottom:80px;
+      margin-bottom:50px;
     }
 
     header>nav>ul>li{
