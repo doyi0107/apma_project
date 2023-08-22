@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SIGN_UP</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/sign_up.css">
+  <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="../js/sign_up.js"></script>
-  <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>   
 </head>
 
-<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
-<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
 <body>
 
   <div id="wrap">
@@ -50,7 +50,7 @@
     <main>
       <section>
         <h3>SING UP</h3>
-        <form action="domain.com/APMA/join/member" method="POST">
+        <form action="apma.o-r.kr/APMA/join/member" method="POST">
           <fieldset>
             <ul>
               <li>
@@ -89,7 +89,7 @@
 
 
             <div id="sub_ul">
-              <div> <button id="submit_menber_info" value="회원가입" onclick="submit_menber_info()">회원가입</button> </div>
+              <div> <button onClick="submit_menber_info()" type="button" id="submit_menber" value="회원가입" >회원가입</button> </div>
               <div id="login_move"><a href="../pages/login.html">로그인으로 돌아가기</a></div>
             </div>
 
@@ -139,6 +139,7 @@
       </footer>
     </div>
   </div>
+
   <script>
 
 
@@ -199,6 +200,9 @@
     });
 
 
+    
+
+            
   
 
    

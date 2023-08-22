@@ -60,14 +60,14 @@ function login() {
     }
 
 	$.ajax({
-		// "url": "localhost:8080/api/users/login",
+		"url": "apma.o-r.kr/login",
 		"type": "POST",
 		"headers": {
 			"Content-Type": "application/json"
 		},
 		"data":   {   
-			username_give:id_give ,
-            password_give:pw_give
+			username:id_give ,
+            password:pw_give
 		},
 			
 		"datatype" : JSON

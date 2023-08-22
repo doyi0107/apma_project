@@ -140,14 +140,18 @@ h3{
   color:#313131;
   margin-bottom:50px;
 }
-
+/* 
 form{
   border:5px solid #444444;
   box-shadow:10px 10px 10px rgb(0 0 0/ 20%);
   border-radius: 2%;  
-}
+} */
 
-fieldset{}
+fieldset{
+  border:5px solid #444444;
+  box-shadow:10px 10px 10px rgb(0 0 0/ 20%);
+  border-radius: 2%;  
+}
 fieldset>ul{
 }
 
@@ -280,7 +284,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
   cursor: pointer;
 }
 
-#submit_menber_info{
+#submit_menber{
   margin: 20px 20px 70px 90px;
   background-color:#444444;
 }
@@ -543,7 +547,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
       margin-bottom:50px;
     }
     
-    form{
+    fieldset{
       border:5px solid #444444;
       box-shadow:10px 10px 10px rgb(0 0 0/ 20%);
       border-radius: 2%;  
@@ -576,7 +580,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
     }
 
 
-    #submit_menber_info{
+    #submit_menber{
       margin: 20px 20px 70px 45px;
     }
     
@@ -643,7 +647,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
         margin-bottom:50px;
       }
       
-      form{
+      fieldset{
         border:5px solid #444444;
         box-shadow:10px 10px 10px rgb(0 0 0/ 20%);
         border-radius: 0%;  
@@ -697,7 +701,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
         width:140px;
       }
 
-      #submit_menber_info{
+      #submit_menber{
         margin: 20px 0px 70px 15px;
       }
       
