@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="../css/notice.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div id="headerWrap">
+            <header>
+                <h1><a href="../index.html">APMA</a></h1>
+                <nav>
+                    <h2 class="hideClass">메인내비게이션</h2>
+                    <ul id="main_menu">
+                        <li><a href="./museum.html">MUSEUM</a></li>
+                        <li><a href="./exhibtion.html">EXHIBTION</a></li>
+                        <li><a href="./project.html">PROJECT</a></li>
+                        <li><a href="./notice_view.html">NOICE</a></li>
+                        <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
+                    </ul>
+                    <ul id="side_menu">
+                        <li><a href="./login.html">LOGIN</a></li>
+                        <li><a href="./sign_up.html">SIGN UP</a></li>
+                        <li><a href="#" onclick="mypage()">MY PAGE</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+        </div>
+
+
+        <div class="board_wrap">
+
+            <div class="board_title">
+                <strong>NOICE</strong>
+                <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+            </div>
+
+            <form name="search-form" class="serach_box">
+                <input type="text" name="keyword" value="" placeholder="검색어를 입력하시오">
+                <input type="button" onclick="getSerachList()" class="serach_list" value="검색">
+            </form>
+
+            <div class="board_list_wrap">
+                <div class="board_list">
+                    <div class="top">
+                        <div class="num">번호</div>
+                        <div class="title">제목</div>
+                        <div class="writer">글쓴이</div>
+                        <div class="date">작성일</div>
+                        <div class="count">조회</div>
+                    </div>
+                    <div>
+                        <div class="num">5</div>
+                        <div class="title"><a href="view.html">오시는 길</a></div>
+                        <div class="writer">관리자</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
+                    </div>
+                    <div>
+                        <div class="num">4</div>
+                        <div class="title"><a href="view.html">입장수칙 안내</a></div>
+                        <div class="writer">관리자</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
+                    </div>
+                    <div>
+                        <div class="num">3</div>
+                        <div class="title"><a href="view.html">관람요금</a></div>
+                        <div class="writer">관리자</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
+                    </div>
+                    <div>
+                        <div class="num">2</div>
+                        <div class="title"><a href="./infomation.html">관람시간 및 휴관일</a></div>
+                        <div class="writer">관리자</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
+                    </div>
+                    <div>
+                        <div class="num">1</div>
+                        <div class="title"><a href="./event.html">전시관람 이벤트</a></div>
+                        <div class="writer">관리자</div>
+                        <div class="date">2021.1.15</div>
+                        <div class="count">33</div>
+                    </div>
+                </div>
+                <div class="board_page">
+                    <a href="#" class="bt first"><<</a>
+                    <a href="#" class="bt prev"><</a>
+                    <a href="#" class="num on">1</a>
+                    <!-- <a href="#" class="num">2</a>
+                    <a href="#" class="num">3</a>
+                    <a href="#" class="num">4</a>
+                    <a href="#" class="num">5</a> -->
+                    <a href="#" class="bt next">></a>
+                    <a href="#" class="bt last">>></a>
+                </div>
+                <div class="bt_wrap">
+                    <a href="write.html" class="on">등록</a>
+                    <!--<a href="#">수정</a>-->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <div id="footerWrap">
+            <footer>
+                <div id="fu">
+                    <div id="ful">
+                        <dl>
+                            <dt>Address:</dt>
+                            <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
+                            <dt>E-mail:</dt>
+                            <dd>E. museum &#64;amorepacific.com</dd>
+                            <dt>Phone:</dt>
+                            <dd>02-6040-2345</dd>
+
+                        </dl>
+                    </div>
+                    <div id="fur">
+                        <dl>
+                            <dt>관람시간</dt>
+                            <dd>화-일10:00AM ~ 6:00PM</dd>
+                        </dl>
+                        <dl>
+                            <dt>휴관일</dt>
+                            <dd>매주월요일
+                                매년1월1일 / 설,추석 연휴</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div id="fd">
+                    <ul>
+                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
+                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
+                        <li><a
+                                href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기
+                                운영방침</a></li>
+                    </ul>
+                    <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
+
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -2,6 +2,12 @@
 
 function submit_menber_info(){
 
+	// let id_give = $("#userId").val();
+    // let pw_give = $("#userPw").val();
+	// let name_give = $("#userPw").val();
+	// let birthDay_give = $("#userPw").val();
+	// let phoneNumber = $("#userPw").val();
+
 
 	var menber_info = {
         username :$("#userId").val(),
@@ -50,14 +56,26 @@ function submit_menber_info(){
 		return false;
 	  }
 
+	//   $.ajax({
+    //     type: "POST",
+    //     url: "apma.o-r.kr/APMA/join/member",
+    //     data: {
+	// 		"username": "id_give",
+	// 	    "password": " pw_give"
+    //     },
+    //     success: function (response) {
+    //         alert("회원가입을 축하드립니다!")
+    //         window.location.replace("/login")
+    //     }
+    // });
+
 	$.ajax({
-		"url": "apma.o-r.kr/APMA/join/member",
-		"type": "POST",
-		"headers": {
-			"Content-Type": "application/json"
-		},
+		crossOrigin : true,
+		"url":"https://apma.o-r.kr/APMA/join/member",
+		"type":"POST",
+		"content-type":"application/json",
 		data: JSON.stringify(menber_info), 
-		dataType: "json"
+		dataType:"json",
 	}).done(function (resp) {
 			// 결과가 정상이면 done 실행
 			alert("회원가입이 완료되었습니다.");
@@ -68,7 +86,34 @@ function submit_menber_info(){
 			alert("회원가입이 실패하였습니다.");
 			alert(JSON.stringify(error));
 		});
+
+
+			// 	var settings = {
+			// "url": "https://apma.o-r.kr/APMA/join/member",
+			// "method": "POST",
+			// "timeout": 0,
+			// "crossOrigin" : true,
+			// "headers": {
+			// 	"Content-Type": "application/json"
+			// },
+			// "data": JSON.stringify({
+			// 	"username": "id_give",
+			// 	"password": " pw_give"
+			// }),
+			// };
+			
+			// $.ajax(settings).done(function (response) {
+			// console.log(response);
+			// });
+
 }
+
+
+  
+
+
+
+	
 	
 
 
