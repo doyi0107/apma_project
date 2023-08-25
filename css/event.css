@@ -71,8 +71,9 @@ header>nav>ul{
 }
 
 header>nav>ul#main_menu{
-  margin-right: 6rem;
+  margin:0px 10rem 0px 6rem;
 }
+
 
 header>nav>ul#side_menu{
 }
@@ -154,14 +155,21 @@ article{
 }
 
 h3{
+  text-decoration: none;
   font:70px 'Shadows Into Light', cursive ;
   color:rgb(94, 52, 121);
   padding-bottom: 50px;
 }
 
-h3>span{
+
+h3 span{
   font:20px 나눔고딕,'sans-serif';
 }
+
+h3>a{
+  color:rgb(94, 52, 121);
+}
+
 #box01{
   width:900px;
   /* height:500px; */
@@ -404,6 +412,7 @@ h3>span{
 
   header>nav>ul#main_menu{
     margin-bottom:50px;
+    margin-left: 0px;
   }
 
   header>nav>ul>li{

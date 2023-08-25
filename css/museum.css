@@ -71,8 +71,9 @@ header>nav>ul{
 }
 
 header>nav>ul#main_menu{
-  margin-right: 6rem;
+  margin:0px 10rem 0px 6rem;
 }
+
 
 header>nav>ul#side_menu{
 }
@@ -382,6 +383,7 @@ section{
 
   header>nav>ul#main_menu{
     margin-bottom:50px;
+    margin-left: 0px;
   }
 
   header>nav>ul>li{

@@ -67,7 +67,7 @@
   }
   
   header>nav>ul#main_menu{
-    margin-right: 6rem;
+    margin:0px 10rem 0px 6rem;
   }
   
   header>nav>ul#side_menu{
@@ -141,7 +141,6 @@ a {
 }
 
 .serach_box{
-    /* background-color: #cd4f96; */
     display: block;
     margin-bottom: 30px;
     text-align: center;
@@ -200,7 +199,7 @@ input::placeholder {
 }
 
 .bt_wrap a {
-    display: inline-block;
+    display: block;
     min-width: 80px;
     margin-left: 10px;
     padding: 10px;
@@ -277,6 +276,7 @@ input::placeholder {
     margin-top: 30px;
     text-align: center;
     font-size: 0;
+    color: #fff;
 }
 
 .board_page a {
@@ -285,9 +285,10 @@ input::placeholder {
     height: 32px;
     box-sizing: border-box;
     vertical-align: middle;
-    border: 1px solid #ddd;
-    border-left: 0;
-    line-height: 100%;
+    border: 1px solid #000;
+    border-radius: 50%;
+    /* border-left: 0; */
+    line-height: 60%;
 }
 
 .board_page a.bt {
@@ -297,18 +298,18 @@ input::placeholder {
 }
 
 .board_page a.num {
-    padding-top: 9px;
+    padding-top: 10px;
     font-size: 1rem;
+
 }
 
 .board_page a.num.on {
     border-color: #000;
-    background: #000;
-    color: #fff;
+    color: #d3d3d3;
 }
 
 .board_page a:first-child {
-    border-left: 1px solid #ddd;
+  border: 1px solid #000;
 }
 
 .board_view {
