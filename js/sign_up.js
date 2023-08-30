@@ -17,6 +17,7 @@ function submit_menber_info(){
         phoneNumber : $("#userPhone").val()
     }
 	console.log(menber_info)
+	console.log(location.origin);
 
 	if ($("#userId").val().trim().length == 0) {
         $(this).val("");
@@ -70,12 +71,13 @@ function submit_menber_info(){
     // });
 
 	$.ajax({
-		crossOrigin : true,
-		"url":"https://apma.o-r.kr/APMA/join/member",
 		"type":"POST",
-		"content-type":"application/json",
+		"url":"https://apma2023.net",
+		"Content-Type": "application/json",
 		data: JSON.stringify(menber_info), 
 		dataType:"json",
+		crossDomain : true,
+		withCredentials:true,
 	}).done(function (resp) {
 			// 결과가 정상이면 done 실행
 			alert("회원가입이 완료되었습니다.");
@@ -85,6 +87,7 @@ function submit_menber_info(){
 			// 실패하면 fail 실행
 			alert("회원가입이 실패하였습니다.");
 			alert(JSON.stringify(error));
+		
 		});
 
 

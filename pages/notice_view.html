@@ -7,6 +7,9 @@
     <title>공지사항</title>
     <link rel="stylesheet" href="../css/notice.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <script type="text/javascript" src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/notice.js"></script>
 </head>
 
 <body>
@@ -48,10 +51,10 @@
                 <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
             </div>
 
-            <form name="search-form" class="serach_box">
+            <form name="search-form" class="serach_box" id="form_Search">
                 <input type="text" name="keyword" value="" placeholder="검색어를 입력하시오">
                 <input type="button" onclick="getSerachList()" class="serach_list" value="검색">
-            </form>
+     
 
             <div class="board_list_wrap">
                 <div class="board_list">
@@ -98,65 +101,70 @@
                         <div class="count">33</div>
                     </div>
                 </div>
+
+
                 <div class="board_page">
-                    <a href="#" class="bt first"><<</a>
-                    <a href="#" class="bt prev"><</a>
-                    <a href="#" class="num on">1</a>
-                    <!-- <a href="#" class="num">2</a>
+                    <a href="#" class="bt first">
+                        << </a>
+                            <a href="#" class="bt prev">
+                                < </a>
+                                    <a href="#" class="num on">1</a>
+                                    <!-- <a href="#" class="num">2</a>
                     <a href="#" class="num">3</a>
                     <a href="#" class="num">4</a>
                     <a href="#" class="num">5</a> -->
-                    <a href="#" class="bt next">></a>
-                    <a href="#" class="bt last">>></a>
+                                    <a href="#" class="bt next">></a>
+                                    <a href="#" class="bt last">>></a>
                 </div>
                 <!-- <div class="bt_wrap">
                     <a href="write.html" class="on">등록</a>
                     <a href="#">수정</a>-->
-                </div> 
             </div>
+            </form>
         </div>
+    </div>
 
 
-        <!-- footer -->
-        <div id="footerWrap">
-            <footer>
-                <div id="fu">
-                    <div id="ful">
-                        <dl>
-                            <dt>Address:</dt>
-                            <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
-                            <dt>E-mail:</dt>
-                            <dd>E. museum &#64;amorepacific.com</dd>
-                            <dt>Phone:</dt>
-                            <dd>02-6040-2345</dd>
+    <!-- footer -->
+    <div id="footerWrap">
+        <footer>
+            <div id="fu">
+                <div id="ful">
+                    <dl>
+                        <dt>Address:</dt>
+                        <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
+                        <dt>E-mail:</dt>
+                        <dd>E. museum &#64;amorepacific.com</dd>
+                        <dt>Phone:</dt>
+                        <dd>02-6040-2345</dd>
 
-                        </dl>
-                    </div>
-                    <div id="fur">
-                        <dl>
-                            <dt>관람시간</dt>
-                            <dd>화-일10:00AM ~ 6:00PM</dd>
-                        </dl>
-                        <dl>
-                            <dt>휴관일</dt>
-                            <dd>매주월요일
-                                매년1월1일 / 설,추석 연휴</dd>
-                        </dl>
-                    </div>
+                    </dl>
                 </div>
-                <div id="fd">
-                    <ul>
-                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
-                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
-                        <li><a
-                                href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기
-                                운영방침</a></li>
-                    </ul>
-                    <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
-
+                <div id="fur">
+                    <dl>
+                        <dt>관람시간</dt>
+                        <dd>화-일10:00AM ~ 6:00PM</dd>
+                    </dl>
+                    <dl>
+                        <dt>휴관일</dt>
+                        <dd>매주월요일
+                            매년1월1일 / 설,추석 연휴</dd>
+                    </dl>
                 </div>
-            </footer>
-        </div>
+            </div>
+            <div id="fd">
+                <ul>
+                    <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
+                    <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
+                    <li><a
+                            href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기
+                            운영방침</a></li>
+                </ul>
+                <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
+
+            </div>
+        </footer>
+    </div>
 
     </div>
 </body>

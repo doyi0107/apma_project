@@ -60,7 +60,7 @@ function login() {
     }
 
 	$.ajax({
-		"url": "apma.o-r.kr/login",
+		"url": "https://apma2023.net",
 		"type": "POST",
 		"headers": {
 			"Content-Type": "application/json"

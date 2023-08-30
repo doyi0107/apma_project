@@ -217,6 +217,10 @@ input::placeholder {
     color: #fff;
 }
 
+.board_list_wrap{
+  margin-top: 30px;
+}
+
 .board_list {
     width: 100%;
     border-top: 2px solid #000;
