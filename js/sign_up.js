@@ -9,13 +9,21 @@ function submit_menber_info(){
 	// let phoneNumber = $("#userPw").val();
 
 
+	// "username": "string",
+	// "email": "string",
+	// "name": "string",
+	// "password": "!BX)5[*/0a&>",
+	// "phoneNumber": "010-7865569",
+	// "birthDay": "2023-08-30"
+
 	var menber_info = {
-        username :$("#userId").val(),
-        password :$("#userPw").val(),
-        name :$("#userName").val(),
-        birthDay :$("#userDate").val(),
-        phoneNumber : $("#userPhone").val()
+		username :$("#userId").val(),
+		password :$("#userPw").val(),
+		name :$("#userName").val(),
+		birthDay :$("#userDate").val(),
+		phoneNumber : $("#userPhone").val()
     }
+
 	console.log(menber_info)
 	console.log(location.origin);
 
@@ -71,9 +79,9 @@ function submit_menber_info(){
     // });
 
 	$.ajax({
+		"url":"https://apma2023.net/login",
 		"type":"POST",
-		"url":"https://apma2023.net",
-		"Content-Type": "application/json",
+		contentType: 'application/json; charset=utf-8',
 		data: JSON.stringify(menber_info), 
 		dataType:"json",
 		crossDomain : true,

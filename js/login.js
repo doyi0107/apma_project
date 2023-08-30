@@ -38,47 +38,51 @@ function mypage(){
 
 function login() {
 
-	let id_give = $("#userId").val();
-    let pw_give = $("#userPw").val();
 
-     console.log(id_give);
-
-	if (id_give == "") {
-		alert('아이디를 입력해주세요');
-        $("#userId").focus()
-        return;
-    } else {
-
+	var login_info = {
+		username :$("#userId").val(),
+		password :$("#userPw").val(),
     }
 
-    if (pw_give == "") {
-		alert('비밀번호를 입력해주세요');
-        $("#userPw").focus()
-        return;
-    } else {
+	// let id_give = $("#userId").val();
+    // let pw_give = $("#userPw").val();
 
-    }
+     console.log(login_info);
+
+	// if (id_give == "") {
+	// 	alert('아이디를 입력해주세요');
+    //     $("#userId").focus()
+    //     return;
+    // } else {
+
+    // }
+
+    // if (pw_give == "") {
+	// 	alert('비밀번호를 입력해주세요');
+    //     $("#userPw").focus()
+    //     return;
+    // } else {
+
+    // }
 
 	$.ajax({
-		"url": "https://apma2023.net",
+		"url": "https://apma2023.net/APMA/join/member",
 		"type": "POST",
-		"headers": {
-			"Content-Type": "application/json"
-		},
-		"data":   {   
-			username:id_give ,
-            password:pw_give
-		},
-			
-		"datatype" : JSON
+		data: JSON.stringify(login_info), 
+        contentType: 'application/json; charset=utf-8',
+		dataType:"json",
+		crossDomain : true,
+		withCredentials:true
 	}).done(function (response,status,xhr) {
+        alert('로그인 완료') 
+        window.location.href = '../index.html'
+        $('#side_menu>li:nth-child(1)').remove();
+        $('#side_menu').prepend("<li><input type='submit'>LOGOUT</input></li>");
         console.log(response);    //로그인 성공하면 
         console.log(xhr.getREsponseHeader('Authorization'))// 헤더에 있는 토큰을 받아와서
         localStorage.setItem('accessToken', xhr.getREsponseHeader('Authorization')) // 로컬스토리지 = 디비 , 에다가 셋 에 응답 받은 토큰을 그대로 넣는다
-        alert('로그인 완료') 
-        window.location.href = '../index.html'  //로그인 성공시 새로고침 
-        $('#side_menu>li:nth-child(1)').remove();
-        $('#side_menu').prepend("<li><input type='submit'>LOGOUT</input></li>");
+        //로그인 성공시 새로고침 
+    
       }).fail(function(response){
           console.log(response.responseJSON);
           if(response.responseJSON.statusCode === 404){
@@ -132,6 +136,19 @@ function login() {
 //       Kakao.Auth.setAccessToken(undefined)
 //     }
 //   }  
+
+
+// "url": "https://apma2023.net/APMA/join/member",
+// "type": "POST",
+// "headers": {
+//     "Content-Type": "application/json"
+// },
+// "data":   {   
+//     username:id_give ,
+//     password:pw_give
+// },
+    
+// "datatype" : JSON
 
 
 
