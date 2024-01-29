@@ -64,16 +64,8 @@ label>img{
   display: none;
 }
 
-header>nav>ul{
-
-}
-
 header>nav>ul#main_menu{
   margin:0px 10rem 0px 6rem;
-}
-
-
-header>nav>ul#side_menu{
 }
 
 header>nav>ul>li{
@@ -202,7 +194,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 }
 
 @-webkit-keyframes posi{
-  from{left: 25%}
+  from{left: 25%;}
   to {left: 13%;}
 }
 

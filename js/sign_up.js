@@ -2,20 +2,6 @@
 
 function submit_menber_info(){
 
-	// let id_give = $("#userId").val();
-    // let pw_give = $("#userPw").val();
-	// let name_give = $("#userPw").val();
-	// let birthDay_give = $("#userPw").val();
-	// let phoneNumber = $("#userPw").val();
-
-
-	// "username": "string",
-	// "email": "string",
-	// "name": "string",
-	// "password": "!BX)5[*/0a&>",
-	// "phoneNumber": "010-7865569",
-	// "birthDay": "2023-08-30"
-
 	var menber_info = {
 		username :$("#userId").val(),
 		password :$("#userPw").val(),
@@ -65,19 +51,6 @@ function submit_menber_info(){
 		return false;
 	  }
 
-	//   $.ajax({
-    //     type: "POST",
-    //     url: "apma.o-r.kr/APMA/join/member",
-    //     data: {
-	// 		"username": "id_give",
-	// 	    "password": " pw_give"
-    //     },
-    //     success: function (response) {
-    //         alert("회원가입을 축하드립니다!")
-    //         window.location.replace("/login")
-    //     }
-    // });
-
 	$.ajax({
 		"url":"https://apma2023.net/login",
 		"type":"POST",
@@ -98,29 +71,7 @@ function submit_menber_info(){
 		
 		});
 
-
-			// 	var settings = {
-			// "url": "https://apma.o-r.kr/APMA/join/member",
-			// "method": "POST",
-			// "timeout": 0,
-			// "crossOrigin" : true,
-			// "headers": {
-			// 	"Content-Type": "application/json"
-			// },
-			// "data": JSON.stringify({
-			// 	"username": "id_give",
-			// 	"password": " pw_give"
-			// }),
-			// };
-			
-			// $.ajax(settings).done(function (response) {
-			// console.log(response);
-			// });
-
 }
-
-
-  
 
 
 

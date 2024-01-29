@@ -1,28 +1,4 @@
-// $(document).ready(function(){
-// 	var adminID = "qwe";
-// 	var adminPW = "1234";
-// 	$("#btnLogin").click(function(){
-// 		var uID = $("#userId").val();
-// 		var uPW = $("#userPw").val();
-// 		if (!uID || !uPW) {
-// 			alert("회원 정보를 모두 입력하세요.");
-// 		} else {
-// 			if (uID == adminID) {
-// 				if (uPW == adminPW) {
-// 					alert("로그인 성공");
-// 					let link = '../index.html';
-// 					location.href = link;
-// 				} else {
-// 					console.log("비밀번호 불일치");
-// 					alert("회원정보 불일치");
-// 				}
-// 			} else {
-// 				console.log("아이디 불일치");
-// 				alert("회원정보 불일치");
-// 			}
-// 		}
-// 	})
-// })
+
 function mypage(){
 	let a = "1"
 	if(a = "1"){
@@ -44,26 +20,7 @@ function login() {
 		password :$("#userPw").val(),
     }
 
-	// let id_give = $("#userId").val();
-    // let pw_give = $("#userPw").val();
-
      console.log(login_info);
-
-	// if (id_give == "") {
-	// 	alert('아이디를 입력해주세요');
-    //     $("#userId").focus()
-    //     return;
-    // } else {
-
-    // }
-
-    // if (pw_give == "") {
-	// 	alert('비밀번호를 입력해주세요');
-    //     $("#userPw").focus()
-    //     return;
-    // } else {
-
-    // }
 
 	$.ajax({
 		"url": "https://apma2023.net/APMA/join/member",
