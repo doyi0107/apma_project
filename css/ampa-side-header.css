@@ -4,9 +4,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 70px;
     z-index: 99;
-    padding: 15px 0px;
+    padding: 18px 0px;
     display: flex;
     backdrop-filter: saturate(180%) blur(90px);
     /* background-image: linear-gradient(180deg, rgba(199, 199, 199, 0.5), rgba(203, 203, 203, 0.5)); */
@@ -20,27 +20,22 @@
     transform: translateY(-100%);
 }
 
-/* .apma-header-logo-wrap {
-    width: 80px;
-    height: 80px;
-} */
 
 .apma-header-logo {
-    margin-top: -15px;
+    margin-top: -20px;
     height: 100%;
 }
 
 .apma-header-logo>a {
-    /* width: 80%; */
-    margin-top: -15px;
-    height: 100%;
     color: #fff;
-    font: 500 2.5rem "Shadows Into Light",
+    font: 500 3rem "Shadows Into Light",
         cursive;
 }
 
 
-
+.apma-header-center {
+    margin-left: 90px;
+}
 
 .apma-header-center,
 .apma-header-icon {
@@ -55,18 +50,17 @@
     transition: all 0.5s;
 }
 
-.apma-header-center>li {
+.apma-header-center>li>a {
     margin-left: 30px;
-    font: 400 18px "Shadows Into Light",
+    font: 400 20px "Shadows Into Light",
         cursive;
 }
 
 .apma-header-icon>li {
-    margin-left: 10px;
-    font: 400 18px "Shadows Into Light",
+    margin-left: 15px;
+    font: 400 20px "Shadows Into Light",
         cursive;
 }
-
 
 .apma-header-center>li:nth-child(1)>a:hover {
     color: #363636;
@@ -161,7 +155,8 @@ label {
     }
 
 
-    #menuicon:checked+label+.apma-header-wrap .apma-header-center-wrap,  #menuicon:checked+label+.apma-header-wrap .apma-header-icon-wrap{
+    #menuicon:checked+label+.apma-header-wrap .apma-header-center-wrap,
+    #menuicon:checked+label+.apma-header-wrap .apma-header-icon-wrap {
         left: 10%;
     }
 
@@ -192,7 +187,7 @@ label {
 
     .apma-header-center-wrap {
         position: fixed;
-        left: -270px;
+        /* left: -270px; */
         right: 0;
         top: 22%;
         margin: 0;
@@ -202,7 +197,7 @@ label {
 
     .apma-header-icon-wrap {
         position: fixed;
-        left: -270px;
+        /* left: -270px; */
         right: 0;
         bottom: 0;
         margin: 0;
@@ -220,9 +215,13 @@ label {
 
     .apma-header-center>li,
     .apma-header-icon>li {
-        margin-left: 25px;
+        /* margin-left: 25px; */
         display: block;
         margin-bottom: 20px;
+    }
+
+    .apma-header-icon>li {
+        margin-left: 25px;
     }
 
     .apma-header-center>li>a,
