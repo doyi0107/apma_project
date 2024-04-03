@@ -48,7 +48,7 @@ let tl2 = gsap.timeline({
     start: "5.5% top", // 두 번째 애니메이션의 start 값
     end: "8% top",
     scrub: true,
-    markers: true,
+    markers: false,
   },
 });
 
