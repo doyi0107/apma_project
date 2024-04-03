@@ -1,0 +1,234 @@
+/* header */
+.apma-header-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 99;
+    padding: 15px 0px;
+    display: flex;
+    backdrop-filter: saturate(180%) blur(90px);
+    /* background-image: linear-gradient(180deg, rgba(199, 199, 199, 0.5), rgba(203, 203, 203, 0.5)); */
+    background-image: linear-gradient(180deg, rgba(156, 156, 156, 0.1), rgba(145, 145, 145, 0.1));
+    justify-content: space-around;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.apma-header-wrap.closed {
+    transform: translateY(-100%);
+}
+
+/* .apma-header-logo-wrap {
+    width: 80px;
+    height: 80px;
+} */
+
+.apma-header-logo {
+    margin-top: -15px;
+    height: 100%;
+}
+
+.apma-header-logo>a {
+    /* width: 80%; */
+    margin-top: -15px;
+    height: 100%;
+    color: #fff;
+    font: 500 2.5rem "Shadows Into Light",
+        cursive;
+}
+
+
+
+
+.apma-header-center,
+.apma-header-icon {
+    display: flex;
+}
+
+
+
+.apma-header-center>li>a,
+.apma-header-icon>li>a {
+    color: #e9e9e9;
+    transition: all 0.5s;
+}
+
+.apma-header-center>li {
+    margin-left: 30px;
+    font: 400 18px "Shadows Into Light",
+        cursive;
+}
+
+.apma-header-icon>li {
+    margin-left: 10px;
+    font: 400 18px "Shadows Into Light",
+        cursive;
+}
+
+
+.apma-header-center>li:nth-child(1)>a:hover {
+    color: #363636;
+}
+
+.apma-header-center>li:nth-child(2)>a:hover {
+    color: rgb(90, 145, 68);
+}
+
+.apma-header-center>li:nth-child(3)>a:hover {
+    color: rgb(208, 92, 57);
+}
+
+.apma-header-center>li:nth-child(4)>a:hover {
+    color: rgb(122, 67, 159);
+}
+
+
+.apma-header-icon>li:nth-child(1)>a:hover,
+.apma-header-icon>li:nth-child(2)>a:hover,
+.apma-header-icon>li:nth-child(3)>a:hover {
+    color: #6a6a6a;
+}
+
+#menuicon {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #menuicon {
+        display: none;
+    }
+
+    #menuicon+label {
+        display: block;
+        position: fixed;
+        left: 20px;
+        top: 20px;
+        z-index: 9999;
+        width: 35px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    #menuicon+label span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 30px;
+        background-color: #fff;
+        transition: all .35s;
+    }
+
+    #menuicon+label span:nth-child(1) {
+        top: 0;
+    }
+
+    #menuicon+label span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #menuicon+label span:nth-child(3) {
+        bottom: 0%;
+    }
+
+    #menuicon:checked+label span:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    #menuicon:checked+label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menuicon:checked+label span:nth-child(3) {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+
+    #menuicon:checked+label+.apma-header-wrap {
+        left: 0;
+    }
+
+    #menuicon:checked+label+.apma-header-wrap .apma-header-logo-wrap {
+        left: 0%;
+    }
+
+
+    #menuicon:checked+label+.apma-header-wrap .apma-header-center-wrap,  #menuicon:checked+label+.apma-header-wrap .apma-header-icon-wrap{
+        left: 10%;
+    }
+
+    .apma-header-wrap {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        background-color: rgba(34, 34, 34, 0.9);
+        z-index: 999;
+        transition: all .35s;
+    }
+
+
+
+    .apma-header-logo-wrap {
+        /* 부모 #headerWrap */
+        position: fixed;
+        top: 45px;
+        left: -250px;
+        margin-left: 50px;
+        width: 100px;
+        z-index: 999;
+    }
+
+
+
+    .apma-header-center-wrap {
+        position: fixed;
+        left: -270px;
+        right: 0;
+        top: 22%;
+        margin: 0;
+        display: block;
+        z-index: 999;
+    }
+
+    .apma-header-icon-wrap {
+        position: fixed;
+        left: -270px;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        display: block;
+        z-index: 999;
+    }
+
+    .apma-header-center,
+    .apma-header-icon {
+        margin-bottom: 50px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apma-header-center>li,
+    .apma-header-icon>li {
+        margin-left: 25px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .apma-header-center>li>a,
+    .apma-header-icon>li>a {
+        font: 19px 'Shadows Into Light', cursive;
+        color: #fff;
+    }
+
+}

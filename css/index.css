@@ -496,7 +496,7 @@ header>nav>ul#side_menu>li:nth-child(2) img{
 }
 
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1080px){
 
       #menuicon{
         display:none;

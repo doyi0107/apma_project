@@ -1,219 +1,231 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFOMATION</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/infomation.css">
-    <script type="text/javascript" src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
-    <script src="../js/login.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFOMATION</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/infomation.css">
+  <link rel="stylesheet" href="../css/ampa-side-header.css">
+  <script type="text/javascript" src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+  <script src="../js/login.js"></script>
 </head>
+
 <body>
-    <div id="wrap">
+  <div id="wrap">
         <!-- header -->
         <input type="checkbox" id="menuicon">
         <label for="menuicon">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </label>
-        <div id="headerWrap">
-            <header>       
-              <h1><a href="../index.html">APMA</a></h1>
-              <nav>              
-                  <h2 class="hideClass">메인내비게이션</h2>
-                  <ul id="main_menu">
-                    <li><a href="./museum.html">MUSEUM</a></li>
-                    <li><a href="./exhibtion.html">EXHIBTION</a></li>
-                    <li><a href="./project.html">PROJECT</a></li>
-                    <li><a href="./notice_view.html">NOICE</a></li>
-                    <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
-                </ul>
-                <ul id="side_menu">
-                    <li><a href="./login.html">LOGIN</a></li>
-                    <li><a href="./sign_up.html">SIGN UP</a></li>
-                    <li><a href="#" onclick="mypage()">MY PAGE</a></li>
-                </ul>
-              </nav>
-
-            </header>
-        </div>
-
-            <!-- main -->
-            <main>
-              <section>
-                  <article>
-                    <h3>INFOMATION</h3>
-
-                      <div id="box01" class="box00">
-                          <div id="pic">
-                          <span></span>
-                          <img src="../src/all_image/open-closed.png">
-                          </div>
-
-                          <div id="info">
-                          <h4><span>I</span>.관람시간/휴관일</h4>
-                            <dl>
-                                <span></span>
-                                <dt>관람시간</dt>
-
-                                <dd>화-일10:00AM ~ 6:00PM</dd>
-                                <span></span>
-                              
-                                <dt>휴관일</dt>
-                                <dd>매주 월요일
-                                  매년 1월1일 / 설,추석 연휴
-                                  
-                                </dd>                               
-                                <span></span>
-                            </dl>
-        
-                      </div>
-                    </div>
-
-                      <div id="box02" class="box00">
-                          <div id="pic">
-                          <span></span>
-                          <img src="../src/all_image/pay.png">
-                          </div>
-
-                          <div id="info">
-                          <h4><span>II</span>.관람요금</h4>
-                            <dl>
-                                <span></span>
-                                <dt>•성인(만 19세 이상)</dt>
-                                <dd>11,000￦</dd>
-
-                                <dt>•학생(만 7-18세) 시니어(만 65세 이상)</dt>
-                                <dd>6,000￦</dd>
-
-                                <dt>•국가유공자,장애인(보호자 1명 포함) 어린이(만 3~6세)</dt>
-                                <dd>11,000￦</dd>
-
-                                <dt>•아모레퍼시픽 임직원36개월 미만ICOM 카드 소지자</dt>
-                                <dd>무료</dd>
-                                <span></span>
-                              
-                                <dt></dt>
-                                <dd><p>※ 발권은 관람종료 30분 전까지 가능 / 학생 할인은 학생증 제시 필요</p><p>※ 아모레퍼시픽 뷰티포인트로 입장권 및 아트상품 결제 가능 (10P=10원, 현금합산 가능)(단, 적립불가)</p><p>※ 아모레퍼시픽(그룹, 관계사 포함) 임직원은 사원증 인증시 본인 무료 및 동반 4인까지 50% 할인 가능</p>
-                                  
-                                </dd>                            
-                                <span></span>
-                            </dl>                    
-                      </div>
-                    </div>
-                    
-                    <div id="box02" class="box00">
-
-                      <div id="pic">
-                      <span></span>
-                      <img src="../src/all_image/guide.png">
-                      </div>
-
-                      <div id="info">
-                      <h4><span>III.</span>입장수칙안내</h4>
-                        <dl>
-                            <span></span>
-                            <dt>2m 거리 유지</dt>
-                            <dd>안전한 관람을 위해 다른 관람객과 거리를 유지해 주세요.</dd>
-                            <span></span>
-                          
-                            <dt>예약 확인</dt>
-                            <dd>홈페이지를 통해 예약하신 시간에 한하여 입장이 가능합니다.
-                            </dd>
-                            <span></span>
-
-                            <dt>티켓 발권</dt>
-                            <dd>티켓팅 후 안전한 관람을 위한 안내사항을 전달 받으세요.
-                            </dd>                    
-                            <span></span>
-                        </dl>
-                    
-
-                  </div>
-                    </div>
-
-                    <div id="map">
-                      <img src="../src/all_image/map.jpg" alt="">
-                    </div>
-
-                      <div id="box02" class="box00">
-                          <div id="pic">
-                          <span></span>
-                          <img src="../src/all_image/location.png">
-                          </div>
-
-                          <div id="info">
-                          <h4><span>IV.</span>오시는 길</h4>
-                            <dl>
-                                <span></span>
-                                <dt></dt>
-                                <dd><img src="../src/all_image/4호선.png" alt="">지하철 4호선 신용산역 1번 출구에서 지하 연결통로를 통하여 아모레퍼시픽 사옥으로 진입</dd>
-                                <span></span>
-                              
-                                <dt></dt>
-                                <dd><img  src="../src/all_image/1호선.png"  alt="">지하철 1호선·경의중앙선 용산역 1번 출구로 나와 래미안 용산을 지나서 신용산역 4번 출구 앞
-                                </dd>
-                                <span></span>
-
-                                <dt></dt>
-                                <dd>횡단보도를 이용하여 아모레퍼시픽 사옥으로 진입
-                                </dd>
-                                
-                                
-                                <span></span>
-                            </dl>
-                        
-
-                      </div>
-                    </div>
-
-                  </article>
-              </section>
-            </main>
-
-          <!-- footer -->
-          <div id="footerWrap">
-            <footer>
-                <div id="fu">
-                    <div id="ful">
-                    <dl>               
-                        <dt>Address:</dt>
-                        <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
-                        <dt>E-mail:</dt>
-                        <dd>E. museum &#64;amorepacific.com</dd>
-                        <dt>Phone:</dt>
-                        <dd>02-6040-2345</dd>
-                        
-                    </dl>
-                    </div>
-                    <div id="fur">
-                        <dl>
-                            <dt>관람시간</dt>
-                            <dd>화-일10:00AM ~ 6:00PM</dd>
-                        </dl>
-                        <dl>
-                            <dt>휴관일</dt>
-                            <dd>매주월요일
-                                매년1월1일 / 설,추석 연휴</dd>
-                        </dl>
-                    </div>
-                </div>
-                <div id="fd">
-                    <ul>
-                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
-                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
-                        <li><a href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기 운영방침</a></li>
-                    </ul>
-                    <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
-
-                </div>
-            </footer>
-          </div>
-      
+    <!-- 헤더 섹션 -->
+    <section class="apma-header-wrap">
+      <div class="apma-header-logo-wrap">
+        <p class="apma-header-logo"><a href="../index.html">APMA</a></p>
       </div>
-    </body>
-  </html>
+      <div class="apma-header-center-wrap">
+        <ul class="apma-header-center">
+          <li><a href="../pages/exhibtion.html">EXHIBTION</a></li>
+          <li><a href="../pages/project.html">PROJECT</a></li>
+          <li><a href="../pages/museum_shop.html">MUSEUM SHOP</a></li>
+          <li><a href="../pages/notice_view.html">NOICE</a></li>
+
+        </ul>
+      </div>
+
+
+      <div class="apma-header-icon-wrap">
+        <ul class="apma-header-icon">
+          <li><a href="../pages/login.html">LOGIN</a></li>
+          <li><a href="../pages/sign_up.html">SIGN UP</a></li>
+          <li><a href="#" onclick="mypage()">MY PAGE</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- main -->
+    <main>
+      <section>
+        <article>
+          <h3>INFOMATION</h3>
+
+          <div id="box01" class="box00">
+            <div id="pic">
+              <span></span>
+              <img src="../assets/notice/open-closed.png">
+            </div>
+
+            <div id="info">
+              <h4><span>I</span>.관람시간/휴관일</h4>
+              <dl>
+                <span></span>
+                <dt>관람시간</dt>
+
+                <dd>화-일10:00AM ~ 6:00PM</dd>
+                <span></span>
+
+                <dt>휴관일</dt>
+                <dd>매주 월요일
+                  매년 1월1일 / 설,추석 연휴
+
+                </dd>
+                <span></span>
+              </dl>
+
+            </div>
+          </div>
+
+          <div id="box02" class="box00">
+            <div id="pic">
+              <span></span>
+              <img src="../assets/notice/pay.png">
+            </div>
+
+            <div id="info">
+              <h4><span>II</span>.관람요금</h4>
+              <dl>
+                <span></span>
+                <dt>•성인(만 19세 이상)</dt>
+                <dd>11,000￦</dd>
+
+                <dt>•학생(만 7-18세) 시니어(만 65세 이상)</dt>
+                <dd>6,000￦</dd>
+
+                <dt>•국가유공자,장애인(보호자 1명 포함) 어린이(만 3~6세)</dt>
+                <dd>11,000￦</dd>
+
+                <dt>•아모레퍼시픽 임직원36개월 미만ICOM 카드 소지자</dt>
+                <dd>무료</dd>
+                <span></span>
+
+                <dt></dt>
+                <dd>
+                  <p>※ 발권은 관람종료 30분 전까지 가능 / 학생 할인은 학생증 제시 필요</p>
+                  <p>※ 아모레퍼시픽 뷰티포인트로 입장권 및 아트상품 결제 가능 (10P=10원, 현금합산 가능)(단, 적립불가)</p>
+                  <p>※ 아모레퍼시픽(그룹, 관계사 포함) 임직원은 사원증 인증시 본인 무료 및 동반 4인까지 50% 할인 가능</p>
+
+                </dd>
+                <span></span>
+              </dl>
+            </div>
+          </div>
+
+          <div id="box02" class="box00">
+
+            <div id="pic">
+              <span></span>
+              <img src="../assets/notice/guide.png">
+            </div>
+
+            <div id="info">
+              <h4><span>III.</span>입장수칙안내</h4>
+              <dl>
+                <span></span>
+                <dt>2m 거리 유지</dt>
+                <dd>안전한 관람을 위해 다른 관람객과 거리를 유지해 주세요.</dd>
+                <span></span>
+
+                <dt>예약 확인</dt>
+                <dd>홈페이지를 통해 예약하신 시간에 한하여 입장이 가능합니다.
+                </dd>
+                <span></span>
+
+                <dt>티켓 발권</dt>
+                <dd>티켓팅 후 안전한 관람을 위한 안내사항을 전달 받으세요.
+                </dd>
+                <span></span>
+              </dl>
+
+
+            </div>
+          </div>
+
+          <div id="map">
+            <img src="../assets/notice/map.jpg" alt="">
+          </div>
+
+          <div id="box02" class="box00">
+            <div id="pic">
+              <span></span>
+              <img src="../assets/notice/location.png">
+            </div>
+
+            <div id="info">
+              <h4><span>IV.</span>오시는 길</h4>
+              <dl>
+                <span></span>
+                <dt></dt>
+                <dd><img src="../assets/notice/4호선.png" alt="">지하철 4호선 신용산역 1번 출구에서 지하 연결통로를 통하여 아모레퍼시픽 사옥으로 진입</dd>
+                <span></span>
+
+                <dt></dt>
+                <dd><img src="../assets/notice/1호선.png" alt="">지하철 1호선·경의중앙선 용산역 1번 출구로 나와 래미안 용산을 지나서 신용산역 4번 출구 앞
+                </dd>
+                <span></span>
+
+                <dt></dt>
+                <dd>횡단보도를 이용하여 아모레퍼시픽 사옥으로 진입
+                </dd>
+
+
+                <span></span>
+              </dl>
+
+
+            </div>
+          </div>
+
+        </article>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <div id="footerWrap">
+      <footer>
+        <div id="fu">
+          <div id="ful">
+            <dl>
+              <dt>Address:</dt>
+              <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
+              <dt>E-mail:</dt>
+              <dd>E. museum &#64;amorepacific.com</dd>
+              <dt>Phone:</dt>
+              <dd>02-6040-2345</dd>
+
+            </dl>
+          </div>
+          <div id="fur">
+            <dl>
+              <dt>관람시간</dt>
+              <dd>화-일10:00AM ~ 6:00PM</dd>
+            </dl>
+            <dl>
+              <dt>휴관일</dt>
+              <dd>매주월요일
+                매년1월1일 / 설,추석 연휴</dd>
+            </dl>
+          </div>
+        </div>
+        <div id="fd">
+          <ul>
+            <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
+            <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
+            <li><a
+                href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기
+                운영방침</a></li>
+          </ul>
+          <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
+
+        </div>
+      </footer>
+    </div>
+
+  </div>
+</body>
+
+</html>

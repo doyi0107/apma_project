@@ -1,188 +1,259 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAIN</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/reset.css">
-
-    <script type="text/javascript" src="./js/index.js"></script>
-    <script type="text/javascript" src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>APMA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="wrap">
-        <!-- header -->
+    <!-- 헤더 섹션 -->
         <input type="checkbox" id="menuicon">
         <label for="menuicon">
             <span></span>
             <span></span>
             <span></span>
         </label>
-        <div id="headerWrap">
-            <header>       
-                <h1><a href="../index.html">APMA</a></h1>
-                    <nav>              
-                        <h2 class="hideClass">메인내비게이션</h2>
-                        <ul id="main_menu">
-                            <li><a href="./pages/museum.html" >MUSEUM
-                            </a></li>
-                            <li><a href="./pages/exhibtion.html">EXHIBTION</a></li>
-                            <li><a href="./pages/project.html">PROJECT</a></li>
-                            <li><a href="./pages/notice_view.html">NOICE</a></li>
-                            <li><a href="./pages/museum_shop.html">MUSEUM SHOP</a></li>
-                        </ul>
-                        <ul id="side_menu">
-                            <li><a href="./pages/login.html">LOGIN</a></li>
-                            <li><a href="./pages/sign_up.html">SIGN UP</a></li>
-                            <li><a href="#" onclick="mypage()">MY PAGE</a></li>
-                        </ul>
-                    </nav>
-
-            </header>
+    <section class="apma-header-wrap">
+        <div class="apma-header-logo-wrap">
+            <div class="apma-header-logo"><a href="./index.html">APMA</a></div>
         </div>
-        <main>  
-            <article>
-                <!-- box01 -->
-                <div id="box01">
-                    <section>
+        <div class="apma-header-center-wrap">
+            <ul class="apma-header-center">
+                <li><a href="./pages/exhibtion.html">EXHIBTION</a></li>
+                <li><a href="./pages/project.html">PROJECT</a></li>
+                <li><a href="./pages/museum_shop.html">MUSEUM SHOP</a></li>
+                <li><a href="./pages/notice_view.html">NOICE</a></li>
 
-                        <div class="slider"> 
+            </ul>
+        </div>
 
 
-                            <div class="myslider fade" style="display: block;">
-                                <div class="txt">
-                                    <h1>Sterling Ruby, &lt;The Window. cotton candy&gt;</h1>
-                                    <p>A window is a kind of boundary where two different spaces collide, <br> and it itself contains the meaning of an "unfair combination."</p>
-                                </div>
-                                <img src="../src/all_image/main_image8.jpeg" alt="1" >  
-                            </div>   
-                            <div class="myslider fade">
-                                <div class="txt">
-                                    <h1>ADHD, &lt;the process of death&gt;</h1>
-                                    <p>You can see noble and beautiful plum blossoms<br>in various folding screens.</p>
-                                </div>
-                                <img src="../src/all_image/main_image5.jpeg" alt="2" >  
-                            </div>
-                            <div class="myslider fade">
-                                <div class="txt">
-                                    <h1>Joseon, the land of folding screens</h1>
-                                    <p>I hope it will be the year of the black rabbit, <br> who leaps wisely and flexibly like a rabbit with many meanings and appearances. </p>
-                                </div>
-                                <img src="../src/all_image/main_image7.jpeg" alt="3">     
-                            </div> 
-                            
-                            <a class="prev" onclick="plusSliders(-1)">
-                                <span></span>
-                                <span></span>
-                            </a>
-                            <a class="next" onclick="plusSliders(1)">
-                                <span></span>
-                                <span></span>
-                            </a>
-    
-                            <div class="dotsbox" style="text-emphasis: center;">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                            </div>
-                        </div> 
-                    
+        <div class="apma-header-icon-wrap">
+            <ul class="apma-header-icon">
+                <li><a href="./pages/login.html">LOGIN</a></li>
+                <li><a href="./pages/sign_up.html">SIGN UP</a></li>
+                <li><a href="#" onclick="mypage()">MY PAGE</a></li>
+            </ul>
+        </div>
+    </section>
 
-                    </section>
+    <!-- main 섹션 -->
+    <section class="apma-main-wrap">
+        <!-- 이미지 -->
+        <div class="apma-main-img-wrap">
+            <img class="apma-main-img" src="./assets/main/main_image1.jpeg">
+            <img class="apma-main-img02" src="./assets/main/main_image02.png">
+            <img class="apma-main-img03" src="./assets/main/8.JPG">
+        </div>
+
+        <!-- 인트로 4개 메뉴 -->
+        <div class="apma-main-menu-wrap">
+            <div class="apma-main-menu-title">
+                <p>APMA</p>
+            </div>
+            <div class="apma-main-menu-subtitle">
+                <p class="apma-main-menu00 apma-main-menu01">EXHIBTION</p>
+                <p class="apma-main-menu00 apma-main-menu02">PROGRAM</p>
+                <p class="apma-main-menu00 apma-main-menu03">INFO</p>
+            </div>
+        </div>
+
+        <!-- 미술관 소개 -->
+        <div class="apma-intro-meseum-wrap">
+            <div class="apma-intro-meseum">
+                <p class="apma-intro01 apma-intro">아모레퍼시픽미술관은 회사의 창업자 서성환 선대회장이 수집한 미술품을 기반으로 출발했습니다.<br>
+                    1979년 태평양박물관을 시작으로 2009년에는 아모레퍼시픽미술관으로 명칭을 바꾸고, 고미술과 현대미술을 아우는 미술관으로서 전시와 연구, 출판 등 다양한 활동을 펼쳐 왔습니다.
+                </p><br>
+                <p class="apma-intro02 apma-intro">
+                    2018년 아모레퍼시픽미술관은 ‘예술’이라는 인류 공통의 언어로 작가와 관람객이 소통하는<br>
+                    다양한 공간을 갖춰 서울 용산 아모레퍼시픽 본사에 새롭게 문을 열었습니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 전시설명섹션 -->
+        <div class="apma-explain-wrap">
+
+            <!-- explain01 -->
+            <div class="apma-explain01 apma-explain">
+                <div class="apma-explain01-inner apma-explain00-inner">
+                    <span class="apma-explain01-top apma-explain-top"></span>
+
+                    <h4 class="apma-explain-title apma-explain-title01">
+                        Steven Harrington <br> &lt;우리 주위에서&gt;
+                    </h4>
+                    <p class="apma-explain-text apma-explain-text01">두 개의 캔버스로 이루어진 대형 회화 &lt;우리 주위에서&gt;에는 작가 작업의 메인
+                        캐릭터인 강아지 ‘멜로’와 장난기 가득한
+                        야자수들, 변형된 음양 상징, 장난감 블록 같은 형상들이 서로 얽혀 부유하고 있습니다. <br><br> 모두
+                        작품에 자주 등장하는 대표적인 모티프로 도시의 다채로운 환경에서 영감을 받았습니다. 그중 2008년에 탄생한 ‘멜로’는 특정 인종, 종교, 성별과 연관되지 않는 ‘보편적인’
+                        존재로서 작가의 생각과 관심사를
+                        전달하는 메신저 역할을 합니다.<br><br> 해링턴은 캘리포니아에서는 너무 흔해 특별할 것 없는 야자수 같은 요소에도 생명을 불어넣어 이를 새로이 바라보게 합니다. 생동감
+                        넘치는
+                        밝고 화려한 색감은 캘리포니아의 따사로운
+                        햇살과 활기찬 도시의 모습을 떠올리게 하며 희망과 무한한 가능성의 메시지를 전합니다.</p>
+                    <span class="apma-explain01-bottom apma-explain-bottom"></span>
                 </div>
-                <!-- box02 -->
-                <div id="box02">
-                    <section>
-                        <div class="container">
-                            <div class="item item1" id="item1">
-                                <a href="../pages/exhibtion.html"><img src="../src/all_image/item1_image.jpg" alt="고흐"></a>
-                                <p>[GOGH] HYUNG KOO KANG</p>
-                            </div>
-                            <div class="item item2">
-                                <a href="../pages/exhibtion.html#eh2"><img src="../src/all_image/item2_image.jpeg" alt="일월오봉도"></a>
-                                <p>[Sun and Moon and Five Peaks] Park Yeojoo</p>
-                            </div>
-                            <div class="item item3">
-                                <a href="../pages/exhibtion.html#eh3"><img src="../src/all_image/item3_image.jpg" alt="무제"></a>
-                                <p>[Andreas Gusky] Belitz, Untitled XIX</p>
-                            </div>
-                            <div class="item item4">
-                                <a href="../pages/exhibtion.html#eh4"><img src="../src/all_image/item4_image.jpeg" alt="7"></a>
-                                <p>[APMA, CHAPTER THREE] Number,7</p>
-                            </div>
-                            <div class="item item5">
-                                <a href="../pages/exhibtion.html#eh5"><img src="../src/all_image/item5_image.jpeg" alt="검은 흙"></a>
-                                <p>[Merry course: Painting with light] Black soil</p>
-                            </div>
-                        </div>
-                    </section>
+            </div>
+
+            <!-- explain02 -->
+            <div class="apma-explain02 apma-explain">
+                <div class="apma-explain02-inner apma-explain00-inner">
+                    <span class="apma-explain02-top apma-explain-top"></span>
+                    <h4 class="apma-explain-title apma-explain-title02">
+                        Anne Imhof <br> &lt;구름 III&gt;
+                    </h4>
+                    <p class="apma-explain-text apma-explain-text02">안네 임호프(1978-)는 독일 중부의 기센에서 태어났습니다. 사실주의에 입각해 사회와
+                        개인, 그리고 신체를 바라보는 작가로, 여러 주제와 매체를 융합하며 다층적인 세계관을 구성합니다.
+                        철근과 콘크리트 등의 산업
+                        구조물이 가득한 공간에 작품을 설치하여 공간 간의 경계를 허물거나, 즉흥적 퍼포먼스를 수행하고 이를 영상으로 재해석하는 등 작품을 통해 독특한 긴장감을
+                        조성합니다.<br><br>
+
+
+
+                        화면을 가득 메운 청록색과 붉은색의 구름은 불안정하게 중첩되어 몽환적인 분위기와 긴장감을 자아냅니다. 작가가 최근에 도입한 기법을 적용한 작품으로, 하나의 도상을 두 개의
+                        색상으로 겹치게 배치함으로써 여러 층의
+                        경계가 공존하는 입체적인 이미지를 구축합니다. <br><br>이처럼 평면의 회화 위에 3차원적인 효과를 창출하는 작가는 추상 작업에서 벗어나 자연과 비자연, 인간과 기계
+                        등의 대비를 탐구한 구상 회화를 선보이고 있습니다.</p>
+                    <span class="apma-explain02-bottom apma-explain-bottom"></span>
                 </div>
-                <div id="box03">
-                    <aside>
-                        <ul>
-                            <li><a href="../pages/museum.html"><img src="../src/all_image/museum_image.jpeg" alt="MUSEUM"></a>
-                            <p>MUSEUM</p>
-                            </li>
-                            <li><a href="../pages/project.html"><img src="../src/all_image/project_image.jpeg" alt="PROJECT"></a>
-                            <p>PROJECT</p>
-                            </li>
-                            <li><a href="../pages/event.html"><img src="../src/all_image/event_image.jpeg" alt="EVENT"></a>
-                            <p>EVENT</p>
-                            </li>
-                            <li><a href="../pages/museum_shop.html"><img src="../src/all_image/museum_image2.jpeg" alt="MUSEUM SHOP"></a>
-                            <p>MUSEUM SHOP</p></li>
-                            <li><a href="../pages/infomation.html"><img src="../src/all_image/information_image.jpg" alt="INFO"></a>
-                            <p>INFOMATION</p>
-                        </li>
-                        </ul>
-                    </aside>
+            </div>
+
+            <!-- explain03 -->
+            <div class="apma-explain03 apma-explain">
+                <div class="apma-explain03-inner apma-explain00-inner">
+                    <span class="apma-explain03-top apma-explain-top"></span>
+                    <h4 class="apma-explain-title apma-explain-title03">
+                        Katherine Bernhardt <br> &lt;오렌지 에어로빅 샤워&gt;
+                    </h4>
+                    <p class="apma-explain-text apma-explain-text03">1975년에 미국에서 태어난 캐서린 번하드는 현재 뉴욕을 중심으로 활동하는 작가입니다.
+                        크록스, 다스베이더, 핑크 팬더, 포켓몬 등 대중문화 속 이미지들을 적극적으로 차용하며, 다채롭고 화려한 색상이 돋보이는 대규모
+                        작품들을 선보여왔습니다.<br><br> 작품의 특징 중 하나는 빠른 운동감으로, 작가는 스튜디오 바닥에 캔버스를 펼쳐놓고 스프레이 페인트를 이용하여 비교적 빠른 시간 안에
+                        작품을 완성합니다. 과감한 기법과 색채의 사용, 대담한
+                        이미지의 구성은 앙리 마티스의 작품에서 볼 수 있는 장식적 형태와 패턴으로부터 받은 영향을 보여줍니다.</p>
+                    <span class="apma-explain03-bottom apma-explain-bottom"></span>
                 </div>
-            </article>
-        </main>
-    
-                <!-- footer -->
-        <div id="footerWrap">
-            <footer>
-                <div id="fu">
-                    <div id="ful">
-                    <dl>               
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="apma-enter-menu-wrap">
+        <img class="apma-enter-menu-back-img" src="./assets/main/enter_menu_back_img.png">
+
+
+        <div class="apma-enter-menu-inner">
+
+            <div class="apma-enter-menu01 apma-enter-menu">
+                <p class="apma-enter-title">EXHIBTION</p>
+                <div class="apma-enter-menu-img-wrap">
+                    <a href="./pages/exhibtion.html"><img class="apma-enter-menu-img01 apma-enter-menu-img"
+                            src="/assets/main/enter_menu01.png"></a>
+                </div>
+                <p class="apma-enter-menu-text">
+                    2024년 상반기 기획전으로 로스앤젤레스를 중심으로 활동해 온 스티븐 해링턴의 전시 개최
+                </p>
+            </div>
+            <div class="apma-enter-menu02 apma-enter-menu">
+                <p class="apma-enter-title">PROJECT</p>
+                <div class="apma-enter-menu-img-wrap">
+                    <a href="./pages/project.html"><img class="apma-enter-menu-img02 apma-enter-menu-img"
+                            src="./assets/main/enter_menu02.jpg"></a>
+                </div>
+                <p class="apma-enter-menu-text">
+                    현대미술 발전에 기여하고자 2013년부터 진행해온 현대미술 중장기 프로젝트
+                </p>
+            </div>
+            <div class="apma-enter-menu03 apma-enter-menu">
+                <p class="apma-enter-title">MUSUEM SHOP</p>
+                <div class="apma-enter-menu-img-wrap">
+                    <a href="./pages/museum_shop.html"><img class="apma-enter-menu-img03 apma-enter-menu-img"
+                            src="./assets/main/main_image03.jpeg"></a>
+                </div>
+                <p class="apma-enter-menu-text">
+                    아모레퍼시픽에서 전시하고 있는 다양한 상품 판매
+                </p>
+            </div>
+            <div class="apma-enter-menu04 apma-enter-menu">
+                <p class="apma-enter-title">NOTICE</p>
+                <div class="apma-enter-menu-img-wrap">
+                    <a href="./pages/notice_view.html"><img class="apma-enter-menu-img04 apma-enter-menu-img"
+                            src="./assets/main/enter_menu03.jpg"></a>
+                </div>
+                <p class="apma-enter-menu-text">
+                    이벤트부터 티켓 요금까지 다양한 공지사항들을 볼 수 있음
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- footer -->
+    <section id="footerWrap">
+        <footer>
+            <div id="fu">
+                <div id="ful">
+                    <dl>
                         <dt>Address:</dt>
                         <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
                         <dt>E-mail:</dt>
                         <dd>E. museum &#64;amorepacific.com</dd>
                         <dt>Phone:</dt>
                         <dd>02-6040-2345</dd>
-                        
-                    </dl>
-                    </div>
-                    <div id="fur">
-                        <dl>
-                            <dt>관람시간</dt>
-                            <dd>화-일10:00AM ~ 6:00PM</dd>
-                        </dl>
-                        <dl>
-                            <dt>휴관일</dt>
-                            <dd>매주월요일
-                                매년1월1일 / 설,추석 연휴</dd>
-                        </dl>
-                    </div>
-                </div>
-                <div id="fd">
-                    <ul>
-                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
-                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
-                        <li><a href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기 운영방침</a></li>
-                    </ul>
-                    <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
 
+                    </dl>
                 </div>
-            </footer>
-        </div>       
-    </div>
-        <script type="text/javascript" src="./js/apma.js"></script>
+                <div id="fur">
+                    <dl>
+                        <dt>관람시간</dt>
+                        <dd>화-일10:00AM ~ 6:00PM</dd>
+                    </dl>
+                    <dl>
+                        <dt>휴관일</dt>
+                        <dd>매주월요일
+                            매년1월1일 / 설,추석 연휴</dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="fd">
+                <ul>
+                    <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
+                    <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
+                    <li><a
+                            href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기
+                            운영방침</a></li>
+                </ul>
+                <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
+
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="./js/scroll-smooth.js"></script>
+    <script src="./js/apma-main.js"></script>
+    <script src="./js/ampa-header.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

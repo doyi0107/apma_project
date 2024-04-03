@@ -14,6 +14,20 @@ function mypage(){
 
 function login() {
 
+    	if ($("#userId").val().trim().length == 0) {
+        $(this).val("");
+        alert("아이디를 입력해주세요.");
+        $("#userId").focus();
+        return;
+      }
+
+      if ($("#userPw").val().trim().length == 0) {
+        $(this).val("");
+        alert("비밀번호를 입력해주세요.");
+        $("#userPw").focus();
+        return;
+      }
+
 
 	var login_info = {
 		username :$("#userId").val(),

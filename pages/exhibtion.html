@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EXHIBTION</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXHIBTION</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/exhibtion.css">
+    <link rel="stylesheet" href="../css/ampa-side-header.css">
     <script type="text/javascript" src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
     <script src="../js/exhibtion.js"></script>
     <script src="../js/login.js"></script>
 
 </head>
+
 <body>
     <div id="Wrap">
         <!-- header -->
@@ -22,266 +25,289 @@
             <span></span>
             <span></span>
         </label>
-        <div id="headerWrap">
-            <header>       
-              <h1><a href="../index.html">APMA</a></h1>
-              <nav>              
-                  <h2 class="hideClass">메인내비게이션</h2>
-                <ul id="main_menu">
-                        <li><a href="./museum.html">MUSEUM</a></li>
-                        <li><a href="./exhibtion.html">EXHIBTION</a></li>
-                        <li><a href="./project.html">PROJECT</a></li>
-                        <li><a href="./notice_view.html">NOICE</a></li>
-                        <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
-                    </ul>
-                    <ul id="side_menu">
-                        <li><a href="./login.html">LOGIN</a></li>
-                        <li><a href="./sign_up.html">SIGN UP</a></li>
-                        <li><a href="#" onclick="mypage()">MY PAGE</a></li>
-                    </ul>
-              </nav>
-
-            </header>
+    <!-- 헤더 섹션 -->
+    <section class="apma-header-wrap">
+        <div class="apma-header-logo-wrap">
+            <p class="apma-header-logo"><a href="../index.html">APMA</a></p>
         </div>
+        <div class="apma-header-center-wrap">
+            <ul class="apma-header-center">
+                <li><a href="../pages/exhibtion.html">EXHIBTION</a></li>
+                <li><a href="../pages/project.html">PROJECT</a></li>
+                <li><a href="../pages/museum_shop.html">MUSEUM SHOP</a></li>
+                <li><a href="../pages/notice_view.html">NOICE</a></li>
+    
+            </ul>
+        </div>
+    
+    
+        <div class="apma-header-icon-wrap">
+            <ul class="apma-header-icon">
+                <li><a href="../pages/login.html">LOGIN</a></li>
+                <li><a href="../pages/sign_up.html">SIGN UP</a></li>
+                <li><a href="#" onclick="mypage()">MY PAGE</a></li>
+            </ul>
+        </div>
+    </section>
         <!-- main -->
-          <main>
-              <section>
+        <main>
+            <section>
                 <!-- item1  -->
-                <div class="box box01">   
-                  <figure id="eh1">
-                    <h3 class="hideClass">EXHIBTION</h3>
-                    <img src="../src/all_image/item1_image.jpg" alt="Head">
-                    
-                    <div id="modal1" class="modal">
-                      <div>
-                          <div class="main_text">
-                          <figure>
-                            <img src="../src/all_image/item1_image.jpg" alt="고흐">
-                          </figure>                        
-                          <figcaption>
-                            <dl>
-                              <dt>강형구,&lt;GOGH&gt; </dt>
-                              <dd>대형 초상 작업을 하는 강형구는 잡지나 도록에 실린 사진에 상상력을 더하여 미세한 주름, 피부결, 머리카락과 같은 극사실주의적 디테일을 표현하는 작가입니다<br>                        이 작품은 빈센트 반 고흐를 묘사한 초상화로 세상을 등지고 외롭게 싸운 고흐의 인생을 비장한 표정을 통해 드러내었습니다. <br>
-                                맑고 푸른 눈동자는 보는 이로 하여금 얼굴 이면에 있는 존재의 본질과 정신성을 느끼고 교감하게 합니다. 특히 극사실주의적인 초상화처럼 보여지지만, 사실은 허구가 더해진 이미지라는 점에서 더욱 흥미로운 작품입니다. 
+                <div class="box box01">
+                    <figure id="eh1">
+                        <h3 class="hideClass">EXHIBTION</h3>
+                        <img src="../assets/exhibtion/item1_image.jpg" alt="Head">
 
-                              </dd>
-                            </dl>
-                          </figcaption>
-                          </div>
-                          <ul>
-                            <li><img src="../src/all_image/item1_image.jpg" alt="고흐"></li>
-                            <li><img src="../src/all_image/item1_sub1.jpeg" alt="고흐2"></li>
-                            <li><img src="../src/all_image/item1_sub2.jpeg"alt="고흐3"></li>
-                          </ul>
-                          </div>
+                        <div id="modal1" class="modal">
+                            <div>
+                                <div class="main_text">
+                                    <figure>
+                                        <img src="../assets/exhibtion/item1_image.black.jpg" alt="고흐">
+                                    </figure>
+                                    <figcaption>
+                                        <dl>
+                                            <dt>강형구,&lt;GOGH&gt; </dt>
+                                            <dd>대형 초상 작업을 하는 강형구는 잡지나 도록에 실린 사진에 상상력을 더하여 미세한 주름, 피부결, 머리카락과 같은 극사실주의적
+                                                디테일을 표현하는 작가입니다<br> 이 작품은 빈센트 반 고흐를 묘사한 초상화로 세상을 등지고 외롭게 싸운 고흐의 인생을 비장한
+                                                표정을 통해 드러내었습니다. <br>
+                                                맑고 푸른 눈동자는 보는 이로 하여금 얼굴 이면에 있는 존재의 본질과 정신성을 느끼고 교감하게 합니다. 특히 극사실주의적인
+                                                초상화처럼 보여지지만, 사실은 허구가 더해진 이미지라는 점에서 더욱 흥미로운 작품입니다.
 
-                        <p id="mClose1" class="mClose">
-                          <span></span>
-                          <span></span>
-                        </p>
-                    </div>
-                  </figure>
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </div>
+                                <ul>
+                                    <li><img src="../assets/exhibtion/item1_image.jpg" alt="고흐"></li>
+                                    <li><img src="../assets/exhibtion/item1_sub1.jpeg" alt="고흐2"></li>
+                                    <li><img src="../assets/exhibtion/item1_sub2.jpeg" alt="고흐3"></li>
+                                </ul>
+                            </div>
+
+                            <p id="mClose1" class="mClose">
+                                <span></span>
+                                <span></span>
+                            </p>
+                        </div>
+                    </figure>
                 </div>
 
-                <!--item2-->               
+                <!--item2-->
                 <div class="box same_box box02">
-                  <figure id="eh2">
-                    <img src="../src/all_image/item2_image.jpeg" alt="일월오봉도">
+                    <figure id="eh2">
+                        <img src="../assets/exhibtion/item2_image.jpeg" alt="일월오봉도">
 
-                    <div id="modal2" class="modal">
-                      <div>
-                          <div class="main_text">
-                          <figure>
-                            <img src="../src/all_image/item2_image.jpeg" alt="일월오봉도">
-                          </figure>                   
-                          <figcaption>
-                            <dl>
-                              <dt>박여주,&lt;일월오봉도lll&gt;</dt>
-                              <dd>규격화된 건축 구조 안에서 새로운 공간을 만드는 박여주는 사람들이 평소에 잘 인지하지 못하는 공간 그 자체에 주목합니다. <br>
-                                <일월오봉도 lll>(2022)에서 작가는 빛과 구조물을 이용해 조선시대 왕의 상징이자 어좌 뒤에 놓였던 일월오봉도를 설치 작업으로 구현합니다.<br>
-                                해와 달 그리고 다섯 개의 산봉우리를 그린 그림을 뜻하는 일월오봉도가 미술관 공간 안에서 평면과 입체를 오가며 감각적인 작업으로 펼쳐집니다. <br>작가는 해와 달이 함께 떠 있는 그림에서부터 영감을 받아 시공을 초월하는 풍경을 그려내고자 했습니다. 왕이 그 앞에 앉아야 비로소 완성되는 일월오봉도처럼, 박여주의 작품 또한 관람객이 직접 그림 속 공간으로 들어서야 온전히 체험될 수 있습니다. 
-                              </dd>
-                            </dl>
-                          </figcaption> 
-                          </div>
-                          <ul>
-                            <li> <img src="../src/all_image/item2_image.jpeg" alt="일월오봉도"></li>
-                            <li><img src="../src/all_image/item2_sub1.jpeg"alt="일월오봉도2"></li>
-                            <li><img src="../src/all_image/item2_sub2.jpeg"alt="일월오봉도3"></li>
-                          </ul>
-                      </div>      
-                      <!-- x -->
-                      <p id="mClose2"  class="mClose">
-                        <span></span>
-                        <span></span>
-                      </p>
-                    </div>             
-                  </figure>                
+                        <div id="modal2" class="modal">
+                            <div>
+                                <div class="main_text">
+                                    <figure>
+                                        <img src="../assets/exhibtion/item2_image.jpeg" alt="일월오봉도">
+                                    </figure>
+                                    <figcaption>
+                                        <dl>
+                                            <dt>박여주,&lt;일월오봉도lll&gt;</dt>
+                                            <dd>규격화된 건축 구조 안에서 새로운 공간을 만드는 박여주는 사람들이 평소에 잘 인지하지 못하는 공간 그 자체에 주목합니다. <br>
+                                                <일월오봉도 lll>(2022)에서 작가는 빛과 구조물을 이용해 조선시대 왕의 상징이자 어좌 뒤에 놓였던 일월오봉도를 설치
+                                                    작업으로 구현합니다.<br>
+                                                    해와 달 그리고 다섯 개의 산봉우리를 그린 그림을 뜻하는 일월오봉도가 미술관 공간 안에서 평면과 입체를 오가며 감각적인
+                                                    작업으로 펼쳐집니다. <br>작가는 해와 달이 함께 떠 있는 그림에서부터 영감을 받아 시공을 초월하는 풍경을 그려내고자
+                                                    했습니다. 왕이 그 앞에 앉아야 비로소 완성되는 일월오봉도처럼, 박여주의 작품 또한 관람객이 직접 그림 속 공간으로
+                                                    들어서야 온전히 체험될 수 있습니다.
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </div>
+                                <ul>
+                                    <li> <img src="../assets/exhibtion/item2_image.jpeg" alt="일월오봉도"></li>
+                                    <li><img src="../assets/exhibtion/item2_sub1.jpeg" alt="일월오봉도2"></li>
+                                    <li><img src="../assets/exhibtion/item2_sub2.jpeg" alt="일월오봉도3"></li>
+                                </ul>
+                            </div>
+                            <!-- x -->
+                            <p id="mClose2" class="mClose">
+                                <span></span>
+                                <span></span>
+                            </p>
+                        </div>
+                    </figure>
                 </div>
 
                 <!-- item3 -->
-                <div class="box same_box box01" >
-                  <figure id="eh3">
-                    <img src="../src/all_image/item3_image.JPG" alt="무제">
+                <div class="box same_box box01">
+                    <figure id="eh3">
+                        <img src="../assets/exhibtion/item3_image.JPG" alt="무제">
 
-                    <div id="modal3" class="modal">
-                      <div>
-                        <div class="main_text">
-                          <figure>
-                            <img src="../src/all_image/item3_image.JPG" alt="무제">
-                          </figure>
-                          <figcaption>
-                            <dl>
-                              <dt>벨리츠, &lt;무제&gt;</dt>
-                              <dd> 작품<무제 XIX>은 멀리서 보면 분홍색과 오렌지 색으로 이루어진 색면 회화처럼 보이지만, 가까이 다가가면 수백만 송이의 튤립으로 가득 찬 들판이라는 것을 알게 됩니다. 밭 고랑에 심어져 있는 튤립 하나하나는 작지만 그 모습이 분명하게 드러나 있습니다. <br> 세번째 작품은 단조로울 정도로 번갈아 이어지는 검은색과 미색의 수평의 띠로 이루어진 작품을 자세히 보면 아스파라거스 밭을 덮고 있는 검은 비닐 시트와 시트 사이에 드러나는 흙이라는 것을 알 수 있습니다. 비닐 시트를 누비며 아스파라거스를 수확해서 작은 수레에 싣고 있는 사람들은 아주 작게 나타납니다.
-                              </dd>
-                            </dl>
-                          </figcaption> 
+                        <div id="modal3" class="modal">
+                            <div>
+                                <div class="main_text">
+                                    <figure>
+                                        <img src="../assets/exhibtion/item3_image.JPG" alt="무제">
+                                    </figure>
+                                    <figcaption>
+                                        <dl>
+                                            <dt>벨리츠, &lt;무제&gt;</dt>
+                                            <dd> 작품<무제 XIX>은 멀리서 보면 분홍색과 오렌지 색으로 이루어진 색면 회화처럼 보이지만, 가까이 다가가면 수백만 송이의
+                                                    튤립으로 가득 찬 들판이라는 것을 알게 됩니다. 밭 고랑에 심어져 있는 튤립 하나하나는 작지만 그 모습이 분명하게 드러나
+                                                    있습니다. <br> 세번째 작품은 단조로울 정도로 번갈아 이어지는 검은색과 미색의 수평의 띠로 이루어진 작품을 자세히 보면
+                                                    아스파라거스 밭을 덮고 있는 검은 비닐 시트와 시트 사이에 드러나는 흙이라는 것을 알 수 있습니다. 비닐 시트를 누비며
+                                                    아스파라거스를 수확해서 작은 수레에 싣고 있는 사람들은 아주 작게 나타납니다.
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </div>
+                                <ul>
+                                    <li><img src="../assets/exhibtion/item3_image.JPG" alt="무제"></li>
+                                    <li><img src="../assets/exhibtion/item3_sub1.JPG" alt="무제2"></li>
+                                    <li><img src="../assets/exhibtion/item3_sub2.jpeg" alt="무제3"></li>
+                                </ul>
+                            </div>
+                            <!-- x -->
+                            <p id="mClose3" class="mClose">
+                                <span></span>
+                                <span></span>
+                            </p>
                         </div>
-                        <ul>
-                          <li><img src="../src/all_image/item3_image.JPG" alt="무제"></li>
-                          <li><img src="../src/all_image/item3_sub1.JPG" alt="무제2"></li>
-                          <li><img src="../src/all_image/item3_sub2.jpeg" alt="무제3"></li>
-                        </ul>
-                      </div>                  
-                      <!-- x -->
-                      <p id="mClose3"  class="mClose">
-                        <span></span>
-                        <span></span>
-                      </p>                                
-                    </div>
-                  </figure>               
+                    </figure>
                 </div>
 
                 <!-- item4 -->
                 <div class="box same_box box02">
-                  <figure id="eh4">
-                    <img src="../src/all_image/item4_image.jpeg"alt="7">
+                    <figure id="eh4">
+                        <img src="../assets/exhibtion/item4_image.jpeg" alt="7">
 
-                    <div id="modal4" class="modal">
-                      <div>
-                        <div class="main_text">
-                          <figure>
-                            <img src="../src/all_image/item4_sub1.jpeg" alt="7">
-                          </figure>
-                          <figcaption>
-                            <dl>
-                              <dt>얀 보, &lt;숫자 (7)&gt;</dt>
-                              <dd>얀 보는 베트남에 수입된 소비재 운송용 종이 상자에 금박을 입히는 작품을 지속적으로 제작해왔습니다. 재활용 더미에서 다 쓰고 버려진 상자를 수집하고 태국 전통 금박 공예가에게 보내 알파벳, 숫자, 상표 로고, 또는 성조기 등의 모양으로 치장하는 작업입니다<br>
-                                <숫자 (7)>은 종이 상자에 숫자 '7'의 모양을 남기고 나머지 부분을 금박으로 뒤덮은 작품입니다.<br>
-                                작가는 폐기된 일회용 물품을 부의 보편적인 상징이자 종교화의 배경 또는 동남아시아의 사찰을 호화롭게 장식하는 금으로 회생시킵니다. 재탄생한 상자는 안에 들어있던 물품이 아닌 그 자체로서 새로운 가치를 얻게 됩니다.
-                              </dd>
-                          </dl>
-                          </figcaption> 
+                        <div id="modal4" class="modal">
+                            <div>
+                                <div class="main_text">
+                                    <figure>
+                                        <img src="../assets/exhibtion/item4_sub1.jpeg" alt="7">
+                                    </figure>
+                                    <figcaption>
+                                        <dl>
+                                            <dt>얀 보, &lt;숫자 (7)&gt;</dt>
+                                            <dd>얀 보는 베트남에 수입된 소비재 운송용 종이 상자에 금박을 입히는 작품을 지속적으로 제작해왔습니다. 재활용 더미에서 다 쓰고
+                                                버려진 상자를 수집하고 태국 전통 금박 공예가에게 보내 알파벳, 숫자, 상표 로고, 또는 성조기 등의 모양으로 치장하는
+                                                작업입니다<br>
+                                                <숫자 (7)>은 종이 상자에 숫자 '7'의 모양을 남기고 나머지 부분을 금박으로 뒤덮은 작품입니다.<br>
+                                                    작가는 폐기된 일회용 물품을 부의 보편적인 상징이자 종교화의 배경 또는 동남아시아의 사찰을 호화롭게 장식하는 금으로
+                                                    회생시킵니다. 재탄생한 상자는 안에 들어있던 물품이 아닌 그 자체로서 새로운 가치를 얻게 됩니다.
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </div>
+                                <ul>
+                                    <li><img src="../assets/exhibtion/item4_sub1.jpeg" alt="7"></li>
+                                    <li><img src="../assets/exhibtion/item4_image.jpeg" alt="7_1"></li>
+                                    <li><img src="../assets/exhibtion/item4_sub2.jpeg" alt="7_2"></li>
+                                </ul>
+                            </div>
+                            <!-- x -->
+                            <p id="mClose4" class="mClose">
+                                <span></span>
+                                <span></span>
+                            </p>
                         </div>
-                        <ul>
-                          <li><img src="../src/all_image/item4_sub1.jpeg" alt="7"></li>
-                          <li><img src="../src/all_image/item4_image.jpeg" alt="7_1"></li>
-                          <li><img src="../src/all_image/item4_sub2.jpeg" alt="7_2"></li>
-                        </ul>
-                      </div>
-                      <!-- x -->
-                      <p id="mClose4"  class="mClose">
-                        <span></span>
-                        <span></span>
-                      </p>
-                    </div>
-                  </figure>                 
+                    </figure>
                 </div>
 
                 <!-- item5 -->
                 <div class="box same_box box01">
-                  <figure id="eh5">
-                    <img src="../src/all_image/item5_image.jpeg" alt="검은 흙">
-                
-                    <div id="modal5" class="modal">
-                      <div>
-                        <div class="main_text">
-                          <figure>
-                            <img src="../src/all_image/item5_sub1.jpeg" alt="Head">
-                          </figure>
-                          <figcaption>
-                            <dl>
-                              <dt> &lt;무제(검은 흙)&gt;</dt>
-                              <dd>
-                                작가는 본인의 집 근처 언덕에 위치한 암석의 표면을 석고로 본뜨고 다시 점토로 찍어낸 다음 가마에서 구워 광택 나는 검은색 표면을 가진 정사각형 타일을 제작했습니다. 작가는 타일 여러 개를 그리드 형태로 벽면에 설치하여 <검은 흙 시리즈>를 완성하였습니다. <br>
-                                메리 코스는 이 작업 시리즈를 회화로 여깁니다. 지면의 형태 위에 석고를 발라서 떠내는 행위가 캔버스의 표면에 물감을 올리는 것과 다를 바 없기 때문입니다. 마치 파도 치는 듯한 유광의 검은 표면은 빛이 일렁이는 효과를 극대화합니다.
-                              </dd>
-                          </dl>
-                          </figcaption> 
-                        </div>
-                        <ul>
-                          <li><img src="../src/all_image/item5_sub1.jpeg" alt="검은 흙"></li>
-                          <li><img src="../src/all_image/item5_image.jpeg" alt="검은 흙"></li>
-                          <li><img src="../src/all_image/item5_sub2.jpeg" alt="검은 흙"></li>
-                        </ul>
+                    <figure id="eh5">
+                        <img src="../assets/exhibtion/item5_image.jpeg" alt="검은 흙">
 
-                      </div>
-                      <!-- x -->
-                      <p id="mClose5"  class="mClose">
-                        <span></span>
-                        <span></span>
-                      </p>
-                    </div>
-                  </figure>
+                        <div id="modal5" class="modal">
+                            <div>
+                                <div class="main_text">
+                                    <figure>
+                                        <img src="../assets/exhibtion/item5_sub1.jpeg" alt="Head">
+                                    </figure>
+                                    <figcaption>
+                                        <dl>
+                                            <dt> &lt;무제(검은 흙)&gt;</dt>
+                                            <dd>
+                                                작가는 본인의 집 근처 언덕에 위치한 암석의 표면을 석고로 본뜨고 다시 점토로 찍어낸 다음 가마에서 구워 광택 나는 검은색 표면을
+                                                가진 정사각형 타일을 제작했습니다. 작가는 타일 여러 개를 그리드 형태로 벽면에 설치하여 <검은 흙 시리즈>를 완성하였습니다.
+                                                    <br>
+                                                    메리 코스는 이 작업 시리즈를 회화로 여깁니다. 지면의 형태 위에 석고를 발라서 떠내는 행위가 캔버스의 표면에 물감을
+                                                    올리는 것과 다를 바 없기 때문입니다. 마치 파도 치는 듯한 유광의 검은 표면은 빛이 일렁이는 효과를 극대화합니다.
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </div>
+                                <ul>
+                                    <li><img src="../assets/exhibtion/item5_sub1.jpeg" alt="검은 흙"></li>
+                                    <li><img src="../assets/exhibtion/item5_image.jpeg" alt="검은 흙"></li>
+                                    <li><img src="../assets/exhibtion/item5_sub2.jpeg" alt="검은 흙"></li>
+                                </ul>
+
+                            </div>
+                            <!-- x -->
+                            <p id="mClose5" class="mClose">
+                                <span></span>
+                                <span></span>
+                            </p>
+                        </div>
+                    </figure>
                 </div>
 
-              </section>
-          </main>
-        
-          <!-- footer -->
-        
-          <div id="footerWrap">
+            </section>
+        </main>
+
+        <!-- footer -->
+
+        <div id="footerWrap">
             <footer>
                 <div id="fu">
-    
-                  <div id="ful">
-                  <dl>                   
-                      <dt>Address :</dt>
-                      <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
-                      <dt>E-mail :</dt>
-                      <dd>E. museum &#64;amorepacific.com</dd>
-                      <dt>Phone :</dt>
-                      <dd>02-6040-2345</dd>
-                      
-                  </dl>
-                  </div>
-    
-              <div id="fur">
-                  <dl>
-                      <dt>관람시간</dt>
-                      <dd>화-일10:00AM ~ 6:00PM</dd>
-                  </dl>
-                  <dl>
-                      <dt>휴관일</dt>
-                      <dd>매주월요일
-                          매년1월1일 / 설,추석 연휴</dd>
-                  </dl>
-                  </div>
-              </div>
-              <div id="fd">
-                <ul>
-                    <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
-                    <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
-                    <li><a href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기 운영방침</a></li>
-                </ul>
-                <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
 
-            </div>    
-            
-              
-    
-            </footer>     
-    </div>
+                    <div id="ful">
+                        <dl>
+                            <dt>Address :</dt>
+                            <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
+                            <dt>E-mail :</dt>
+                            <dd>E. museum &#64;amorepacific.com</dd>
+                            <dt>Phone :</dt>
+                            <dd>02-6040-2345</dd>
 
-    <script>
-          $(function(){
-            eh1();
-            eh2();
-            eh3();
-            eh4();
-            eh5();
-          })
-    </script>
+                        </dl>
+                    </div>
+
+                    <div id="fur">
+                        <dl>
+                            <dt>관람시간</dt>
+                            <dd>화-일10:00AM ~ 6:00PM</dd>
+                        </dl>
+                        <dl>
+                            <dt>휴관일</dt>
+                            <dd>매주월요일
+                                매년1월1일 / 설,추석 연휴</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div id="fd">
+                    <ul>
+                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
+                        <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
+                        <li><a
+                                href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기
+                                운영방침</a></li>
+                    </ul>
+                    <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
+
+                </div>
+
+
+
+            </footer>
+        </div>
+
+        <script>
+            $(function () {
+                eh1();
+                eh2();
+                eh3();
+                eh4();
+                eh5();
+            })
+        </script>
 </body>
+
 </html>

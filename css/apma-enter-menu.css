@@ -1,0 +1,146 @@
+.apma-enter-menu-wrap {
+    position: relative;
+    top: 900px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.apma-enter-menu-back-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.apma-enter-menu-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 70%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.apma-enter-menu {
+    width: 20%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.apma-enter-menu-img-wrap {
+    width: 80%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.apma-enter-menu-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.5s;
+    /* filter: brightness(0.9); */
+}
+
+.apma-enter-menu-img:hover {
+    transform: scale(1.1);
+}
+
+.apma-enter-title {
+    color: rgb(52, 52, 52);
+    font: bold 1.1rem "Orbitron",
+        sans-serif;
+}
+
+.apma-enter-menu-text {
+    width: 80%;
+    height: 50px;
+    margin-top: -10px;
+    text-align: center;
+    color: rgb(52, 52, 52);
+    font: bold 0.8rem "Orbitron",
+        sans-serif;
+}
+
+@media (max-width: 800px) {
+    .apma-enter-menu-wrap {
+        position: relative;
+        top: 900px;
+        left: 0;
+        width: 100%;
+        height: 1300px;
+        overflow: hidden;
+    }
+
+    .apma-enter-menu-back-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.4);
+    }
+
+    .apma-enter-menu-inner {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .apma-enter-menu {
+        width: 200px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0px;
+        margin-bottom: 40px;
+    }
+
+    .apma-enter-menu-img-wrap {
+        width: 80%;
+        height: 50%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .apma-enter-menu-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+    }
+
+    .apma-enter-menu-img:hover {
+        transform: scale(1.1);
+    }
+
+    .apma-enter-title {
+        font: bold 1.1rem "Orbitron",
+            sans-serif;
+    }
+
+    .apma-enter-menu-text {
+        width: 80%;
+        height: 50px;
+        margin-top: -10px;
+        text-align: center;
+        font: bold 0.8rem "Orbitron",
+            sans-serif;
+    }
+}

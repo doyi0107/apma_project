@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
     <title>MUSEUM_SHOP</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/museum_shop.css">
+    <link rel="stylesheet" href="../css/ampa-side-header.css">
     <script type="text/javascript" src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
     <script src="../js/login.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <!-- header -->
@@ -20,194 +23,199 @@
             <span></span>
             <span></span>
         </label>
-        <div id="headerWrap">
-            <header>       
-                <h1><a href="../index.html">APMA</a></h1>
-                        <nav>              
-                            <h2 class="hideClass">메인내비게이션</h2>
-                            <ul id="main_menu">
-                              <li><a href="./museum.html">MUSEUM</a></li>
-                              <li><a href="./exhibtion.html">EXHIBTION</a></li>
-                              <li><a href="./project.html">PROJECT</a></li>
-                              <li><a href="./notice_view.html">NOICE</a></li>
-                              <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
-                          </ul>
-                          <ul id="side_menu">
-                              <li><a href="./login.html">LOGIN</a></li>
-                              <li><a href="./sign_up.html">SIGN UP</a></li>
-                              <li><a href="#" onclick="mypage()">MY PAGE</a></li>
-                          </ul>
-                        </nav>
-    
-              </header>
-        </div>
+        <!-- 헤더 섹션 -->
+        <section class="apma-header-wrap">
+            <div class="apma-header-logo-wrap">
+                <p class="apma-header-logo"><a href="../index.html">APMA</a></p>
+            </div>
+            <div class="apma-header-center-wrap">
+                <ul class="apma-header-center">
+                    <li><a href="../pages/exhibtion.html">EXHIBTION</a></li>
+                    <li><a href="../pages/project.html">PROJECT</a></li>
+                    <li><a href="../pages/museum_shop.html">MUSEUM SHOP</a></li>
+                    <li><a href="../pages/notice_view.html">NOICE</a></li>
+
+                </ul>
+            </div>
+
+
+            <div class="apma-header-icon-wrap">
+                <ul class="apma-header-icon">
+                    <li><a href="../pages/login.html">LOGIN</a></li>
+                    <li><a href="../pages/sign_up.html">SIGN UP</a></li>
+                    <li><a href="#" onclick="mypage()">MY PAGE</a></li>
+                </ul>
+            </div>
+        </section>
 
         <!-- main -->
         <main>
             <section>
                 <article>
-                 <div id="box01">
-                     <figure>
-                        <h3>MUSEUM SHOP</h3>         
-                         <div id="img_l">
-                            
-                            <div class="imgbox">
-                            <img src="../src/all_image/museum_shop_product1.jpeg" alt="코랄백">
+                    <div id="box01">
+                        <figure>
+                            <h3>MUSEUM SHOP</h3>
+                            <div id="img_l">
 
-                            <figcaption id="text_r">
-                                <dl>
-                                    <dt>노방백 코랄</dt>
-                                    <dd>아모레퍼시픽미술관의 로고를 톤온톤의
-                                       색실 자수로 곱게 새겨놓은 노방백은
-                                       한복 옷감의 새로운 쓰임을 제안합니다.
-                                       봄을 알리는 코랄 색상의 노방백은
-                                       OIMU와의 콜라보레이션으로 탄생하였습니다.
-                                       네이비, 버건디, 그리고 코랄 세 가지 색상은
-    
-                                       아모레퍼시픽미술관의 뮤지엄샵에서만
-                                       
-                                       만나보실 수 있는 한정 칼라로 준비하였습니다.
-                                       
-                                       속이 비치는 소재이기 때문에
-                                       
-                                       가방 속 소지품을 통해 다양한 연출이 가능합니다.</dd>
-                                </dl>
-                            </figcaption>
+                                <div class="imgbox">
+                                    <img src="../assets/museum_shop/museum_shop_product1.jpeg" alt="코랄백">
+
+                                    <figcaption id="text_r">
+                                        <dl>
+                                            <dt>노방백 코랄</dt>
+                                            <dd>아모레퍼시픽미술관의 로고를 톤온톤의
+                                                색실 자수로 곱게 새겨놓은 노방백은
+                                                한복 옷감의 새로운 쓰임을 제안합니다.
+                                                봄을 알리는 코랄 색상의 노방백은
+                                                OIMU와의 콜라보레이션으로 탄생하였습니다.
+                                                네이비, 버건디, 그리고 코랄 세 가지 색상은
+
+                                                아모레퍼시픽미술관의 뮤지엄샵에서만
+
+                                                만나보실 수 있는 한정 칼라로 준비하였습니다.
+
+                                                속이 비치는 소재이기 때문에
+
+                                                가방 속 소지품을 통해 다양한 연출이 가능합니다.</dd>
+                                        </dl>
+                                    </figcaption>
+                                </div>
+
+                                <div class="hoverBox">
+                                    <span>
+                                        <p class="p1">노방백 코랄</p>
+                                        <p class="p2">봄을 알리는 코랄 색상의 노방백은
+                                            OIMU와의 콜라보레이션으로 탄생하였고 한복 옷감의 새로운 쓰임을 제안했습니다.
+                                            네이비, 버건디, 그리고 코랄 세 가지 색상을 준비하였고
+                                            속이 비치는 소재이기 때문에
+                                            가방 속 소지품을 통해 다양한 연출이 가능합니다.</p>
+                                    </span>
+                                </div>
+
                             </div>
 
-                            <div class="hoverBox">
-                                <span>   
-                                    <p class="p1">노방백 코랄</p>
-                                    <p class="p2">봄을 알리는 코랄 색상의 노방백은
-                                        OIMU와의 콜라보레이션으로 탄생하였고 한복 옷감의 새로운 쓰임을 제안했습니다. 
-                                        네이비, 버건디, 그리고 코랄 세 가지 색상을 준비하였고
-                                        속이 비치는 소재이기 때문에
-                                       가방 속 소지품을 통해 다양한 연출이 가능합니다.</p>
-                                </span>              
-                            </div>
-
-                        </div>
-
-                     </figure>
-                 </div>
+                        </figure>
+                    </div>
                     <div id="box02">
-                     <figure>
-                        <div id="img_r">
+                        <figure>
+                            <div id="img_r">
 
-                        <div class="imgbox">
-                        <img src="../src/all_image/museum_shop_product2.jpeg" alt="포스터와 엽서세트">
-                         <figcaption id="text_l"> 
-                             <dl>
-                                 <dt>포스터와 엽서세트</dt>
-                                 <dd>재료와 기법의 변형으로 전시 공간에 대한 시각과 차원을 변형시킨 
-                                    작품, 엘름 그린 & 드라그셋의 <화가, 도판 2>을 아모레퍼시픽미술관 뮤지엄샵에서 포스터와 엽서 세트로 만나보실 수 있습니다.
-                                    
-                                    </dd>
-                             </dl>
-                         </figcaption>
-                         </div>
+                                <div class="imgbox">
+                                    <img src="../assets/museum_shop/museum_shop_product2.jpeg" alt="포스터와 엽서세트">
+                                    <figcaption id="text_l">
+                                        <dl>
+                                            <dt>포스터와 엽서세트</dt>
+                                            <dd>재료와 기법의 변형으로 전시 공간에 대한 시각과 차원을 변형시킨
+                                                작품, 엘름 그린 & 드라그셋의 <화가, 도판 2>을 아모레퍼시픽미술관 뮤지엄샵에서 포스터와 엽서 세트로 만나보실 수 있습니다.
+
+                                            </dd>
+                                        </dl>
+                                    </figcaption>
+                                </div>
 
 
-                         <div class="hoverBox">
-                            <span>   
-                                <p class="p1">포스터와 엽서세트</p>
-                                <p class="p2">재료와 기법의 변형으로 전시 공간에 대한 시각과 차원을 변형시킨 
-                                    작품, 엘름 그린 & 드라그셋의 <화가, 도판 2>을 아모레퍼시픽미술관 뮤지엄샵에서 포스터와 엽서 세트로 만나보실 수 있습니다.</p>
-                            </span>              
-                        </div>
+                                <div class="hoverBox">
+                                    <span>
+                                        <p class="p1">포스터와 엽서세트</p>
+                                        <p class="p2">재료와 기법의 변형으로 전시 공간에 대한 시각과 차원을 변형시킨
+                                            작품, 엘름 그린 & 드라그셋의 <화가, 도판 2>을 아모레퍼시픽미술관 뮤지엄샵에서 포스터와 엽서 세트로 만나보실 수 있습니다.</p>
+                                    </span>
+                                </div>
 
-                        </div>
-                     </figure>
-                 </div>
-                 <div id="box03">
-                     <figure>
-                        <div id="img_l">
+                            </div>
+                        </figure>
+                    </div>
+                    <div id="box03">
+                        <figure>
+                            <div id="img_l">
 
-                        <div class="imgbox">
-                         <img src="../src/all_image/museum_shop_product3.JPG" alt="소장품 카드">
+                                <div class="imgbox">
+                                    <img src="../assets/museum_shop/museum_shop_product3.JPG" alt="소장품 카드">
 
-                         <figcaption id="text_r">
-                            <dl>
-                                <dt>LINGERING NOUS</dt>
-                                <dd>양혜규 작가의 도록 ‘Lingering Nous’는
+                                    <figcaption id="text_r">
+                                        <dl>
+                                            <dt>LINGERING NOUS</dt>
+                                            <dd>양혜규 작가의 도록 ‘Lingering Nous’는
 
-                                   아모레퍼시픽미술관의 후원으로 발간되었습니다.이 도록은 작가가 지난 10여 년간 선보인
+                                                아모레퍼시픽미술관의 후원으로 발간되었습니다.이 도록은 작가가 지난 10여 년간 선보인
 
-                                   블라인드 설치작품을 총 망라하며,
-                                   
-                                   프랑스 퐁피두 센터와 유명 출판사인
-                                   
-                                   레 프레스 뒤 렐이 공동 발간하였습니다.</dd>
-                            </dl>
-                        </figcaption>
-                        </div>         
+                                                블라인드 설치작품을 총 망라하며,
 
-                        <div class="hoverBox">
-                            <span>   
-                                <p class="p1">LINGERING NOUS</p>
-                                <p class="p2">양혜규 작가의 도록 ‘Lingering Nous’는
+                                                프랑스 퐁피두 센터와 유명 출판사인
 
-                                    아모레퍼시픽미술관의 후원으로 발간되었습니다.이 도록은 작가가 지난 10여 년간 선보인
- 
-                                    블라인드 설치작품을 총 망라하며,
-                                    
-                                    프랑스 퐁피두 센터와 유명 출판사인
-                                    
-                                    레 프레스 뒤 렐이 공동 발간하였습니다.</p>
-                            </span>              
-                        </div>
-                        </div>
+                                                레 프레스 뒤 렐이 공동 발간하였습니다.</dd>
+                                        </dl>
+                                    </figcaption>
+                                </div>
 
-                     </figure>
-                 </div>
-                 <div id="box04">
-                     <figure>
-                        <div id="img_r">
+                                <div class="hoverBox">
+                                    <span>
+                                        <p class="p1">LINGERING NOUS</p>
+                                        <p class="p2">양혜규 작가의 도록 ‘Lingering Nous’는
 
-                        <div class="imgbox">
-                         <img src="../src/all_image/museum_shop_product4.jpeg" alt="책">
-                         <figcaption id="text_l"> 
-                             <dl>
-                                 <dt> 요지연도8폭병풍</dt>
-                                 <dd>
-                                    요지연도는 불로장생의 복숭아가 열리는 삼천년마다 서왕모(西王母)가 신선들을 초대해서 베푸는 잔치를 그린 병풍입니다. 작품 속 도상들의 다양한 이야기를 담은 개암향의 선향과 복숭아를 닮은 성냥은                   
-                                    단품으로도 구입이 가능합니다. 향세트는 선향과 성냥 제품과 함께                              
-                                    미니 향로와 금속 트레이가 구성되어 있습니다.                          
-                                    무형광 소창으로 제작된 패브릭 파우치는 향을 피울 때 깔개로 활용하실 수 있습니다.</dd>
-                             </dl>
-                         </figcaption>
-                         </div>
-                         
-                        <div class="hoverBox">
-                            <span>   
-                                <p class="p1">요지연도8폭병풍</p>
-                                <p class="p2"> 요지연도는 불로장생의 복숭아가 열리는 삼천년마다 서왕모(西王母)가 신선들을 초대해서 베푸는 잔치를 그린 병풍입니다. 작품 속 도상들의 다양한 이야기를 담은 개암향의 선향과 복숭아를 닮은 성냥은                   
-                                    단품으로도 구입이 가능합니다.</p>
-                            </span>              
-                        </div>
-                        </div>
-                     </figure>
-                 </div>
+                                            아모레퍼시픽미술관의 후원으로 발간되었습니다.이 도록은 작가가 지난 10여 년간 선보인
+
+                                            블라인드 설치작품을 총 망라하며,
+
+                                            프랑스 퐁피두 센터와 유명 출판사인
+
+                                            레 프레스 뒤 렐이 공동 발간하였습니다.</p>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </figure>
+                    </div>
+                    <div id="box04">
+                        <figure>
+                            <div id="img_r">
+
+                                <div class="imgbox">
+                                    <img src="../assets/museum_shop/museum_shop_product4.jpeg" alt="책">
+                                    <figcaption id="text_l">
+                                        <dl>
+                                            <dt> 요지연도8폭병풍</dt>
+                                            <dd>
+                                                요지연도는 불로장생의 복숭아가 열리는 삼천년마다 서왕모(西王母)가 신선들을 초대해서 베푸는 잔치를 그린 병풍입니다. 작품 속
+                                                도상들의 다양한 이야기를 담은 개암향의 선향과 복숭아를 닮은 성냥은
+                                                단품으로도 구입이 가능합니다. 향세트는 선향과 성냥 제품과 함께
+                                                미니 향로와 금속 트레이가 구성되어 있습니다.
+                                                무형광 소창으로 제작된 패브릭 파우치는 향을 피울 때 깔개로 활용하실 수 있습니다.</dd>
+                                        </dl>
+                                    </figcaption>
+                                </div>
+
+                                <div class="hoverBox">
+                                    <span>
+                                        <p class="p1">요지연도8폭병풍</p>
+                                        <p class="p2"> 요지연도는 불로장생의 복숭아가 열리는 삼천년마다 서왕모(西王母)가 신선들을 초대해서 베푸는 잔치를 그린 병풍입니다.
+                                            작품 속 도상들의 다양한 이야기를 담은 개암향의 선향과 복숭아를 닮은 성냥은
+                                            단품으로도 구입이 가능합니다.</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
                 </article>
             </section>
         </main>
 
-        
+
 
         <!-- footer -->
         <div id="footerWrap">
             <footer>
                 <div id="fu">
                     <div id="ful">
-                    <dl>               
-                        <dt>Address:</dt>
-                        <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
-                        <dt>E-mail:</dt>
-                        <dd>E. museum &#64;amorepacific.com</dd>
-                        <dt>Phone:</dt>
-                        <dd>02-6040-2345</dd>
-                        
-                    </dl>
+                        <dl>
+                            <dt>Address:</dt>
+                            <dd>서울특별시 용산구 한강대로 100 (한강로2가 181)</dd>
+                            <dt>E-mail:</dt>
+                            <dd>E. museum &#64;amorepacific.com</dd>
+                            <dt>Phone:</dt>
+                            <dd>02-6040-2345</dd>
+
+                        </dl>
                     </div>
                     <div id="fur">
                         <dl>
@@ -225,13 +233,16 @@
                     <ul>
                         <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/agreement.do">이용약관</a></li>
                         <li><a href="https://www.amoremall.com/kr/ko/beautypoint/footer/privacy.do">개인정보처리방침</a></li>
-                        <li><a href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기 운영방침</a></li>
+                        <li><a
+                                href="https://www.apgroup.com/int/ko/misc/cctv-policies-and-procedures/cctv-policies-and-procedures.html">영상정보처리기기
+                                운영방침</a></li>
                     </ul>
                     <small>&copy; 2023 BY AMOREPACIFIC CORP. ALL RIGHTS RESERVED.</small>
 
                 </div>
             </footer>
-        </div>  
+        </div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,476 @@
+.apma-main-wrap {
+    background-color: #9a9ec8;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1200vh;
+}
+
+/* 이미지 */
+.apma-main-img-wrap {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+    /* top: 50%; */
+    width: 100%;
+    height: 100vh;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.apma-main-img {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.3);
+
+}
+
+.apma-main-img02 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.apma-main-img03 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+
+/* 텍스트 웹 */
+.apma-main-menu-wrap {
+    position: sticky;
+    top: 0;
+    left: 50%;
+    transition: all 0.5s;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.apma-main-menu-title {
+    color: #e4e4e4;
+    font: bold 20rem "Orbitron",
+        sans-serif;
+    height: 25%;
+    /* background-color: #c45d43; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+
+
+.apma-main-menu-subtitle {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    height: 75%;
+    /* background-color: #9a9ec8; */
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    color: #ffffff;
+}
+
+.apma-main-menu00 {
+    height: 33.3333%;
+    /* background-color: #d1949c; */
+}
+
+.apma-main-menu01,
+.apma-main-menu03 {
+    color: #fff;
+    z-index: 4;
+    font: 500 8rem/9rem "Orbitron",
+        sans-serif;
+    transform: translateX(-1500px);
+}
+
+.apma-main-menu02 {
+    color: #fff;
+    z-index: 4;
+    font: 500 8rem/9rem "Orbitron",
+        sans-serif;
+    transform: translateX(1500px);
+}
+
+
+/* 미술관 소개 섹션 */
+.apma-intro-meseum-wrap {
+    position: relative;
+    top: 130vh;
+    left: 0;
+    width: 100%;
+    height: 170vh;
+    /* background-color: bisque; */
+}
+
+.apma-intro-meseum {
+    position: sticky;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apma-intro {
+    text-align: center;
+    color: #ffffff;
+    height: 30%;
+    font: bold 1.4rem/40px "Orbitron",
+        sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apma-intro01 {
+    opacity: 0;
+}
+
+.apma-intro02 {
+    opacity: 0;
+}
+
+/* 전시 설명 섹션 */
+
+.apma-explain-wrap {
+    position: relative;
+    top: 350vh;
+    left: 0;
+    width: 45%;
+}
+
+
+/* relative */
+.apma-explain {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.apma-explain01 {
+    height: 210vh;
+    /* background-color: rgb(62, 129, 206); */
+}
+
+.apma-explain02 {
+    height: 280vh;
+    /* background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(243, 255, 229)); */
+    background-color: #3C5F72;
+}
+
+.apma-explain03 {
+    height: 250vh;
+    background-color: #c45d43;
+}
+
+
+/* sticky*/
+.apma-explain00-inner {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 50px 10%;
+    box-sizing: border-box;
+}
+
+.apma-explain01-inner {
+    height: 100vh;
+}
+
+.apma-explain02-inner {
+    height: 100vh;
+}
+
+.apma-explain03-inner {
+    height: 100vh;
+}
+
+/* span */
+
+.apma-explain-top {
+    width: 0%;
+    height: 2px;
+}
+
+.apma-explain-bottom {
+    width: 0%;
+    height: 2px;
+}
+
+.apma-explain01-top,
+.apma-explain01-bottom {
+    background-color: #ccdf80;
+}
+
+.apma-explain02-top,
+.apma-explain02-bottom {
+    background-color: #d1949c;
+}
+
+.apma-explain03-top,
+.apma-explain03-bottom {
+    background-color: rgb(231, 203, 151);
+}
+
+/* 설명 */
+
+.apma-explain-title {
+    text-align: center;
+    font: bold 2rem "Orbitron",
+        sans-serif;
+}
+
+.apma-explain-text {
+    font: 0.9rem "Orbitron",
+        sans-serif;
+}
+
+.apma-explain-title01,
+.apma-explain-text01 {
+    color: #ccdf80;
+}
+
+.apma-explain-title02,
+.apma-explain-text02 {
+    color: #d1949c;
+}
+
+.apma-explain-title03,
+.apma-explain-text03 {
+    color: rgb(231, 203, 151);
+}
+
+@media (max-width: 800px) {
+    .apma-main-wrap {
+        background-color: #9a9ec8;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 9600px;
+    }
+
+    /* 이미지 */
+    .apma-main-img-wrap {
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .apma-main-img {
+        position: absolute;
+        top: 0;
+        /* right:0px; */
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        filter: brightness(0.3);
+
+    }
+
+    .apma-main-img02 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+    }
+
+    .apma-main-img03 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+    }
+
+    /* 텍스트 웹 */
+    .apma-main-menu-wrap {
+        left: 50%;
+        height: 100vh;
+    }
+
+
+    .apma-main-menu-title {
+        font: bold 7rem "Orbitron",
+            sans-serif;
+        height: 25%;
+        padding-bottom: 1%;
+    }
+
+    .apma-main-menu-subtitle {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        height: 75%;
+        transform: translate(-50%, 0%);
+    }
+
+    .apma-main-menu00 {
+        height: 33.3333%;
+        /* background-color: #d1949c; */
+    }
+
+    .apma-main-menu01,
+    .apma-main-menu03 {
+        z-index: 4;
+        font: 500 6em/8rem "Orbitron",
+            sans-serif;
+        transform: translateX(-1500px);
+    }
+
+    .apma-main-menu02 {
+        z-index: 4;
+        font: 500 6em/8rem "Orbitron",
+            sans-serif;
+        transform: translateX(1500px);
+    }
+
+    /* 미술관 소개 섹션 */
+    .apma-intro-meseum-wrap {
+        position: relative;
+        top: 130vh;
+        left: 0;
+        width: 100%;
+        height: 1360px
+            /* background-color: bisque; */
+    }
+
+    .apma-intro-meseum {
+        position: sticky;
+        top: 0;
+        width: 80%;
+        height: 800px;
+        margin: 0 auto;
+    }
+
+    .apma-intro {
+        text-align: center;
+        height: 30%;
+        font: bold 1.1rem/40px "Orbitron",
+            sans-serif;
+    }
+
+    .apma-intro01 {
+        opacity: 0;
+    }
+
+    .apma-intro02 {
+        opacity: 0;
+    }
+
+    /* 전시 설명 섹션 */
+
+    .apma-explain-wrap {
+        position: relative;
+        top: 350vh;
+        left: 0;
+        width: 45%;
+    }
+
+    /* relative */
+
+    .apma-explain01 {
+        height: 2150px;
+    }
+
+    .apma-explain02 {
+        height: 2300px;
+    }
+
+    .apma-explain03 {
+        height: 2200px;
+    }
+
+
+    /* sticky*/
+    .apma-explain00-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* 설명 */
+
+    .apma-explain-title {
+        text-align: center;
+        font: bold 1.7rem "Orbitron",
+            sans-serif;
+    }
+
+    .apma-explain-text {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .apma-main-menu-wrap {
+            position: sticky;
+            top: 30PX;
+            left: 50%;
+            text-align: center;
+            height: 75vh;
+        }
+    .apma-main-menu-title {
+        font: bold 4rem "Orbitron",
+            sans-serif;
+        height: 25%;
+        padding-bottom: 0%;
+    }
+
+    .apma-main-menu01,
+    .apma-main-menu03 {
+        font: 500 3em/7rem "Orbitron",
+            sans-serif;
+        transform: translateX(-1500px);
+    }
+
+    .apma-main-menu02 {
+        font: 500 3em/7rem "Orbitron",
+            sans-serif;
+        transform: translateX(1500px);
+    }
+}

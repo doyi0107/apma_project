@@ -7,6 +7,7 @@
   <title>MY_PAGE</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/my_page.css">
+      <link rel="stylesheet" href="../css/ampa-side-header.css">
   <script type="text/javascript" src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
   <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
   <script src="../js/my_page.js"></script>
@@ -20,27 +21,30 @@
         <span></span>
         <span></span>
     </label>
-    <div id="headerWrap">
-        <header>       
-            <h1><a href="../index.html">APMA</a></h1>
-                    <nav>              
-                        <h2 class="hideClass">메인내비게이션</h2>
-                        <ul id="main_menu">
-                          <li><a href="./museum.html">MUSEUM</a></li>
-                          <li><a href="./exhibtion.html">EXHIBTION</a></li>
-                          <li><a href="./project.html">PROJECT</a></li>
-                          <li><a href="./notice_view.html">NOICE</a></li>
-                          <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
-                      </ul>
-                      <ul id="side_menu">
-                          <li><a href="./login.html">LOGIN</a></li>
-                          <li><a href="./sign_up.html">SIGN UP</a></li>
-                          <li><a href="#" onclick="mypage()">MY PAGE</a></li>
-                      </ul>
-                    </nav>
-
-          </header>
-    </div>
+    <!-- 헤더 섹션 -->
+    <section class="apma-header-wrap">
+      <div class="apma-header-logo-wrap">
+        <p class="apma-header-logo"><a href="../index.html">APMA</a></p>
+      </div>
+      <div class="apma-header-center-wrap">
+        <ul class="apma-header-center">
+          <li><a href="../pages/exhibtion.html">EXHIBTION</a></li>
+          <li><a href="../pages/project.html">PROJECT</a></li>
+          <li><a href="../pages/museum_shop.html">MUSEUM SHOP</a></li>
+          <li><a href="../pages/notice_view.html">NOICE</a></li>
+    
+        </ul>
+      </div>
+    
+    
+      <div class="apma-header-icon-wrap">
+        <ul class="apma-header-icon">
+          <li><a href="../pages/login.html">LOGIN</a></li>
+          <li><a href="../pages/sign_up.html">SIGN UP</a></li>
+          <li><a href="#" onclick="mypage()">MY PAGE</a></li>
+        </ul>
+      </div>
+    </section>
         <!-- main -->
             <main>
               <section>
@@ -133,7 +137,7 @@
           </footer>
       </div>  
   </div>
-  
+        <script src="./js/ampa-header.js"></script>
 </body>
 </html>
 

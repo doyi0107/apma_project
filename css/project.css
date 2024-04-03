@@ -6,675 +6,431 @@
 
 
 
-.hideClass{
-    width:0; height:0;
-    font-size:0; line-height:0;
-    position:absolute;
-    visibility:hidden;
-  }
-
-
-div#wrap{
-  position: relative;
-  width:100%;
-
-}
-
-#headerWrap{
-  position:fixed;
-  left:0; top:0;
-  width:100%;
-  height:110px;
-  background-color:rgba(34, 34, 34, 0.9);
-  z-index: 999;
-}
-
-#menuicon{
-  display: none;
-}
-
-label{
-  display: none;
+.hideClass {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    visibility: hidden;
 }
 
 
-header>h1{
-  /* 부모 #headerWrap */
-  position: fixed;
-  top:1%; left: 0; 
-  margin-left:100px;
-  width: 100px;
-  z-index: 9999;
-}
-
-
-header>h1>a{
-  font:4rem  'Shadows Into Light', cursive ;
-  color: #fff;
-}
-
-header>nav{ 
-  width: max-content;
-  position: fixed;
-  margin: 0 auto;
-  left: 300px; right: 0;
-  margin-top:40px;
-  z-index: 999;
-  display: flex;
-}
-
-label>img{
-  display: none;
-}
-
-header>nav>ul{
+div#wrap {
+    position: relative;
+    width: 100%;
 
 }
 
-header>nav>ul#main_menu{
-  margin:0px 10rem 0px 6rem;
-}
 
-header>nav>ul#side_menu{
-}
-
-header>nav>ul>li{
-  margin-left: 25px;
-  display: inline-block;
-}
-
-header>nav>ul>li>a{
-  font:1.3rem 'Shadows Into Light', cursive ;
-  color: #fff;
-  transition: color 0.5s;
-
-
-}
-
-header>nav>ul#main_menu>li:nth-child(1)>a:hover{
-  color:rgb(218, 191, 44);
-
-
-}
-header>nav>ul#main_menu>li:nth-child(2)>a:hover{
-  color:#cd4f96;
-}
-header>nav>ul#main_menu>li:nth-child(3)>a:hover{
-  color:rgb(101, 182, 69);
-}
-header>nav>ul#main_menu>li:nth-child(4)>a:hover{
-  color:rgb(134, 66, 180);
-}
-header>nav>ul#main_menu>li:nth-child(5)>a:hover{
-  color:rgb(224, 102, 64);
-}
-header>nav>ul#main_menu>li:nth-child(6)>a:hover{
-  color:rgb(60, 160, 206);
-}
-header #side_menu>li>a:hover{
-  color: #979797;
-}
-
-
-
-header>nav>ul#side_menu>li:nth-child(2) img{
-  width: 35px;
-  height: 35px;
-  margin-bottom: 3px;
-}
 
 
 /* main */
 
-article{
+article {
 
-  position:relative;
-  background-color:#2c2c2c;
-
-}
-
-#box01{
-  width:100%;
-  height:650px;
-  position:relative;
-background:url('../src/all_image/project_main_image1.JPG') no-repeat center top;
-  background-size:100% 100%;
+    position: relative;
+    background-color: #2c2c2c;
 
 }
 
-#box01>h4{
-  width:600px;
-  position: absolute;
-  left:50%; top:50%;
-  margin: -40px 0 0 -300px;
-  text-align:center;
-    font:5rem 'Shadows Into Light', cursive ;
-    color:rgb(255, 255, 255);
+#box01 {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    background: url('../assets/project/project_main_image1.JPG') no-repeat center top;
+    background-size: 100% 100%;
+
+}
+
+#box01>h4 {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -40px 0 0 -300px;
+    text-align: center;
+    font: 5rem 'Shadows Into Light', cursive;
+    color: rgb(255, 255, 255);
     z-index: 990;
     text-shadow: 0 2px 0px #727272,
-    1px 4px 0 #818181,
-    2px 6px 0 #919191,
-    3px 8px 0 #a9a9a9,
-    4px 10px 0  #afafaf;
+        1px 4px 0 #818181,
+        2px 6px 0 #919191,
+        3px 8px 0 #a9a9a9,
+        4px 10px 0 #afafaf;
     transition: all 0.5s;
 }
 
-#box02{
-  width:100%;
-  height:650px;
-  position:relative;  background:url('../src/all_image/project_main_image2.jpeg') no-repeat center top;
-  background-size:100% 100%;
+#box02 {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    background: url('../assets/project/project_main_image2.jpeg') no-repeat center top;
+    background-size: 100% 100%;
 }
 
-#box02>h4{
-    width:600px;
+#box02>h4 {
+    width: 600px;
     position: absolute;
-    left:50%; top:50%;
+    left: 50%;
+    top: 50%;
     margin: -40px 0 0 -300px;
-    text-align:center;
+    text-align: center;
     text-shadow: 0 2px 0px #727272,
-    1px 4px 0 #818181,
-    2px 6px 0 #919191,
-    3px 8px 0 #a9a9a9,
-    4px 10px 0  #afafaf;
+        1px 4px 0 #818181,
+        2px 6px 0 #919191,
+        3px 8px 0 #a9a9a9,
+        4px 10px 0 #afafaf;
     transition: all 0.5s;
-      /* top:45%; left:40%; */
-      font:5rem 'Shadows Into Light', cursive ;
-      color:rgb(255, 255, 255);
-      z-index: 990;
+    /* top:45%; left:40%; */
+    font: 5rem 'Shadows Into Light', cursive;
+    color: rgb(255, 255, 255);
+    z-index: 990;
 
 }
 
-#box01>h4:hover{
-  color:rgb(101, 182, 69);
-  cursor: pointer;
-}
-#box02>h4:hover{
-  color:rgb(101, 182, 69);
+#box01>h4:hover {
+    color: rgb(101, 182, 69);
     cursor: pointer;
 }
-h4>span{
-  font-family:'IBM Plex Sans Arabic', sans-serif;
-}
-.box03>div{
-  width:100%;
-  height:650px;
-  overflow:hidden;
-  position:absolute;
-  left:0;
-  bottom:0;
-  z-index:100;
+
+#box02>h4:hover {
+    color: rgb(101, 182, 69);
+    cursor: pointer;
 }
 
-#box01 #pic{
-  width:100%;
-  position:absolute;
-  left:0;
-  top:-300px;
+h4>span {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
-#box02 #pic{
-  width:100%;
-  position:absolute;
-  left:0;
-  top:-589px;
+.box03>div {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+#box01 #pic {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -300px;
+}
+
+#box02 #pic {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -589px;
 
 }
 
-#box01 dl{
-  position:absolute;
-  bottom:-500px;
-  left:0;
-  width:100%;
-  margin:0 auto;
-  padding:30px 0 ;
-  background-color:#2c2c2c;
+#box01 dl {
+    position: absolute;
+    bottom: -500px;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: #2c2c2c;
 }
 
-#box02 dl{
-  position:absolute;
-  bottom:-500px;
-  left:0;
-  width:100%;
-  margin:0 auto;
-  padding:30px 0;
-  background-color:#2c2c2c;
+#box02 dl {
+    position: absolute;
+    bottom: -500px;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: #2c2c2c;
 }
 
-.box03 #pic>img{
-  width:33%;
-  height: 280px;
-  box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
+.box03 #pic>img {
+    width: 33%;
+    height: 280px;
+    box-shadow: 7px 7px 20px 10px rgba(0, 0, 0, 0.64);
 }
 
-.box03>div dt{
-  width:1000px;
-  margin: 15px auto 0;
-  font:1.4rem  'Gowun Dodum', sans-serif;
-  color:rgb(101, 182, 69);
-  text-align: center;
-  /* margin-top:15px; */
+.box03>div dt {
+    width: 1000px;
+    margin: 15px auto 0;
+    font: 1.4rem 'Gowun Dodum', sans-serif;
+    color: rgb(101, 182, 69);
+    text-align: center;
+    /* margin-top:15px; */
 }
 
-.box03>div dd{
-  width:1000px;
-  margin: 5px auto 0;
-  font:0.8rem/25px 나눔고딕,san-serif;
-  color:rgb(142, 180, 128);
-  text-align:center ;
-  /* margin-top:5px; */
+.box03>div dd {
+    width: 1000px;
+    margin: 5px auto 0;
+    font: 0.8rem/25px 나눔고딕, san-serif;
+    color: rgb(142, 180, 128);
+    text-align: center;
+    /* margin-top:5px; */
 }
 
-#box00{
-  width:100%;
-  color:#fff;
+#box00 {
+    width: 100%;
+    color: #fff;
 }
 
-#box00>div{
-  width:1000px;
-  margin:0 auto;
-  padding:196px 0 200px 0;
+#box00>div {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 196px 0 200px 0;
 }
 
-#box00>div>h3{
-  text-align: center;
-  font:70px 'Shadows Into Light', cursive ;
-  color:rgb(101, 182, 69);
-  text-align: center;
+#box00>div>h3 {
+    text-align: center;
+    font: 70px 'Shadows Into Light', cursive;
+    color: rgb(101, 182, 69);
+    text-align: center;
 }
 
-#box00 dl{
+#box00 dl {
     margin-top: 30px;
 }
 
-#box00 dt{
-  font:30px  'Gowun Dodum', sans-serif;
-  color:rgb(101, 182, 69);
-  text-align: center; 
+#box00 dt {
+    font: 30px 'Gowun Dodum', sans-serif;
+    color: rgb(101, 182, 69);
+    text-align: center;
 }
 
-#box00 dd{
-  font:16px/25px 나눔고딕,san-serif;
-  color:rgb(142, 180, 128);
-  text-align:center ;
+#box00 dd {
+    font: 16px/25px 나눔고딕, san-serif;
+    color: rgb(142, 180, 128);
+    text-align: center;
 }
 
 
 
 /* footerWrap */
 
-#footerWrap{
-  /* position: absolute; */
-  background-color: rgb(34, 34, 34);
+#footerWrap {
+    /* position: absolute; */
+    background-color: rgb(34, 34, 34);
 }
 
-#footerWrap div#fu{
-  overflow: hidden;
-  width:98vw;
-  margin:0 auto;
-  padding-top:20px;  
+#footerWrap div#fu {
+    overflow: hidden;
+    width: 98vw;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
-#footerWrap div#ful{
-  float:left;
-  width:500px;
-  padding-bottom:3px;
+#footerWrap div#ful {
+    float: left;
+    width: 500px;
+    padding-bottom: 3px;
 }
 
-#footerWrap div#ful>dl{
-  padding-bottom:3px;
-  font:1rem/1.2rem 나눔고딕,'sans-serif';
+#footerWrap div#ful>dl {
+    padding-bottom: 3px;
+    font: 1rem/1.2rem 나눔고딕, 'sans-serif';
 }
 
-#footerWrap div#ful dt{
-  float:left;
-  clear: both;
-  color:#666;
+#footerWrap div#ful dt {
+    float: left;
+    clear: both;
+    color: #666;
 }
 
-#footerWrap div#ful dd{
-  color:#666;
+#footerWrap div#ful dd {
+    color: #666;
 }
 
-#footerWrap div#fur{
-  float:right;
-  display: flex;
-  color:#666;
-  font:1rem 나눔고딕,'sans-serif';
+#footerWrap div#fur {
+    float: right;
+    display: flex;
+    color: #666;
+    font: 1rem 나눔고딕, 'sans-serif';
 }
 
-#footerWrap div#fur>dl{
-  margin-left:20px;
+#footerWrap div#fur>dl {
+    margin-left: 20px;
 }
 
-#footerWrap div#fur>dl>dt{
-  padding-bottom:5px;
+#footerWrap div#fur>dl>dt {
+    padding-bottom: 5px;
 }
 
-#footerWrap div#fd{
-  width: 98vw;
-  height:50px;
-  margin: 0 auto;
-  color:#666;
+#footerWrap div#fd {
+    width: 98vw;
+    height: 50px;
+    margin: 0 auto;
+    color: #666;
 }
 
-#footerWrap div#fd li{
-  float:left; 
-} 
+#footerWrap div#fd li {
+    float: left;
+}
 
-#footerWrap div#fd li>a:after{
-  content: " ㅣ";
+#footerWrap div#fd li>a:after {
+    content: " ㅣ";
 }
 
 
-#footerWrap div#fd li>a{
-  display: flex;
-  margin-right: 5px;
-  color:#666;
+#footerWrap div#fd li>a {
+    display: flex;
+    margin-right: 5px;
+    color: #666;
 }
 
-#footerWrap div#fd small{
-  float:right;
-  font:15px 나눔고딕,'sans-serif';
-  color:#666;
-}
-
-@media screen and (max-width: 1280px){
-
-  #menuicon{
-    display:none;
-  }
-
-  #menuicon + label{
-    display: block;
-    position:fixed;
-    left: 20px; top:20px;
-    z-index: 9999;
-    width: 35px;
-    height: 25px;
-    cursor: pointer;
-  }
-
-  #menuicon + label span{
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 30px;
-    background-color: #fff;
-    transition: all .35s;
-  }
-
-  #menuicon + label span:nth-child(1){
-    top:0;
-  }
-  #menuicon + label span:nth-child(2){
-    top:50%;
-    transform: translateY(-50%);
-  }
-  #menuicon + label span:nth-child(3){
-    bottom:0%;
-  }
-
-  #menuicon:checked + label span:nth-child(1){
-    top:50%;
-    transform: translateY(-50%) rotate(45deg);
-  }
-
-  #menuicon:checked + label span:nth-child(2){
-    opacity: 0;
-  }
-
-  #menuicon:checked + label span:nth-child(3){
-    bottom: 50%;
-    transform: translateY(50%) rotate(-45deg);
-  }
-
-  #menuicon:checked + label + div[id="headerWrap"]{
-    left:0;
-  }
-
-  #menuicon:checked + label + div[id="headerWrap"] nav{
-    left:50px;
-  }
-
-  
-  #menuicon:checked + label + div[id="headerWrap"] h1{
-    left:13px;
-  }
-
-
-  #headerWrap{
-      position:fixed;
-      left:-250px; top:0;
-      width:250px;
-      height:100vh;
-      background-color:rgba(34, 34, 34, 0.9);
-      z-index: 999;
-      transition: all .35s;
-  }
-        
-
-        
-  header>h1{
-    /* 부모 #headerWrap */
-    position: fixed;
-    top:60px; left:-250px; 
-    margin-left:50px;
-    width: 100px;
-    z-index: 999;
-  }
-
-
-
-  header>nav{ 
-    position: fixed;
-    left:-270px; right: 0;
-    top:170px;
-    margin: 0;
-    display: block;
-    z-index: 999;
-  }
-
-  header>nav>ul#main_menu{
-    margin-bottom:50px;
-    margin-left: 0px;
-  }
-
-  header>nav>ul>li{
-    margin-left: 25px;
-    display: block;
-    margin-bottom: 20px;   
-  }
-  
-  header>nav>ul>li>a{
-    font:19px 'Shadows Into Light', cursive ;
-    color: #fff;  
-  }
-
-  /* box */
-
-  #box00{
-    width:100%;
-    color:#fff;
-  }
-
-  #box00>div{
-    width:80vw;
-    margin:0 auto;
-    padding:196px 0 200px 0;
-  }
-
-  #box00>div>h3{
-    font-size:3rem ;
-  }
-
-  #box00 dt{
-    font-size:1rem;
-  }
-  
-  #box00 dd{
-    font:1rem;
-  }
-
-  .box03>div dt{
-    width:80%;
-  }
-
-  .box03>div dd{
-    width: 90%;
-
-  }
-  
-
-  .box03 #pic>img{
-    width:32.8%;
-    height: 280px;
-  box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
-  }
-
-
-  
-  /* footerwrap */
-
-
-  #footerWrap div#ful{
-    float:left;
-    width:380px;
-    padding-bottom:3px;
-  }
-  
-
-  #footerWrap div#ful>dl{
-    padding-bottom:5px;
-    font:0.9rem/1.2rem 나눔고딕,'sans-serif';
-  }
-
-  #footerWrap div#fur{
-    font:0.9rem 나눔고딕,'sans-serif';
-    color:#666;
-  }
-  
-  #footerWrap div#fd>ul{
-    display: none;
-  }
-
-  #footerWrap div#fur>dl{
-    margin-left:10px;
-  }
-
-  #footerWrap div#fd small{
-    font:0.9rem 나눔고딕,'sans-serif';
-  }
-  
+#footerWrap div#fd small {
+    float: right;
+    font: 15px 나눔고딕, 'sans-serif';
+    color: #666;
 }
 
 
 
+@media screen and (max-width:1000px) {
+    /* box */
 
-@media screen and (max-width:960px) {
-
-    #box00>div{
-      margin:0 auto;
-      padding:150px 0 100px 0;
-    }
-  
-    
-    #box00 dl{
-      display: none;
+    #box00 {
+        width: 100%;
+        color: #fff;
     }
 
-    .box03>div dt{
-      font-size: 1.3rem;
+    #box00>div {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 196px 0 200px 0;
     }
 
-    .box03 #pic>img{
-      width:32.8%;
-      height: 280px;
-      box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
-    }
-    
-    #box01>h4{
-      font-size: 4rem;
+    #box00>div>h3 {
+        font-size: 3rem;
     }
 
-    #box02>h4{
-      font-size: 4rem;
+    #box00 dt {
+        font-size: 1rem;
+    }
+
+    #box00 dd {
+        font: 1rem;
+    }
+
+    .box03>div dt {
+        width: 80%;
+    }
+
+    .box03>div dd {
+        width: 90%;
+
     }
 
 
-    .box03 dd{
-      display: none;
+    .box03 #pic>img {
+        width: 32.8%;
+        height: 280px;
+        box-shadow: 7px 7px 20px 10px rgba(0, 0, 0, 0.64);
     }
 
-    #box01 dt:nth-child(1):after{
-      content: "\A농사가 행해지는 장소와 녹차잎 성장이 가장 활발한 여름이 \A 전시의 시공간적 배경. ‘예술적 가능성의 밭’으로 장소의 개념을 확장.";
-      font:1rem/0.5rem  'Gowun Dodum', sans-serif;
-      white-space: pre;
-      color:rgb(142, 180, 128);
+    #box00>div {
+        margin: 0 auto;
+        padding: 150px 0 100px 0;
     }
 
-    
-    #box01 dt:nth-child(3):after{
-      content: "\A '새로운 미(美)를 향한 테크놀로지'를 전시 주제로 삼고 수차례 \A현장을 답사한 작가는, 주제에 대한 연구과정과 결과를 형상화하여 야외 공간 곳곳에 작품을 설치.";
-      font:1rem/0.5rem  'Gowun Dodum', sans-serif;
-      white-space: pre;
-      color:rgb(142, 180, 128);
+
+    #box00 dl {
+        display: none;
     }
 
-        
-    #box01 dt:nth-child(5):after{
-      content: "\A 용산이라는 지역의 과거-현재-미래를 생각하면서 전시를 통해 두 개의 장소를 개념적으로 연결하고, \A 도시-자연-사람 등 다양한 요소를 예술작품을 매개로 적극적으로 소통.";
-      font:1rem/0.5rem  'Gowun Dodum', sans-serif;
-      white-space: pre;
-      color:rgb(142, 180, 128);
+    .box03>div dt {
+        font-size: 1.3rem;
     }
 
-           
-    #box02 dt:nth-child(1):after{
-      content: "단순한 관광지로서의 제주가 아닌 고유의 자연과 어우러진 현대미술을 즐길 수 있는 장소로 \A  제주의 위상을 높이고자 했음. 제주의 탄생과 관련된 '설화'를 주제로 오설록 티뮤지엄 일대에서 개최.";
-      font:0.9rem/0.5rem  'Gowun Dodum', sans-serif;
-      white-space: pre;
-      color:rgb(142, 180, 128);
+    .box03 #pic>img {
+        width: 32.8%;
+        height: 280px;
+        box-shadow: 7px 7px 20px 10px rgba(0, 0, 0, 0.64);
     }
 
-    #box02 dt:nth-child(3):after{
-      content: "화산 활동으로 만들어진 제주는 독특한 화산 지형을 자랑. 생성 과정에서 만들어진 오름이나 용암동굴과 \A 같은 신비로운 제주의 자연을 주제로 한 작품들은 관람객에게 제주의 강인한 생명력을 느끼게 함.";
-      font:0.9rem/0.5rem  'Gowun Dodum', sans-serif;
-      white-space: pre;
-      color:rgb(142, 180, 128);
+    #box01>h4 {
+        font-size: 4rem;
     }
 
-    #box02 dt:nth-child(5):after{
-      content: "제주 사람들은 바람과 돌이 많은 제주의 자연 환경 속에서 극복하고 순응하며 \A고유한 삶의 방식과 문화를 구축해왔음. 자연을 단순히 개척해야하는 대상으로만 보지 않고, \A 혹독할 정도로 거세었던 자연의 위력 앞에서 겸허한 자세로 자신들의 삶을 일구어낸 제주 사람들의 모습을 담음.";
-      font:0.9rem/0.5rem  'Gowun Dodum', sans-serif;
-      white-space: pre;
-      color:rgb(142, 180, 128);
+    #box02>h4 {
+        font-size: 4rem;
     }
-  
+
+
+    .box03 dd {
+        display: none;
+    }
+
+    #box01 dt:nth-child(1):after {
+        content: "\A농사가 행해지는 장소와 녹차잎 성장이 가장 활발한 여름이 \A 전시의 시공간적 배경. ‘예술적 가능성의 밭’으로 장소의 개념을 확장.";
+        font: 1rem/0.5rem 'Gowun Dodum', sans-serif;
+        white-space: pre;
+        color: rgb(142, 180, 128);
+    }
+
+
+    #box01 dt:nth-child(3):after {
+        content: "\A '새로운 미(美)를 향한 테크놀로지'를 전시 주제로 삼고 수차례 \A현장을 답사한 작가는, 주제에 대한 연구과정과 결과를 형상화하여 야외 공간 곳곳에 작품을 설치.";
+        font: 1rem/0.5rem 'Gowun Dodum', sans-serif;
+        white-space: pre;
+        color: rgb(142, 180, 128);
+    }
+
+
+    #box01 dt:nth-child(5):after {
+        content: "\A 용산이라는 지역의 과거-현재-미래를 생각하면서 전시를 통해 두 개의 장소를 개념적으로 연결하고, \A 도시-자연-사람 등 다양한 요소를 예술작품을 매개로 적극적으로 소통.";
+        font: 1rem/0.5rem 'Gowun Dodum', sans-serif;
+        white-space: pre;
+        color: rgb(142, 180, 128);
+    }
+
+
+    #box02 dt:nth-child(1):after {
+        content: "단순한 관광지로서의 제주가 아닌 고유의 자연과 어우러진 현대미술을 즐길 수 있는 장소로 \A  제주의 위상을 높이고자 했음. 제주의 탄생과 관련된 '설화'를 주제로 오설록 티뮤지엄 일대에서 개최.";
+        font: 0.9rem/0.5rem 'Gowun Dodum', sans-serif;
+        white-space: pre;
+        color: rgb(142, 180, 128);
+    }
+
+    #box02 dt:nth-child(3):after {
+        content: "화산 활동으로 만들어진 제주는 독특한 화산 지형을 자랑. 생성 과정에서 만들어진 오름이나 용암동굴과 \A 같은 신비로운 제주의 자연을 주제로 한 작품들은 관람객에게 제주의 강인한 생명력을 느끼게 함.";
+        font: 0.9rem/0.5rem 'Gowun Dodum', sans-serif;
+        white-space: pre;
+        color: rgb(142, 180, 128);
+    }
+
+    #box02 dt:nth-child(5):after {
+        content: "제주 사람들은 바람과 돌이 많은 제주의 자연 환경 속에서 극복하고 순응하며 \A고유한 삶의 방식과 문화를 구축해왔음. 자연을 단순히 개척해야하는 대상으로만 보지 않고, \A 혹독할 정도로 거세었던 자연의 위력 앞에서 겸허한 자세로 자신들의 삶을 일구어낸 제주 사람들의 모습을 담음.";
+        font: 0.9rem/0.5rem 'Gowun Dodum', sans-serif;
+        white-space: pre;
+        color: rgb(142, 180, 128);
+    }
+
 
     /* footer */
 
-    #footerWrap{
-      /* position: absolute; */
-      background-color: rgb(34, 34, 34);
-      height: 120px;
+    #footerWrap {
+        /* position: absolute; */
+        background-color: rgb(34, 34, 34);
+        height: 120px;
     }
 
-    #footerWrap div#fu{
-      overflow: visible;
-      width:50vw;
-      margin:0 auto;
-      padding-top:25px;  
+    #footerWrap div#fu {
+        overflow: visible;
+        width: 50vw;
+        margin: 0 auto;
+        padding-top: 25px;
     }
 
-    #footerWrap div#fur{
-      display: none;
+    #footerWrap div#fur {
+        display: none;
     }
 
 
-    #fd{
-      display: none;
+    #fd {
+        display: none;
     }
 }
 
@@ -682,71 +438,71 @@ h4>span{
 
 @media screen and (max-width:720px) {
 
-  #box00 dd{
-    display: none;
-  }
+    #box00 dd {
+        display: none;
+    }
 
-  #box00>div>h3{
-    font-size: 3rem;
-  }
+    #box00>div>h3 {
+        font-size: 3rem;
+    }
 
 
 
-  .box03 #pic>img{
-    width:32.5%;
-    height: 220px;
-    box-shadow:7px 7px 20px 10px rgba(0,0,0,0.64);
-  }
+    .box03 #pic>img {
+        width: 32.5%;
+        height: 220px;
+        box-shadow: 7px 7px 20px 10px rgba(0, 0, 0, 0.64);
+    }
 
-  #box01 dt:nth-child(1):after{
-    content: "\A농사가 행해지는 장소와 녹차잎 성장이 \A 가장 활발한 여름이 전시의 시공간적 배경. \A  ‘예술적 가능성의 밭’으로 장소의 개념을 확장";
-    white-space: pre;
-    font-size: 0.9rem;
-    color:rgb(142, 180, 128);
-  }
+    #box01 dt:nth-child(1):after {
+        content: "\A농사가 행해지는 장소와 녹차잎 성장이 \A 가장 활발한 여름이 전시의 시공간적 배경. \A  ‘예술적 가능성의 밭’으로 장소의 개념을 확장";
+        white-space: pre;
+        font-size: 0.9rem;
+        color: rgb(142, 180, 128);
+    }
 
-  #box01 dt:nth-child(3):after{
-    content: "\A '새로운 미(美)를 향한 테크놀로지'를 전시 주제로 \A 삼고 수차례 현장을 답사, 주제에 대한 연구과정과 \A 결과를 형상화하여 야외 공간 곳곳에 작품을 설치";
-    font-size: 0.9rem;
-    color:rgb(142, 180, 128);
-  }
+    #box01 dt:nth-child(3):after {
+        content: "\A '새로운 미(美)를 향한 테크놀로지'를 전시 주제로 \A 삼고 수차례 현장을 답사, 주제에 대한 연구과정과 \A 결과를 형상화하여 야외 공간 곳곳에 작품을 설치";
+        font-size: 0.9rem;
+        color: rgb(142, 180, 128);
+    }
 
-          
-  #box01 dt:nth-child(5):after{
-    content: "\A 용산이라는 지역의 과거-현재-미래를 생각하면서  \A 전시를 통해 두 개의 장소를 개념적으로 연결,  도시-자연\A-사람등 다양한 요소를 예술작품을 매개로 소통.";
-    font-size: 0.9rem;
-    color:rgb(142, 180, 128);
 
-  }
+    #box01 dt:nth-child(5):after {
+        content: "\A 용산이라는 지역의 과거-현재-미래를 생각하면서  \A 전시를 통해 두 개의 장소를 개념적으로 연결,  도시-자연\A-사람등 다양한 요소를 예술작품을 매개로 소통.";
+        font-size: 0.9rem;
+        color: rgb(142, 180, 128);
 
-  #box02 dt:nth-child(1):after{
-    content: "\A 제주의 탄생과 관련된 '설화'를 주제로 \A오설록 티뮤지엄 일대에서 개최.";
-    font-size: 0.9rem;
-    color:rgb(142, 180, 128);
-  }
+    }
 
-  #box02 dt:nth-child(3):after{
-    content: "\A  화산 활동으로 만들어진 제주는 독특한 화산 지형을 자랑. \A 신비로운 자연을 주제로 한 작품들은 제주의 \A강인한 생명력을 느끼게 함.";
-    font-size: 0.9rem;
-    color:rgb(142, 180, 128);
+    #box02 dt:nth-child(1):after {
+        content: "\A 제주의 탄생과 관련된 '설화'를 주제로 \A오설록 티뮤지엄 일대에서 개최.";
+        font-size: 0.9rem;
+        color: rgb(142, 180, 128);
+    }
 
-  }
+    #box02 dt:nth-child(3):after {
+        content: "\A  화산 활동으로 만들어진 제주는 독특한 화산 지형을 자랑. \A 신비로운 자연을 주제로 한 작품들은 제주의 \A강인한 생명력을 느끼게 함.";
+        font-size: 0.9rem;
+        color: rgb(142, 180, 128);
 
-  #box02 dt:nth-child(5):after{
-    content: "\A  자연을 단순히 개척해야하는 대상으로만 보지 않고, \A 혹독할 정도로 거세었던 자연의 위력 앞에 겸허한 자세로 \A자신들의 삶을 일구어낸 제주 사람들의 모습을 담음.";
-    font-size: 0.9rem;
-    color:rgb(142, 180, 128);
-  }
+    }
 
-  .box03 #pic>img{
-    width: 32.5% ;
-  }
+    #box02 dt:nth-child(5):after {
+        content: "\A  자연을 단순히 개척해야하는 대상으로만 보지 않고, \A 혹독할 정도로 거세었던 자연의 위력 앞에 겸허한 자세로 \A자신들의 삶을 일구어낸 제주 사람들의 모습을 담음.";
+        font-size: 0.9rem;
+        color: rgb(142, 180, 128);
+    }
 
-  .box03>div dt{
-    font-size: 1.4rem;
-  }
+    .box03 #pic>img {
+        width: 32.5%;
+    }
 
-  /* #box02 .container{
+    .box03>div dt {
+        font-size: 1.4rem;
+    }
+
+    /* #box02 .container{
     width: 50vw;
   }
 
@@ -756,27 +512,28 @@ h4>span{
   
   } */
 
-  #footerWrap div#fu{
-    width:70vw;
-  }
+    #footerWrap div#fu {
+        width: 70vw;
+    }
 
 }
 
 
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
 
-  .box03 #pic>img{
-    width: 32.3% ;
-  }
-  .box03>div dt{
-    font-size: 1.2rem;
-  }
+    .box03 #pic>img {
+        width: 32.3%;
+    }
 
-  
-        /* footer */
-        #footerWrap div#fu{
-          width:85vw;
-        }
+    .box03>div dt {
+        font-size: 1.2rem;
+    }
+
+
+    /* footer */
+    #footerWrap div#fu {
+        width: 85vw;
+    }
 
 }

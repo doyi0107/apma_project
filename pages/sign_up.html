@@ -8,44 +8,47 @@
   <title>SIGN_UP</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/sign_up.css">
-  <script type="text/javascript"src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <link rel="stylesheet" href="../css/ampa-side-header.css">
+  <script type="text/javascript" src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
   <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="../js/sign_up.js"></script>
-  <script  type="text/javascript" src="../js/login.js"></script>  
-  <script  type="text/javascript" src="../js/jquery.ajax-cross-origin.min.js"></script> 
+  <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="../js/jquery.ajax-cross-origin.min.js"></script>
 </head>
 
 <body>
 
-  <div id="wrap">
-    <!-- header -->
+  <div id="wrap"><!-- header -->
     <input type="checkbox" id="menuicon">
     <label for="menuicon">
       <span></span>
       <span></span>
       <span></span>
     </label>
-    <div id="headerWrap">
-      <header>
-        <h1><a href="../index.html">APMA</a></h1>
-        <nav>
-          <h2 class="hideClass">메인내비게이션</h2>
-          <ul id="main_menu">
-            <li><a href="./museum.html">MUSEUM</a></li>
-            <li><a href="./exhibtion.html">EXHIBTION</a></li>
-            <li><a href="./project.html">PROJECT</a></li>
-            <li><a href="./notice_view.html">NOICE</a></li>
-            <li><a href="./museum_shop.html">MUSEUM SHOP</a></li>
-          </ul>
-          <ul id="side_menu">
-            <li><a href="./login.html">LOGIN</a></li>
-            <li><a href="./sign_up.html">SIGN UP</a></li>
-            <li><a href="#" onclick="mypage()">MY PAGE</a></li>
-          </ul>
-        </nav>
+    <!-- 헤더 섹션 -->
+    <section class="apma-header-wrap">
+      <div class="apma-header-logo-wrap">
+        <p class="apma-header-logo"><a href="../index.html">APMA</a></p>
+      </div>
+      <div class="apma-header-center-wrap">
+        <ul class="apma-header-center">
+          <li><a href="../pages/exhibtion.html">EXHIBTION</a></li>
+          <li><a href="../pages/project.html">PROJECT</a></li>
+          <li><a href="../pages/museum_shop.html">MUSEUM SHOP</a></li>
+          <li><a href="../pages/notice_view.html">NOICE</a></li>
 
-      </header>
-    </div>
+        </ul>
+      </div>
+
+
+      <div class="apma-header-icon-wrap">
+        <ul class="apma-header-icon">
+          <li><a href="../pages/login.html">LOGIN</a></li>
+          <li><a href="../pages/sign_up.html">SIGN UP</a></li>
+          <li><a href="#" onclick="mypage()">MY PAGE</a></li>
+        </ul>
+      </div>
+    </section>
     <!-- main -->
     <main>
       <section>
@@ -60,13 +63,13 @@
 
               <li>
                 <label for="userPw">비밀번호</label>
-                <input type="password" id="userPw" placeholder="비밀번호">     
+                <input type="password" id="userPw" placeholder="비밀번호">
                 <span id="pw_vaild"></span>
               <li>
 
               <li>
                 <label for="userPw_check">비밀번호 확인</label>
-                <input type="password" id="userPw_check" placeholder="비밀번호 확인" >
+                <input type="password" id="userPw_check" placeholder="비밀번호 확인">
                 <span id="pwCk"></span>
               <li>
 
@@ -78,18 +81,19 @@
 
               <li>
                 <label for="userDate">생년월일</label>
-                <input class="date_empty placeholder-date" id="userDate" type="date" id="userdate" >
+                <input class="date_empty placeholder-date" id="userDate" type="date" id="userdate">
               </li>
 
               <li>
                 <label for="userPhone">전화번호</label>
-                <input type="tel" id="userPhone" required placeholder="전화번호 ( - 생략 )" >
+                <input type="tel" id="userPhone" required placeholder="전화번호 ( - 생략 )">
               </li>
             </ul>
 
 
             <div id="sub_ul">
-              <div> <button onClick="submit_menber_info()" type="button" id="submit_menber" value="회원가입" >회원가입</button> </div>
+              <div> <button onClick="submit_menber_info()" type="button" id="submit_menber" value="회원가입">회원가입</button>
+              </div>
               <div id="login_move"><a href="../pages/login.html">로그인으로 돌아가기</a></div>
             </div>
 
@@ -143,71 +147,74 @@
   <script>
 
 
-      $("#userPw").on("input",function(){
-        if ($(this).val().trim().length == 0) {
-              $("#pw_vaild").text("");
-              return;
-            }
+    $("#userPw").on("input", function () {
+      if ($(this).val().trim().length == 0) {
+        $("#pw_vaild").text("");
+        return;
+      }
 
-            const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,15}$/
+      const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,15}$/
 
-            if (passwordRegex.test($(this).val())) {
-              $("#pw_vaild").text("올바른 형식입니다.");
-              $("#pw_vaild").css({"color":"rgb(60 194 60)","font-size":"0.9rem" });
-    
-              
-            } else {
-              $("#pw_vaild").text("숫자+영문자+특수문자 조합으로 8자리 이상");
-              $("#pw_vaild").css({"color":"rgb(249, 89, 33)","font-size":"0.9rem" });
-            }
-      });
+      if (passwordRegex.test($(this).val())) {
+        $("#pw_vaild").text("올바른 형식입니다.");
+        $("#pw_vaild").css({ "color": "rgb(60 194 60)", "font-size": "0.9rem" });
 
- 
-      
-       $("#userPw_check").on("keyup", function() {
- 
-              if ($(this).val().trim().length == 0) {
-                $("#pwCk").text("");
-                  return;
-              }
 
-              if ($("#userPw").val() == $(this).val()){
-                $("#pwCk").text("비밀번호가 일치합니다.")
-                  .css({"color":"rgb(60 194 60)","font-size":"0.9rem" });}
-              else
-                $("#pwCk").text("비밀번호가 일치하지 않습니다.")
-                  .css({"color":"rgb(249, 89, 33)","font-size":"0.9rem" });
-    });
-
-    
-
-        $("#userName").on("input", function() {
-            if ($(this).val().trim().length == 0) {
-              $("#nameCk").text("");
-              return;
-            }
-
-            const regExp = /^[가-힣]{2,5}$/;
-              
-            if (regExp.test($(this).val())) {
-              $("#nameCk").text("올바른 형식입니다.");
-              $("#nameCk").css({"color":"rgb(60 194 60)","font-size":"0.9rem" });
-              
-            } else {
-              $("#nameCk").text("이름의 올바른 형식이 아닙니다.");
-              $("#nameCk").css({"color":"rgb(249, 89, 33)","font-size":"0.9rem" });
-            }
+      } else {
+        $("#pw_vaild").text("숫자+영문자+특수문자 조합으로 8자리 이상");
+        $("#pw_vaild").css({ "color": "rgb(249, 89, 33)", "font-size": "0.9rem" });
+      }
     });
 
 
-    
 
-            
-  
+    $("#userPw_check").on("keyup", function () {
 
-   
+      if ($(this).val().trim().length == 0) {
+        $("#pwCk").text("");
+        return;
+      }
+
+      if ($("#userPw").val() == $(this).val()) {
+        $("#pwCk").text("비밀번호가 일치합니다.")
+          .css({ "color": "rgb(60 194 60)", "font-size": "0.9rem" });
+      }
+      else
+        $("#pwCk").text("비밀번호가 일치하지 않습니다.")
+          .css({ "color": "rgb(249, 89, 33)", "font-size": "0.9rem" });
+    });
+
+
+
+    $("#userName").on("input", function () {
+      if ($(this).val().trim().length == 0) {
+        $("#nameCk").text("");
+        return;
+      }
+
+      const regExp = /^[가-힣]{2,5}$/;
+
+      if (regExp.test($(this).val())) {
+        $("#nameCk").text("올바른 형식입니다.");
+        $("#nameCk").css({ "color": "rgb(60 194 60)", "font-size": "0.9rem" });
+
+      } else {
+        $("#nameCk").text("이름의 올바른 형식이 아닙니다.");
+        $("#nameCk").css({ "color": "rgb(249, 89, 33)", "font-size": "0.9rem" });
+      }
+    });
+
+
+
+
+
+
+
+
 
   </script>
+      <script src="./js/scroll-smooth.js"></script>
+      <script src="./js/ampa-header.js"></script>
 </body>
 
 </html>
