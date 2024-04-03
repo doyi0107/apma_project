@@ -34,7 +34,7 @@ let tl1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".apma-main-wrap",
     start: "0 top", // 첫 번째 애니메이션의 start 값
-    end: "7% 8%",
+    end: "5% 8%",
     scrub: true,
     markers: false,
     onUpdate: updateFontSize, // 스크롤 위치가 변경될 때마다 폰트 크기 업데이트
@@ -45,10 +45,10 @@ let tl1 = gsap.timeline({
 let tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".apma-main-wrap",
-    start: "6% top", // 두 번째 애니메이션의 start 값
-    end: "10% top",
+    start: "5.5% top", // 두 번째 애니메이션의 start 값
+    end: "8% top",
     scrub: true,
-    markers: false,
+    markers: true,
   },
 });
 
