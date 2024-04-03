@@ -131,7 +131,7 @@
     }
 
     .apma-enter-title {
-        font: bold 1.1rem "Orbitron",
+        font: bold 1.5rem "Orbitron",
             sans-serif;
     }
 
@@ -140,7 +140,7 @@
         height: 50px;
         margin-top: -10px;
         text-align: center;
-        font: bold 0.8rem "Orbitron",
+        font: bold 1rem "Orbitron",
             sans-serif;
     }
 }

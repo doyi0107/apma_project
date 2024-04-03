@@ -13,7 +13,7 @@
 function updateFontSize() {
   let fontSize;
   if (window.innerWidth>=1000) {
-    fontSize = "8rem"; // 뷰포트 너비가 1000px 이상인 경우
+    fontSize = "10rem"; // 뷰포트 너비가 1000px 이상인 경우
   } else if (window.innerWidth >= 500 && window.innerWidth < 1000) {
     fontSize = "6rem"; // 뷰포트 너비가 1000px 미만인 경우
   } else {
