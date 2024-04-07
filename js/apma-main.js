@@ -45,8 +45,8 @@ let tl1 = gsap.timeline({
 let tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".apma-main-wrap",
-    start: "5.5% top", // 두 번째 애니메이션의 start 값
-    end: "8% top",
+    start: "5.3% top", // 두 번째 애니메이션의 start 값
+    end: "8.5% top",
     scrub: true,
     markers: false,
   },
